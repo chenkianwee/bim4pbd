@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1. Markdown Files &#8212; Open Computational Design for Sustainable Development</title>
+    <title>1. Design Aims &#8212; Open Computational Design for Sustainable Development</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -37,7 +37,6 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/language_data.js"></script>
     <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
@@ -52,7 +51,7 @@
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="1.3. Markdown Files" href="01_1.html" />
+    <link rel="next" title="1.3. SDG 1 No Poverty" href="01_1.html" />
     <link rel="prev" title="Open Computational Design for Sustainable Development" href="../intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -91,13 +90,13 @@
 </ul>
 <p class="caption">
  <span class="caption-text">
-  Concepts
+  Motivation and Background
  </span>
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
-   1. Markdown Files
+   1. Design Aims
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -107,14 +106,55 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="01_1.html">
-     1.3. Markdown Files
+     1.3. SDG 1 No Poverty
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="02.html">
-   2. Markdown Files
+   2. Design Issues
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03.html">
+   3. Design Processes
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Open Data Models
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../020/01.html">
+   1. Open Data Models
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Open Technologies
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../030/01.html">
+   1. Open Technologies
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Open Computational Design for Sustainable Developments
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../040/01.html">
+   1. Open Computational Design Process for Sustainable Developments
   </a>
  </li>
 </ul>
@@ -205,33 +245,33 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-is-myst">
-   1.1. What is MyST?
+  <a class="reference internal nav-link" href="#united-nations-sustainable-development-goals-sdgs">
+   1.1. United Nations Sustainable Development Goals (SDGs)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-are-roles-and-directives">
-   1.2. What are roles and directives?
+  <a class="reference internal nav-link" href="#ratings">
+   1.2. Ratings
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#using-a-directive">
-     1.2.1. Using a directive
+    <a class="reference internal nav-link" href="#living-building-challenge">
+     1.2.1. Living Building Challenge
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#using-a-role">
-     1.2.2. Using a role
+    <a class="reference internal nav-link" href="#leed">
+     1.2.2. LEED
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#adding-a-citation">
-     1.2.3. Adding a citation
+    <a class="reference internal nav-link" href="#casbee">
+     1.2.3. CASBEE
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#executing-code-in-your-markdown-files">
-     1.2.4. Executing code in your markdown files
+    <a class="reference internal nav-link" href="#breeam">
+     1.2.4. BREEAM
     </a>
    </li>
   </ul>
@@ -247,114 +287,28 @@
         
               <div>
                 
-  <div class="section" id="markdown-files">
-<h1><span class="section-number">1. </span>Markdown Files<a class="headerlink" href="#markdown-files" title="Permalink to this headline">¶</a></h1>
-<p>Whether you write your book’s content in Jupyter Notebooks (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) or
-in regular markdown files (<code class="docutils literal notranslate"><span class="pre">.md</span></code>), you’ll write in the same flavor of markdown
-called <strong>MyST Markdown</strong>.</p>
-<div class="section" id="what-is-myst">
-<h2><span class="section-number">1.1. </span>What is MyST?<a class="headerlink" href="#what-is-myst" title="Permalink to this headline">¶</a></h2>
-<p>MyST stands for “Markedly Structured Text”. It
-is a slight variation on a flavor of markdown called “CommonMark” markdown,
-with small syntax extensions to allow you to write <strong>roles</strong> and <strong>directives</strong>
-in the Sphinx ecosystem.</p>
+  <div class="section" id="design-aims">
+<h1><span class="section-number">1. </span>Design Aims<a class="headerlink" href="#design-aims" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="united-nations-sustainable-development-goals-sdgs">
+<h2><span class="section-number">1.1. </span>United Nations Sustainable Development Goals (SDGs)<a class="headerlink" href="#united-nations-sustainable-development-goals-sdgs" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="what-are-roles-and-directives">
-<h2><span class="section-number">1.2. </span>What are roles and directives?<a class="headerlink" href="#what-are-roles-and-directives" title="Permalink to this headline">¶</a></h2>
-<p>Roles and directives are two of the most powerful tools in Jupyter Book. They
-are kind of like functions, but written in a markup language. They both
-serve a similar purpose, but <strong>roles are written in one line</strong>, whereas
-<strong>directives span many lines</strong>. They both accept different kinds of inputs,
-and what they do with those inputs depends on the specific role or directive
-that is being called.</p>
-<div class="section" id="using-a-directive">
-<h3><span class="section-number">1.2.1. </span>Using a directive<a class="headerlink" href="#using-a-directive" title="Permalink to this headline">¶</a></h3>
-<p>At its simplest, you can insert a directive into your book’s content like so:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{mydirectivename}
-My directive content
-```
-</pre></div>
+<div class="section" id="ratings">
+<h2><span class="section-number">1.2. </span>Ratings<a class="headerlink" href="#ratings" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="living-building-challenge">
+<h3><span class="section-number">1.2.1. </span>Living Building Challenge<a class="headerlink" href="#living-building-challenge" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://living-future.org/lbc/">https://living-future.org/lbc/</a></p>
 </div>
-<p>This will only work if a directive with name <code class="docutils literal notranslate"><span class="pre">mydirectivename</span></code> already exists
-(which it doesn’t). There are many pre-defined directives associated with
-Jupyter Book. For example, to insert a note box into your content, you can
-use the following directive:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{note}
-Here is a note
-```
-</pre></div>
+<div class="section" id="leed">
+<h3><span class="section-number">1.2.2. </span>LEED<a class="headerlink" href="#leed" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://leed.usgbc.org/">https://leed.usgbc.org/</a></p>
 </div>
-<p>This results in:</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Here is a note</p>
+<div class="section" id="casbee">
+<h3><span class="section-number">1.2.3. </span>CASBEE<a class="headerlink" href="#casbee" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://www.ibec.or.jp/CASBEE/english/downloadE.htm">https://www.ibec.or.jp/CASBEE/english/downloadE.htm</a></p>
 </div>
-<p>In your built book.</p>
-<p>For more information on writing directives, see the
-<a class="reference external" href="https://myst-parser.readthedocs.io/">MyST documentation</a>.</p>
-</div>
-<div class="section" id="using-a-role">
-<h3><span class="section-number">1.2.2. </span>Using a role<a class="headerlink" href="#using-a-role" title="Permalink to this headline">¶</a></h3>
-<p>Roles are very similar to directives, but they are less-complex and written
-entirely on one line. You can insert a role into your book’s content with
-this pattern:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Some content {rolename}`and here is my role&#39;s content!`
-</pre></div>
-</div>
-<p>Again, roles will only work if <code class="docutils literal notranslate"><span class="pre">rolename</span></code> is a valid role’s name. For example,
-the <code class="docutils literal notranslate"><span class="pre">doc</span></code> role can be used to refer to another page in your book. You can
-refer directly to another page by its relative path. For example, the
-role syntax <code class="docutils literal notranslate"><span class="pre">{doc}`intro`</span></code> will result in: <span class="xref std std-doc">intro</span>.</p>
-<p>For more information on writing roles, see the
-<a class="reference external" href="https://myst-parser.readthedocs.io/">MyST documentation</a>.</p>
-</div>
-<div class="section" id="adding-a-citation">
-<h3><span class="section-number">1.2.3. </span>Adding a citation<a class="headerlink" href="#adding-a-citation" title="Permalink to this headline">¶</a></h3>
-<p>You can also cite references that are stored in a <code class="docutils literal notranslate"><span class="pre">bibtex</span></code> file. For example,
-the following syntax: <code class="docutils literal notranslate"><span class="pre">{cite}`holdgraf_evidence_2014`</span></code> will render like
-this: <span id="id1">[]</span>.</p>
-<p>Moreover, you can insert a bibliography into your page with this syntax:
-The <code class="docutils literal notranslate"><span class="pre">{bibliography}</span></code> directive must be used for all the <code class="docutils literal notranslate"><span class="pre">{cite}</span></code> roles to
-render properly.
-For example, if the references for your book are stored in <code class="docutils literal notranslate"><span class="pre">references.bib</span></code>,
-then the bibliography is inserted with:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{bibliography}
-```
-</pre></div>
-</div>
-<p>Resulting in a rendered bibliography that looks like:</p>
-<p id="id2"><dl class="citation">
-<dt class="label" id="id4"><span class="brackets">Joh16</span></dt>
-<dd><p>Brian Johnson. <em>Design Computing: An Overview of an Emergent Field</em>. Routledge, 1st edition, 2016. ISBN 978-1-138-93097-1. URL: <a class="reference external" href="https://doi.org/10.4324/9781315680057">https://doi.org/10.4324/9781315680057</a>.</p>
-</dd>
-<dt class="label" id="id3"><span class="brackets">YGO21</span></dt>
-<dd><p>Rongrong Yu, Ning Gu, and Michael J. Ostwald. <em>Computational Design: Technology, Cognition and Environments</em>. CRC Press, Oxon, England, 1st edition, 2021. ISBN 978-0-429-26078-0. URL: <a class="reference external" href="https://doi.org/10.1201/9780429260780">https://doi.org/10.1201/9780429260780</a>.</p>
-</dd>
-</dl>
-</p>
-</div>
-<div class="section" id="executing-code-in-your-markdown-files">
-<h3><span class="section-number">1.2.4. </span>Executing code in your markdown files<a class="headerlink" href="#executing-code-in-your-markdown-files" title="Permalink to this headline">¶</a></h3>
-<p>If you’d like to include computational content inside these markdown files,
-you can use MyST Markdown to define cells that will be executed when your
-book is built. Jupyter Book uses <em>jupytext</em> to do this.</p>
-<p>First, add Jupytext metadata to the file. For example, to add Jupytext metadata
-to this markdown page, run this command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">myst</span> <span class="n">init</span> <span class="n">markdown</span><span class="o">.</span><span class="n">md</span>
-</pre></div>
-</div>
-<p>Once a markdown file has Jupytext metadata in it, you can add the following
-directive to run the code at build time:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{code-cell}
-print(&quot;Here is some code to execute&quot;)
-```
-</pre></div>
-</div>
-<p>When your book is built, the contents of any <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> blocks will be
-executed with your default Jupyter kernel, and their outputs will be displayed
-in-line with the rest of your content.</p>
-<p>For more information about executing computational content with Jupyter Book,
-see <a class="reference external" href="https://myst-nb.readthedocs.io/">The MyST-NB documentation</a>.</p>
+<div class="section" id="breeam">
+<h3><span class="section-number">1.2.4. </span>BREEAM<a class="headerlink" href="#breeam" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://www.breeam.com/">https://www.breeam.com/</a></p>
 </div>
 </div>
 <div class="toctree-wrapper compound">
@@ -403,7 +357,7 @@ see <a class="reference external" href="https://myst-nb.readthedocs.io/">The MyS
         <a class="right-next" href="01_1.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title"><span class="section-number">1.3. </span>Markdown Files</p>
+                <p class="prevnext-title"><span class="section-number">1.3. </span>SDG 1 No Poverty</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>

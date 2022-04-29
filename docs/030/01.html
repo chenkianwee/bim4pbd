@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2. Design Issues &#8212; Open Computational Design for Sustainable Development</title>
+    <title>1. Open Technologies &#8212; Open Computational Design for Sustainable Development</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,8 +51,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="3. Design Processes" href="03.html" />
-    <link rel="prev" title="1.3. SDG 1 No Poverty" href="01_1.html" />
+    <link rel="next" title="1. Open Computational Design Process for Sustainable Developments" href="../040/01.html" />
+    <link rel="prev" title="1. Open Data Models" href="../020/01.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -93,10 +93,10 @@
   Motivation and Background
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="01.html">
-   1. Design Aims
+  <a class="reference internal" href="../010/01.html">
+   1. Aim
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -105,20 +105,20 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="01_1.html">
-     1.3. SDG 1 No Poverty
+    <a class="reference internal" href="../010/01_1.html">
+     1.2. SDG 1 No Poverty
     </a>
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   2. Design Issues
+ <li class="toctree-l1">
+  <a class="reference internal" href="../010/02.html">
+   2. Issues
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="03.html">
-   3. Design Processes
+  <a class="reference internal" href="../010/03.html">
+   3. Integrative Design
   </a>
  </li>
 </ul>
@@ -139,9 +139,9 @@
   Open Technologies
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../030/01.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    1. Open Technologies
   </a>
  </li>
@@ -198,7 +198,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/docs/010/02.md"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/docs/030/01.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -218,7 +218,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/chenkianwee/opencd4susdev/issues/new?title=Issue%20on%20page%20%2Fdocs/010/02.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/chenkianwee/opencd4susdev/issues/new?title=Issue%20on%20page%20%2Fdocs/030/01.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -245,18 +245,52 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#climate-change">
-   2.1. Climate Change
+  <a class="reference internal nav-link" href="#vizualization">
+   1.1. Vizualization
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#background">
-     2.1.1. Background
+    <a class="reference internal nav-link" href="#cesiumjs">
+     1.1.1. CesiumJS
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-management">
+   1.2. Data Management
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dcitydb">
+     1.2.1. 3DCityDB
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#solutions">
-     2.1.2. Solutions
+    <a class="reference internal nav-link" href="#frost-server">
+     1.2.2. FROST-Server
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#timescale">
+     1.2.3. Timescale
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bimserver">
+     1.2.4. BIMServer
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#communication">
+   1.3. Communication
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#element-io">
+     1.3.1. Element.io
     </a>
    </li>
   </ul>
@@ -272,23 +306,33 @@
         
               <div>
                 
-  <div class="section" id="design-issues">
-<h1><span class="section-number">2. </span>Design Issues<a class="headerlink" href="#design-issues" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="climate-change">
-<h2><span class="section-number">2.1. </span>Climate Change<a class="headerlink" href="#climate-change" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="background">
-<h3><span class="section-number">2.1.1. </span>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h3>
+  <div class="section" id="open-technologies">
+<h1><span class="section-number">1. </span>Open Technologies<a class="headerlink" href="#open-technologies" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="vizualization">
+<h2><span class="section-number">1.1. </span>Vizualization<a class="headerlink" href="#vizualization" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="cesiumjs">
+<h3><span class="section-number">1.1.1. </span>CesiumJS<a class="headerlink" href="#cesiumjs" title="Permalink to this headline">¶</a></h3>
 </div>
-<div class="section" id="solutions">
-<h3><span class="section-number">2.1.2. </span>Solutions<a class="headerlink" href="#solutions" title="Permalink to this headline">¶</a></h3>
-<ol class="simple">
-<li><p>Decarbonize the grid and use renewable energy sources</p></li>
-<li><p>Electrification</p></li>
-<li><p>Synthetic fuel</p></li>
-<li><p>Decarbonizing industry and agriculture</p></li>
-<li><p>Carbon removal technologies</p></li>
-<li><p>Protect nature</p></li>
-</ol>
+</div>
+<div class="section" id="data-management">
+<h2><span class="section-number">1.2. </span>Data Management<a class="headerlink" href="#data-management" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="dcitydb">
+<h3><span class="section-number">1.2.1. </span>3DCityDB<a class="headerlink" href="#dcitydb" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="frost-server">
+<h3><span class="section-number">1.2.2. </span>FROST-Server<a class="headerlink" href="#frost-server" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="timescale">
+<h3><span class="section-number">1.2.3. </span>Timescale<a class="headerlink" href="#timescale" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="bimserver">
+<h3><span class="section-number">1.2.4. </span>BIMServer<a class="headerlink" href="#bimserver" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="communication">
+<h2><span class="section-number">1.3. </span>Communication<a class="headerlink" href="#communication" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="element-io">
+<h3><span class="section-number">1.3.1. </span><a class="reference external" href="http://Element.io">Element.io</a><a class="headerlink" href="#element-io" title="Permalink to this headline">¶</a></h3>
 </div>
 </div>
 </div>
@@ -306,7 +350,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./docs\010"
+            path: "./docs\030"
         },
         predefinedOutput: true
     }
@@ -323,19 +367,19 @@
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="01_1.html" title="previous page">
+        <a class="left-prev" href="../020/01.html" title="previous page">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
-                <p class="prevnext-title"><span class="section-number">1.3. </span>SDG 1 No Poverty</p>
+                <p class="prevnext-title"><span class="section-number">1. </span>Open Data Models</p>
             </div>
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="03.html" title="next page">
+        <a class="right-next" href="../040/01.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title"><span class="section-number">3. </span>Design Processes</p>
+                <p class="prevnext-title"><span class="section-number">1. </span>Open Computational Design Process for Sustainable Developments</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>
