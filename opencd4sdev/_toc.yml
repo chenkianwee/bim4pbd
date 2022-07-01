@@ -4,10 +4,30 @@
 format: jb-book
 root: docs/intro
 parts:
-- caption: Concepts
+- caption: Motivation and Background
   numbered: true
   chapters:
     - file: docs/010/01
       sections:
         - file: docs/010/01_1
     - file: docs/010/02
+    - file: docs/010/03
+- caption: Open Data Models
+  numbered: true
+  chapters:
+    - file: docs/020/01
+- caption: Open Technologies
+  numbered: true
+  chapters:
+    - file: docs/030/01
+- caption: Open Computational Design for Sustainable Developments
+  numbered: true
+  chapters:
+    - file: docs/040/01
+    - file: docs/040/02
+    - file: docs/040/03
+    - file: docs/040/04
+- caption: References
+  numbered: true
+  chapters:
+    - file: docs/biblio
