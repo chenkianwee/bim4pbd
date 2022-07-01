@@ -37,6 +37,7 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
     <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
@@ -49,9 +50,30 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="1. Open Computational Design Process for Sustainable Developments" href="../040/01.html" />
+    <link rel="next" title="1. Modeling Princeton Campus" href="../040/01.html" />
     <link rel="prev" title="1. Open Data Models" href="../020/01.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -96,7 +118,7 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../010/01.html">
-   1. Aim
+   1. Design Aims
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -106,19 +128,19 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../010/01_1.html">
-     1.2. SDG 1 No Poverty
+     1.4. SDG 1 No Poverty
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../010/02.html">
-   2. Issues
+   2. Design Issues
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../010/03.html">
-   3. Integrative Design
+   3. Design Processes
   </a>
  </li>
 </ul>
@@ -154,7 +176,34 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../040/01.html">
-   1. Open Computational Design Process for Sustainable Developments
+   1. Modeling Princeton Campus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../040/02.html">
+   2. Modeling Mean Radiant Temperature
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../040/03.html">
+   3. Decarbonizing Short Commutes with Solar Powered Personalized Electric Vehicles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../040/04.html">
+   4. Aiming for Zero: Measuring Personal Carbon Footprint with Low-Cost Distributed Sensing
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  References
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../biblio.html">
+   1. Bibliography
   </a>
  </li>
 </ul>
@@ -250,8 +299,23 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#cesiumjs">
-     1.1.1. CesiumJS
+    <a class="reference internal nav-link" href="#cesiumjs-https-cesium-com-platform-cesiumjs">
+     1.1.1. CesiumJS (https://cesium.com/platform/cesiumjs/)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#itowns-https-github-com-itowns-itowns">
+     1.1.2. Itowns (https://github.com/iTowns/itowns)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vts-geospatial-https-vts-geospatial-org">
+     1.1.3. Vts Geospatial (https://vts-geospatial.org/)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#kepler-gl-https-kepler-gl">
+     1.1.4. Kepler.gl (https://kepler.gl/)
     </a>
    </li>
   </ul>
@@ -262,23 +326,33 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#dcitydb">
-     1.2.1. 3DCityDB
+    <a class="reference internal nav-link" href="#dcitydb-https-www-3dcitydb-org-3dcitydb">
+     1.2.1. 3DCityDB (https://www.3dcitydb.org/3dcitydb/)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#frost-server">
-     1.2.2. FROST-Server
+    <a class="reference internal nav-link" href="#frost-server-https-github-com-fraunhoferiosb-frost-server">
+     1.2.2. FROST-Server (https://github.com/FraunhoferIOSB/FROST-Server)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#timescale">
-     1.2.3. Timescale
+    <a class="reference internal nav-link" href="#timescale-https-www-timescale-com">
+     1.2.3. Timescale (https://www.timescale.com/)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#bimserver">
-     1.2.4. BIMServer
+    <a class="reference internal nav-link" href="#bimserver-https-github-com-opensourcebim-bimserver">
+     1.2.4. BIMServer (https://github.com/opensourceBIM/BIMserver)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#speckle-https-speckle-systems">
+     1.2.5. speckle (https://speckle.systems/)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#compas-https-compas-dev">
+     1.2.6. COMPAS (https://compas.dev/)
     </a>
    </li>
   </ul>
@@ -289,8 +363,8 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#element-io">
-     1.3.1. Element.io
+    <a class="reference internal nav-link" href="#element-io-https-element-io">
+     1.3.1. Element.io (https://element.io/)
     </a>
    </li>
   </ul>
@@ -310,29 +384,44 @@
 <h1><span class="section-number">1. </span>Open Technologies<a class="headerlink" href="#open-technologies" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="vizualization">
 <h2><span class="section-number">1.1. </span>Vizualization<a class="headerlink" href="#vizualization" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="cesiumjs">
-<h3><span class="section-number">1.1.1. </span>CesiumJS<a class="headerlink" href="#cesiumjs" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="cesiumjs-https-cesium-com-platform-cesiumjs">
+<h3><span class="section-number">1.1.1. </span>CesiumJS (<a class="reference external" href="https://cesium.com/platform/cesiumjs/">https://cesium.com/platform/cesiumjs/</a>)<a class="headerlink" href="#cesiumjs-https-cesium-com-platform-cesiumjs" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="itowns-https-github-com-itowns-itowns">
+<h3><span class="section-number">1.1.2. </span>Itowns (<a class="reference external" href="https://github.com/iTowns/itowns">https://github.com/iTowns/itowns</a>)<a class="headerlink" href="#itowns-https-github-com-itowns-itowns" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="vts-geospatial-https-vts-geospatial-org">
+<h3><span class="section-number">1.1.3. </span>Vts Geospatial (<a class="reference external" href="https://vts-geospatial.org/">https://vts-geospatial.org/</a>)<a class="headerlink" href="#vts-geospatial-https-vts-geospatial-org" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="kepler-gl-https-kepler-gl">
+<h3><span class="section-number">1.1.4. </span><a class="reference external" href="http://Kepler.gl">Kepler.gl</a> (<a class="reference external" href="https://kepler.gl/">https://kepler.gl/</a>)<a class="headerlink" href="#kepler-gl-https-kepler-gl" title="Permalink to this headline">¶</a></h3>
 </div>
 </div>
 <div class="section" id="data-management">
 <h2><span class="section-number">1.2. </span>Data Management<a class="headerlink" href="#data-management" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="dcitydb">
-<h3><span class="section-number">1.2.1. </span>3DCityDB<a class="headerlink" href="#dcitydb" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="dcitydb-https-www-3dcitydb-org-3dcitydb">
+<h3><span class="section-number">1.2.1. </span>3DCityDB (<a class="reference external" href="https://www.3dcitydb.org/3dcitydb/">https://www.3dcitydb.org/3dcitydb/</a>)<a class="headerlink" href="#dcitydb-https-www-3dcitydb-org-3dcitydb" title="Permalink to this headline">¶</a></h3>
 </div>
-<div class="section" id="frost-server">
-<h3><span class="section-number">1.2.2. </span>FROST-Server<a class="headerlink" href="#frost-server" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="frost-server-https-github-com-fraunhoferiosb-frost-server">
+<h3><span class="section-number">1.2.2. </span>FROST-Server (<a class="reference external" href="https://github.com/FraunhoferIOSB/FROST-Server">https://github.com/FraunhoferIOSB/FROST-Server</a>)<a class="headerlink" href="#frost-server-https-github-com-fraunhoferiosb-frost-server" title="Permalink to this headline">¶</a></h3>
 </div>
-<div class="section" id="timescale">
-<h3><span class="section-number">1.2.3. </span>Timescale<a class="headerlink" href="#timescale" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="timescale-https-www-timescale-com">
+<h3><span class="section-number">1.2.3. </span>Timescale (<a class="reference external" href="https://www.timescale.com/">https://www.timescale.com/</a>)<a class="headerlink" href="#timescale-https-www-timescale-com" title="Permalink to this headline">¶</a></h3>
 </div>
-<div class="section" id="bimserver">
-<h3><span class="section-number">1.2.4. </span>BIMServer<a class="headerlink" href="#bimserver" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="bimserver-https-github-com-opensourcebim-bimserver">
+<h3><span class="section-number">1.2.4. </span>BIMServer (<a class="reference external" href="https://github.com/opensourceBIM/BIMserver">https://github.com/opensourceBIM/BIMserver</a>)<a class="headerlink" href="#bimserver-https-github-com-opensourcebim-bimserver" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="speckle-https-speckle-systems">
+<h3><span class="section-number">1.2.5. </span>speckle (<a class="reference external" href="https://speckle.systems/">https://speckle.systems/</a>)<a class="headerlink" href="#speckle-https-speckle-systems" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="compas-https-compas-dev">
+<h3><span class="section-number">1.2.6. </span>COMPAS (<a class="reference external" href="https://compas.dev/">https://compas.dev/</a>)<a class="headerlink" href="#compas-https-compas-dev" title="Permalink to this headline">¶</a></h3>
 </div>
 </div>
 <div class="section" id="communication">
 <h2><span class="section-number">1.3. </span>Communication<a class="headerlink" href="#communication" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="element-io">
-<h3><span class="section-number">1.3.1. </span><a class="reference external" href="http://Element.io">Element.io</a><a class="headerlink" href="#element-io" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="element-io-https-element-io">
+<h3><span class="section-number">1.3.1. </span><a class="reference external" href="http://Element.io">Element.io</a> (<a class="reference external" href="https://element.io/">https://element.io/</a>)<a class="headerlink" href="#element-io-https-element-io" title="Permalink to this headline">¶</a></h3>
 </div>
 </div>
 </div>
@@ -379,7 +468,7 @@
         <a class="right-next" href="../040/01.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title"><span class="section-number">1. </span>Open Computational Design Process for Sustainable Developments</p>
+                <p class="prevnext-title"><span class="section-number">1. </span>Modeling Princeton Campus</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>
