@@ -20,6 +20,7 @@ parts:
   numbered: true
   chapters:
     - file: docs/030/01
+    - file: docs/030/02
 - caption: Open Computational Design for Sustainable Developments
   numbered: true
   chapters:
