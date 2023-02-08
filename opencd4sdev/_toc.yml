@@ -8,10 +8,10 @@ parts:
   numbered: true
   chapters:
     - file: docs/010/01
-      sections:
-        - file: docs/010/01_1
     - file: docs/010/02
     - file: docs/010/03
+      sections:
+        - file: docs/010/03_1
 - caption: Open Data Models
   numbered: true
   chapters:
@@ -20,6 +20,15 @@ parts:
   numbered: true
   chapters:
     - file: docs/030/01
+      sections:
+        - file: docs/030/01_1
+          sections:
+            - file: docs/030/01_1_01
+        - file: docs/030/01_2
+          sections:
+            - file: docs/030/01_2_01
+            - file: docs/030/01_2_02
+            - file: docs/030/01_2_03
     - file: docs/030/02
 - caption: Open Computational Design for Sustainable Developments
   numbered: true
@@ -28,6 +37,7 @@ parts:
     - file: docs/040/02
     - file: docs/040/03
     - file: docs/040/04
+    - file: docs/040/05
 - caption: References
   numbered: true
   chapters:
