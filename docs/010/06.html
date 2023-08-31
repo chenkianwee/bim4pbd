@@ -1,0 +1,675 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>6. Free and Open-Source Technologies for Design Process &#8212; Open Computational Design for Sustainable Development</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/010/06';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="1. Modeling Princeton Campus" href="../020/01.html" />
+    <link rel="prev" title="5. Open Data Models" href="05.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Open Computational Design for Sustainable Development</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Open Computational Design for Sustainable Development
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Motivation and Background</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01.html">1. Design Aims</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02.html">2. Design Issues</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="03.html">3. Design Processes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="03_1.html">3.2. Formulating a Design Problem</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="04.html">4. Architectural Science</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="04_1.html">4.1. Thermal Conductivity (λ or K-value), Resistance (R-value) and Transmittance (U-value)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_2.html">4.2. Radiant Heat Transfer: Reflectance, Absorptance and Emittance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_3.html">4.3. Climate Classifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_4.html">4.4. Cooling and Heating Loads</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="05.html">5. Open Data Models</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">6. Free and Open-Source Technologies for Design Process</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Task</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../020/01.html">1. Modeling Princeton Campus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../020/02.html">2. Modeling Mean Radiant Temperature</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../020/03.html">3. Decarbonizing Short Commutes with Solar Powered Personalized Electric Vehicles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../020/04.html">4. Aiming for Zero: Measuring Personal Carbon Footprint with Low-Cost Distributed Sensing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../020/05.html">5. Multi-Objective Optimization of Building Form, Envelope and Cooling System</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Sub-Task</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../030/01.html">1. Shortcut keys and tips</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../030/02.html">2. Sectional perspective with Blender3D and LibreCAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../030/03.html">3. Blender3D plane</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../030/04.html">4. Import background image and scale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../030/05.html">5. BIM with FreeCAD</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../biblio.html">1. Bibliography</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/chenkianwee/opencd4susdev" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/chenkianwee/opencd4susdev/issues/new?title=Issue%20on%20page%20%2Fdocs/010/06.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/docs/010/06.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Free and Open-Source Technologies for Design Process</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-modeling">6.1. 3D Modeling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-drawings">6.2. 2D Drawings</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scripting">6.3. Scripting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#web-vizualization">6.4. Web Vizualization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-management">6.5. Data Management</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#communication">6.6. Communication</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collaboration">6.7. Collaboration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reality-capture">6.8. Reality Capture</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#photogrammetry">6.8.1. Photogrammetry</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="free-and-open-source-technologies-for-design-process">
+<h1><span class="section-number">6. </span>Free and Open-Source Technologies for Design Process<a class="headerlink" href="#free-and-open-source-technologies-for-design-process" title="Permalink to this heading">#</a></h1>
+<section id="d-modeling">
+<h2><span class="section-number">6.1. </span>3D Modeling<a class="headerlink" href="#d-modeling" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Blender 3D (<a class="reference external" href="https://www.blender.org/">https://www.blender.org/</a>) - Visualization</p></li>
+<li><p>FreeCAD (<a class="reference external" href="https://www.freecadweb.org/">https://www.freecadweb.org/</a>) - 3D Drafting</p></li>
+</ul>
+</section>
+<section id="d-drawings">
+<h2><span class="section-number">6.2. </span>2D Drawings<a class="headerlink" href="#d-drawings" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>LibreCAD (<a class="reference external" href="https://librecad.org/">https://librecad.org/</a>) - Drafting</p></li>
+<li><p>GIMP (<a class="reference external" href="https://www.gimp.org/">https://www.gimp.org/</a>) - Image editor</p></li>
+<li><p>Inkscape (<a class="reference external" href="https://inkscape.org/">https://inkscape.org/</a>) - Illustration</p></li>
+</ul>
+</section>
+<section id="scripting">
+<h2><span class="section-number">6.3. </span>Scripting<a class="headerlink" href="#scripting" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Python (<a class="reference external" href="https://www.python.org/">https://www.python.org/</a>) - Batteries included programming language for automating the boring stuffs</p>
+<ul>
+<li><p>Geomie3d (<a class="github reference external" href="https://github.com/chenkianwee/geomie3d">chenkianwee/geomie3d</a>) - geometry kernel in development</p></li>
+<li><p>py3dtileslib (<a class="github reference external" href="https://github.com/chenkianwee/py3dtileslib">chenkianwee/py3dtileslib</a>) - generating 3dtiles for web visualization</p></li>
+<li><p>IFCopenshell (<a class="reference external" href="http://ifcopenshell.org/">http://ifcopenshell.org/</a>) - Read and write IFC files</p></li>
+<li><p>Scikit-learn (<a class="reference external" href="https://scikit-learn.org/stable/index.html">https://scikit-learn.org/stable/index.html</a>) - machine learning</p></li>
+<li><p>networkx (<a class="reference external" href="https://networkx.org/">https://networkx.org/</a>) - network modeling</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="web-vizualization">
+<h2><span class="section-number">6.4. </span>Web Vizualization<a class="headerlink" href="#web-vizualization" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>CesiumJS (<a class="reference external" href="https://cesium.com/platform/cesiumjs/">https://cesium.com/platform/cesiumjs/</a>)</p></li>
+<li><p>Itowns (<a class="github reference external" href="https://github.com/iTowns/itowns">iTowns/itowns</a>)</p></li>
+<li><p>Vts Geospatial (<a class="reference external" href="https://vts-geospatial.org/">https://vts-geospatial.org/</a>)</p></li>
+<li><p><a class="reference external" href="http://Kepler.gl">Kepler.gl</a> (<a class="reference external" href="https://kepler.gl/">https://kepler.gl/</a>)</p></li>
+<li><p>Pyodide (<a class="reference external" href="https://pyodide.org/en/stable/">https://pyodide.org/en/stable/</a>) - run python in the browser</p></li>
+<li><p>Pyscript (<a class="reference external" href="https://pyscript.net/">https://pyscript.net/</a>) - framework for python in the browser</p></li>
+<li><p>JupyterHub (<a class="reference external" href="https://jupyter.org/hub">https://jupyter.org/hub</a>) - ide for coding in the browser</p></li>
+</ul>
+</section>
+<section id="data-management">
+<h2><span class="section-number">6.5. </span>Data Management<a class="headerlink" href="#data-management" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>3DCityDB (<a class="reference external" href="https://www.3dcitydb.org/3dcitydb/">https://www.3dcitydb.org/3dcitydb/</a>)</p></li>
+<li><p>FROST-Server (<a class="github reference external" href="https://github.com/FraunhoferIOSB/FROST-Server">FraunhoferIOSB/FROST-Server</a>)</p></li>
+<li><p>Timescale (<a class="reference external" href="https://www.timescale.com/">https://www.timescale.com/</a>)</p></li>
+<li><p>BIMServer (<a class="github reference external" href="https://github.com/opensourceBIM/BIMserver">opensourceBIM/BIMserver</a>)</p></li>
+<li><p>speckle (<a class="reference external" href="https://speckle.systems/">https://speckle.systems/</a>)</p></li>
+<li><p>COMPAS (<a class="reference external" href="https://compas.dev/">https://compas.dev/</a>)</p></li>
+<li><p>Bhom (<a class="reference external" href="https://bhom.xyz/">https://bhom.xyz/</a>)</p></li>
+<li><p>Yun2Infinity (<a class="github reference external" href="https://github.com/chenkianwee/yun2infinity">chenkianwee/yun2infinity</a>)</p></li>
+</ul>
+</section>
+<section id="communication">
+<h2><span class="section-number">6.6. </span>Communication<a class="headerlink" href="#communication" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="http://Element.io">Element.io</a> (<a class="reference external" href="https://element.io/">https://element.io/</a>)</p></li>
+</ul>
+</section>
+<section id="collaboration">
+<h2><span class="section-number">6.7. </span>Collaboration<a class="headerlink" href="#collaboration" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.goodfirms.co/collaboration-software/blog/best-free-open-source-collaboration-software">https://www.goodfirms.co/collaboration-software/blog/best-free-open-source-collaboration-software</a></p></li>
+</ul>
+</section>
+<section id="reality-capture">
+<h2><span class="section-number">6.8. </span>Reality Capture<a class="headerlink" href="#reality-capture" title="Permalink to this heading">#</a></h2>
+<section id="photogrammetry">
+<h3><span class="section-number">6.8.1. </span>Photogrammetry<a class="headerlink" href="#photogrammetry" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Article about photogrammetry software (<a class="reference external" href="https://all3dp.com/2/best-free-photogrammetry-software/">https://all3dp.com/2/best-free-photogrammetry-software/</a>)</p></li>
+<li><p>Conclusion</p>
+<ul>
+<li><p>It is not useful for capturing room. Rooms have bland walls, which make feature detection difficult (<a class="github reference external" href="https://github.com/alicevision/Meshroom/issues/2144">alicevision/Meshroom#2144</a>).</p></li>
+<li><p>Need a 3d lidar scanner for scanning room.</p>
+<ul>
+<li><p>the use of Ipad or iphone could be a viable solution (<a class="reference external" href="https://canvas.io/#pricing">https://canvas.io/#pricing</a>)</p></li>
+<li><p>most low-cost off-the-shelf 3d scanners are developed for scanning benchscale products</p>
+<ul>
+<li><p><a class="reference external" href="https://us.revopoint3d.com/?&amp;amp;msclkid=a4160ffc1b5214fb34d26b2e7cd3ce76&amp;amp;utm_source=bing&amp;amp;utm_medium=cpc&amp;amp;utm_campaign=%5BUS%5D3D%20Scanner(p)_en&amp;amp;utm_term=3d%20scanner&amp;amp;utm_content=3D%20scanner(e)_en">https://us.revopoint3d.com/?&amp;msclkid=a4160ffc1b5214fb34d26b2e7cd3ce76&amp;utm_source=bing&amp;utm_medium=cpc&amp;utm_campaign=[US]3D Scanner(p)_en&amp;utm_term=3d scanner&amp;utm_content=3D scanner(e)_en</a></p></li>
+<li><p><a class="reference external" href="https://store.creality.com/products/cr-scan-ferret-3d-scanner?spm=..404.header_1.1">https://store.creality.com/products/cr-scan-ferret-3d-scanner?spm=..404.header_1.1</a></p></li>
+</ul>
+</li>
+<li><p>Overview of 3dscanners on the market (<a class="reference external" href="https://www.3dsourced.com/rankings/best-3d-scanner/">https://www.3dsourced.com/rankings/best-3d-scanner/</a>)</p></li>
+<li><p>roomscale scanners quickly become very expensive &gt;USD 5000</p>
+<ul>
+<li><p><a class="reference external" href="https://matterport.com/pro3?utm_source=bing&amp;amp;utm_medium=ppc&amp;amp;utm_campaign=EN_NORAM_US_Shopping&amp;amp;utm_content=&amp;amp;utm_term=&amp;amp;device=c&amp;amp;nw=s&amp;amp;msclkid=938aa638b49917a52adac2eadd95949e">https://matterport.com/pro3?utm_source=bing&amp;utm_medium=ppc&amp;utm_campaign=EN_NORAM_US_Shopping&amp;utm_content=&amp;utm_term=&amp;device=c&amp;nw=s&amp;msclkid=938aa638b49917a52adac2eadd95949e</a></p></li>
+</ul>
+</li>
+<li><p>DIY solution</p>
+<ul>
+<li><p><a class="reference external" href="https://courses.engr.illinois.edu/ece445/getfile.asp?id=19286">https://courses.engr.illinois.edu/ece445/getfile.asp?id=19286</a></p></li>
+<li><p><a class="reference external" href="https://www.seeedstudio.com/catalogsearch/result/?q=lidar">https://www.seeedstudio.com/catalogsearch/result/?q=lidar</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Software that I have tried:</p>
+<ul>
+<li><p>Meshroom (<a class="reference external" href="https://alicevision.org/#meshroom">https://alicevision.org/#meshroom</a>), the most matured and well-supported open-source photogrammetry software. However, it does not have a MacOS version.</p>
+<ul>
+<li><p><a class="reference external" href="https://meshroom-manual.readthedocs.io/en/bibtex1/test/test.html">https://meshroom-manual.readthedocs.io/en/bibtex1/test/test.html</a></p></li>
+</ul>
+</li>
+<li><p>visualSFM (<a class="reference external" href="http://ccwu.me/vsfm/index.html">http://ccwu.me/vsfm/index.html</a>) - not allowed for commercial use.</p>
+<ul>
+<li><p><a class="reference external" href="http://ccwu.me/vsfm/doc.html#usage">http://ccwu.me/vsfm/doc.html#usage</a></p></li>
+</ul>
+</li>
+<li><p>OpenCV Python (<a class="github reference external" href="https://github.com/opencv/opencv-python">opencv/opencv-python</a>) both of the tutorials below are not working anymore.</p>
+<ul>
+<li><p><a class="github reference external" href="https://github.com/adnappp/Sfm-python">adnappp/Sfm-python</a></p></li>
+<li><p><a class="github reference external" href="https://github.com/muneebaadil/how-to-sfm">muneebaadil/how-to-sfm</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Software that require you to compile</p>
+<ul>
+<li><p><a class="github reference external" href="https://github.com/openMVG/openMVG">openMVG/openMVG</a></p></li>
+<li><p><a class="reference external" href="https://demuc.de/colmap/">https://demuc.de/colmap/</a></p></li>
+<li><p><a class="github reference external" href="https://github.com/micmacIGN/micmac">micmacIGN/micmac</a></p></li>
+</ul>
+</li>
+<li><p>Related software</p>
+<ul>
+<li><p><a class="github reference external" href="https://github.com/isl-org/Open3D">isl-org/Open3D</a> – uses rgbd images (need realsense camera) for reconstruction.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./docs/010"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="05.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>Open Data Models</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../020/01.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Modeling Princeton Campus</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-modeling">6.1. 3D Modeling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-drawings">6.2. 2D Drawings</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scripting">6.3. Scripting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#web-vizualization">6.4. Web Vizualization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-management">6.5. Data Management</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#communication">6.6. Communication</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collaboration">6.7. Collaboration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reality-capture">6.8. Reality Capture</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#photogrammetry">6.8.1. Photogrammetry</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Kian Wee Chen
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
