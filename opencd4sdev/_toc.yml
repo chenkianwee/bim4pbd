@@ -19,7 +19,6 @@ parts:
     - file: docs/010/04_3
     - file: docs/010/04_4
   - file: docs/010/05
-  - file: docs/010/06
 - caption: Task
   numbered: true        
   chapters:

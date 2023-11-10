@@ -20,6 +20,10 @@ latex:
 bibtex_bibfiles:
   - docs/references.bib
 
+sphinx:
+  config:
+    bibtex_reference_style: author_year
+    
 # Information about where the book exists on the web
 repository:
   url: https://github.com/chenkianwee/opencd4susdev  # Online location of your book
