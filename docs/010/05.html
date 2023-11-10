@@ -7,9 +7,9 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>5. Open Data Models &#8212; Open Computational Design for Sustainable Development</title>
+    <title>5. Free and Open-Source Technologies for Design Process &#8212; Open Computational Design for Sustainable Development</title>
   
   
   
@@ -64,7 +64,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/010/05';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="6. Free and Open-Source Technologies for Design Process" href="06.html" />
+    <link rel="next" title="1. Analysis of Princeton Campus - Stadium Garage" href="../020/01.html" />
     <link rel="prev" title="4.4. Cooling and Heating Loads" href="04_4.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -165,12 +165,11 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="04_4.html">4.4. Cooling and Heating Loads</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">5. Open Data Models</a></li>
-<li class="toctree-l1"><a class="reference internal" href="06.html">6. Free and Open-Source Technologies for Design Process</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">5. Free and Open-Source Technologies for Design Process</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Task</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../020/01.html">1. Modeling Princeton Campus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../020/01.html">1. Analysis of Princeton Campus - Stadium Garage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../020/02.html">2. Modeling Mean Radiant Temperature</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../020/03.html">3. Decarbonizing Short Commutes with Solar Powered Personalized Electric Vehicles</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../020/04.html">4. Aiming for Zero: Measuring Personal Carbon Footprint with Low-Cost Distributed Sensing</a></li>
@@ -370,7 +369,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Open Data Models</h1>
+    <h1>Free and Open-Source Technologies for Design Process</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -380,19 +379,23 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geographic-information-system">5.1. Geographic Information System</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#citygml">5.1.1. CityGML</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#landinfra">5.1.2. LandInfra</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shapefile">5.1.3. Shapefile</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#digital-elevation-model-dem">5.1.4. Digital Elevation Model (DEM)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#laz">5.1.5. LAZ</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-data-models">5.1. Open Data Models</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geographic-information-system">5.1.1. Geographic Information System</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-information-modeling">5.1.2. Building Information Modeling</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-information-modeling">5.2. Building Information Modeling</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#industry-foundation-class-ifc">5.2.1. Industry Foundation Class (IFC)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-modeling">5.2. 3D Modeling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-drawings">5.3. 2D Drawings</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geographic-information-system-gis">5.4. Geographic Information System (GIS)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scripting">5.5. Scripting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#web-vizualization">5.6. Web Vizualization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-management">5.7. Data Management</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#communication">5.8. Communication</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collaboration">5.9. Collaboration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reality-capture">5.10. Reality Capture</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#photogrammetry">5.10.1. Photogrammetry</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#time-series">5.3. Time Series</a></li>
 </ul>
             </nav>
         </div>
@@ -404,34 +407,173 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="open-data-models">
-<h1><span class="section-number">5. </span>Open Data Models<a class="headerlink" href="#open-data-models" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="free-and-open-source-technologies-for-design-process">
+<h1><span class="section-number">5. </span>Free and Open-Source Technologies for Design Process<a class="headerlink" href="#free-and-open-source-technologies-for-design-process" title="Permalink to this heading">#</a></h1>
+<section id="open-data-models">
+<h2><span class="section-number">5.1. </span>Open Data Models<a class="headerlink" href="#open-data-models" title="Permalink to this heading">#</a></h2>
 <section id="geographic-information-system">
-<h2><span class="section-number">5.1. </span>Geographic Information System<a class="headerlink" href="#geographic-information-system" title="Permalink to this heading">#</a></h2>
-<section id="citygml">
-<h3><span class="section-number">5.1.1. </span>CityGML<a class="headerlink" href="#citygml" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="landinfra">
-<h3><span class="section-number">5.1.2. </span>LandInfra<a class="headerlink" href="#landinfra" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="shapefile">
-<h3><span class="section-number">5.1.3. </span>Shapefile<a class="headerlink" href="#shapefile" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="digital-elevation-model-dem">
-<h3><span class="section-number">5.1.4. </span>Digital Elevation Model (DEM)<a class="headerlink" href="#digital-elevation-model-dem" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="laz">
-<h3><span class="section-number">5.1.5. </span>LAZ<a class="headerlink" href="#laz" title="Permalink to this heading">#</a></h3>
-</section>
+<h3><span class="section-number">5.1.1. </span>Geographic Information System<a class="headerlink" href="#geographic-information-system" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>CityGML (<a class="reference external" href="https://www.ogc.org/standard/CityGML/">https://www.ogc.org/standard/CityGML/</a>)</p></li>
+<li><p>LandInfra (<a class="reference external" href="https://www.ogc.org/standard/infragml/">https://www.ogc.org/standard/infragml/</a>)</p></li>
+<li><p>Shapefile (<a class="reference external" href="https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/whitepapers/pdfs/shapefile.pdf">https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/whitepapers/pdfs/shapefile.pdf</a>)</p></li>
+<li><p>Digital Elevation Model (DEM) (<a class="reference external" href="https://www.usgs.gov/faqs/what-digital-elevation-model-dem">https://www.usgs.gov/faqs/what-digital-elevation-model-dem</a>)</p></li>
+<li><p>LAS (<a class="reference external" href="https://www.ogc.org/standard/LAS/">https://www.ogc.org/standard/LAS/</a>)</p></li>
+</ul>
 </section>
 <section id="building-information-modeling">
-<h2><span class="section-number">5.2. </span>Building Information Modeling<a class="headerlink" href="#building-information-modeling" title="Permalink to this heading">#</a></h2>
-<section id="industry-foundation-class-ifc">
-<h3><span class="section-number">5.2.1. </span>Industry Foundation Class (IFC)<a class="headerlink" href="#industry-foundation-class-ifc" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">5.1.2. </span>Building Information Modeling<a class="headerlink" href="#building-information-modeling" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Industry Foundation Class (IFC)</p>
+<ul>
+<li><p>Introduction: <a class="reference external" href="https://technical.buildingsmart.org/standards/ifc/">https://technical.buildingsmart.org/standards/ifc/</a></p></li>
+<li><p>Formats: <a class="reference external" href="https://technical.buildingsmart.org/standards/ifc/ifc-formats/">https://technical.buildingsmart.org/standards/ifc/ifc-formats/</a></p></li>
+<li><p>Specificaitons: <a class="reference external" href="https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/">https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/</a></p></li>
+</ul>
+</li>
+</ul>
 </section>
 </section>
-<section id="time-series">
-<h2><span class="section-number">5.3. </span>Time Series<a class="headerlink" href="#time-series" title="Permalink to this heading">#</a></h2>
+<section id="d-modeling">
+<h2><span class="section-number">5.2. </span>3D Modeling<a class="headerlink" href="#d-modeling" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Blender 3D (<a class="reference external" href="https://www.blender.org/">https://www.blender.org/</a>) - Visualization</p></li>
+<li><p>FreeCAD (<a class="reference external" href="https://www.freecadweb.org/">https://www.freecadweb.org/</a>) - 3D Drafting</p></li>
+</ul>
+</section>
+<section id="d-drawings">
+<h2><span class="section-number">5.3. </span>2D Drawings<a class="headerlink" href="#d-drawings" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>LibreCAD (<a class="reference external" href="https://librecad.org/">https://librecad.org/</a>) - Drafting</p></li>
+<li><p>GIMP (<a class="reference external" href="https://www.gimp.org/">https://www.gimp.org/</a>) - Image editor</p></li>
+<li><p>Inkscape (<a class="reference external" href="https://inkscape.org/">https://inkscape.org/</a>) - Illustration</p></li>
+</ul>
+</section>
+<section id="geographic-information-system-gis">
+<h2><span class="section-number">5.4. </span>Geographic Information System (GIS)<a class="headerlink" href="#geographic-information-system-gis" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>QGIS (<a class="reference external" href="https://qgis.org">https://qgis.org</a>)</p></li>
+</ul>
+</section>
+<section id="scripting">
+<h2><span class="section-number">5.5. </span>Scripting<a class="headerlink" href="#scripting" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Python (<a class="reference external" href="https://www.python.org/">https://www.python.org/</a>) - Batteries included programming language for automating the boring stuffs</p>
+<ul>
+<li><p>Geomie3d (<a class="github reference external" href="https://github.com/chenkianwee/geomie3d">chenkianwee/geomie3d</a>) - geometry kernel in development</p></li>
+<li><p>py3dtileslib (<a class="github reference external" href="https://github.com/chenkianwee/py3dtileslib">chenkianwee/py3dtileslib</a>) - generating 3dtiles for web visualization</p></li>
+<li><p>IFCopenshell (<a class="reference external" href="http://ifcopenshell.org/">http://ifcopenshell.org/</a>) - Read and write IFC files</p></li>
+<li><p>Scikit-learn (<a class="reference external" href="https://scikit-learn.org/stable/index.html">https://scikit-learn.org/stable/index.html</a>) - machine learning</p></li>
+<li><p>networkx (<a class="reference external" href="https://networkx.org/">https://networkx.org/</a>) - network modeling</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="web-vizualization">
+<h2><span class="section-number">5.6. </span>Web Vizualization<a class="headerlink" href="#web-vizualization" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>CesiumJS (<a class="reference external" href="https://cesium.com/platform/cesiumjs/">https://cesium.com/platform/cesiumjs/</a>)</p></li>
+<li><p>Itowns (<a class="github reference external" href="https://github.com/iTowns/itowns">iTowns/itowns</a>)</p></li>
+<li><p>Vts Geospatial (<a class="reference external" href="https://vts-geospatial.org/">https://vts-geospatial.org/</a>)</p></li>
+<li><p><a class="reference external" href="http://Kepler.gl">Kepler.gl</a> (<a class="reference external" href="https://kepler.gl/">https://kepler.gl/</a>)</p></li>
+<li><p>Pyodide (<a class="reference external" href="https://pyodide.org/en/stable/">https://pyodide.org/en/stable/</a>) - run python in the browser</p></li>
+<li><p>Pyscript (<a class="reference external" href="https://pyscript.net/">https://pyscript.net/</a>) - framework for python in the browser</p></li>
+<li><p>JupyterHub (<a class="reference external" href="https://jupyter.org/hub">https://jupyter.org/hub</a>) - ide for coding in the browser</p></li>
+</ul>
+</section>
+<section id="data-management">
+<h2><span class="section-number">5.7. </span>Data Management<a class="headerlink" href="#data-management" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>3DCityDB (<a class="reference external" href="https://www.3dcitydb.org/3dcitydb/">https://www.3dcitydb.org/3dcitydb/</a>)</p></li>
+<li><p>FROST-Server (<a class="github reference external" href="https://github.com/FraunhoferIOSB/FROST-Server">FraunhoferIOSB/FROST-Server</a>)</p></li>
+<li><p>Timescale (<a class="reference external" href="https://www.timescale.com/">https://www.timescale.com/</a>)</p></li>
+<li><p>BIMServer (<a class="github reference external" href="https://github.com/opensourceBIM/BIMserver">opensourceBIM/BIMserver</a>)</p></li>
+<li><p>speckle (<a class="reference external" href="https://speckle.systems/">https://speckle.systems/</a>)</p></li>
+<li><p>COMPAS (<a class="reference external" href="https://compas.dev/">https://compas.dev/</a>)</p></li>
+<li><p>Bhom (<a class="reference external" href="https://bhom.xyz/">https://bhom.xyz/</a>)</p></li>
+<li><p>Yun2Infinity (<a class="github reference external" href="https://github.com/chenkianwee/yun2infinity">chenkianwee/yun2infinity</a>)</p></li>
+</ul>
+</section>
+<section id="communication">
+<h2><span class="section-number">5.8. </span>Communication<a class="headerlink" href="#communication" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="http://Element.io">Element.io</a> (<a class="reference external" href="https://element.io/">https://element.io/</a>)</p></li>
+</ul>
+</section>
+<section id="collaboration">
+<h2><span class="section-number">5.9. </span>Collaboration<a class="headerlink" href="#collaboration" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.goodfirms.co/collaboration-software/blog/best-free-open-source-collaboration-software">https://www.goodfirms.co/collaboration-software/blog/best-free-open-source-collaboration-software</a></p></li>
+</ul>
+</section>
+<section id="reality-capture">
+<h2><span class="section-number">5.10. </span>Reality Capture<a class="headerlink" href="#reality-capture" title="Permalink to this heading">#</a></h2>
+<section id="photogrammetry">
+<h3><span class="section-number">5.10.1. </span>Photogrammetry<a class="headerlink" href="#photogrammetry" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Article about photogrammetry software (<a class="reference external" href="https://all3dp.com/2/best-free-photogrammetry-software/">https://all3dp.com/2/best-free-photogrammetry-software/</a>)</p></li>
+<li><p>Conclusion</p>
+<ul>
+<li><p>It is not useful for capturing room. Rooms have bland walls, which make feature detection difficult (<a class="github reference external" href="https://github.com/alicevision/Meshroom/issues/2144">alicevision/Meshroom#2144</a>).</p></li>
+<li><p>Need a 3d lidar scanner for scanning room.</p>
+<ul>
+<li><p>the use of Ipad or iphone could be a viable solution (<a class="reference external" href="https://canvas.io/#pricing">https://canvas.io/#pricing</a>)</p></li>
+<li><p>most low-cost off-the-shelf 3d scanners are developed for scanning benchscale products</p>
+<ul>
+<li><p><a class="reference external" href="https://us.revopoint3d.com/?&amp;amp;msclkid=a4160ffc1b5214fb34d26b2e7cd3ce76&amp;amp;utm_source=bing&amp;amp;utm_medium=cpc&amp;amp;utm_campaign=%5BUS%5D3D%20Scanner(p)_en&amp;amp;utm_term=3d%20scanner&amp;amp;utm_content=3D%20scanner(e)_en">https://us.revopoint3d.com/?&amp;msclkid=a4160ffc1b5214fb34d26b2e7cd3ce76&amp;utm_source=bing&amp;utm_medium=cpc&amp;utm_campaign=[US]3D Scanner(p)_en&amp;utm_term=3d scanner&amp;utm_content=3D scanner(e)_en</a></p></li>
+<li><p><a class="reference external" href="https://store.creality.com/products/cr-scan-ferret-3d-scanner?spm=..404.header_1.1">https://store.creality.com/products/cr-scan-ferret-3d-scanner?spm=..404.header_1.1</a></p></li>
+</ul>
+</li>
+<li><p>Overview of 3dscanners on the market (<a class="reference external" href="https://www.3dsourced.com/rankings/best-3d-scanner/">https://www.3dsourced.com/rankings/best-3d-scanner/</a>)</p></li>
+<li><p>roomscale scanners quickly become very expensive &gt;USD 5000</p>
+<ul>
+<li><p><a class="reference external" href="https://matterport.com/pro3?utm_source=bing&amp;amp;utm_medium=ppc&amp;amp;utm_campaign=EN_NORAM_US_Shopping&amp;amp;utm_content=&amp;amp;utm_term=&amp;amp;device=c&amp;amp;nw=s&amp;amp;msclkid=938aa638b49917a52adac2eadd95949e">https://matterport.com/pro3?utm_source=bing&amp;utm_medium=ppc&amp;utm_campaign=EN_NORAM_US_Shopping&amp;utm_content=&amp;utm_term=&amp;device=c&amp;nw=s&amp;msclkid=938aa638b49917a52adac2eadd95949e</a></p></li>
+</ul>
+</li>
+<li><p>DIY solution</p>
+<ul>
+<li><p><a class="reference external" href="https://courses.engr.illinois.edu/ece445/getfile.asp?id=19286">https://courses.engr.illinois.edu/ece445/getfile.asp?id=19286</a></p></li>
+<li><p><a class="reference external" href="https://www.seeedstudio.com/catalogsearch/result/?q=lidar">https://www.seeedstudio.com/catalogsearch/result/?q=lidar</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Software that I have tried:</p>
+<ul>
+<li><p>Meshroom (<a class="reference external" href="https://alicevision.org/#meshroom">https://alicevision.org/#meshroom</a>), the most matured and well-supported open-source photogrammetry software. However, it does not have a MacOS version.</p>
+<ul>
+<li><p><a class="reference external" href="https://meshroom-manual.readthedocs.io/en/bibtex1/test/test.html">https://meshroom-manual.readthedocs.io/en/bibtex1/test/test.html</a></p></li>
+</ul>
+</li>
+<li><p>visualSFM (<a class="reference external" href="http://ccwu.me/vsfm/index.html">http://ccwu.me/vsfm/index.html</a>) - not allowed for commercial use.</p>
+<ul>
+<li><p><a class="reference external" href="http://ccwu.me/vsfm/doc.html#usage">http://ccwu.me/vsfm/doc.html#usage</a></p></li>
+</ul>
+</li>
+<li><p>OpenCV Python (<a class="github reference external" href="https://github.com/opencv/opencv-python">opencv/opencv-python</a>) both of the tutorials below are not working anymore.</p>
+<ul>
+<li><p><a class="github reference external" href="https://github.com/adnappp/Sfm-python">adnappp/Sfm-python</a></p></li>
+<li><p><a class="github reference external" href="https://github.com/muneebaadil/how-to-sfm">muneebaadil/how-to-sfm</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Software that require you to compile</p>
+<ul>
+<li><p><a class="github reference external" href="https://github.com/openMVG/openMVG">openMVG/openMVG</a></p></li>
+<li><p><a class="reference external" href="https://demuc.de/colmap/">https://demuc.de/colmap/</a></p></li>
+<li><p><a class="github reference external" href="https://github.com/micmacIGN/micmac">micmacIGN/micmac</a></p></li>
+</ul>
+</li>
+<li><p>Related software</p>
+<ul>
+<li><p><a class="github reference external" href="https://github.com/isl-org/Open3D">isl-org/Open3D</a> – uses rgbd images (need realsense camera) for reconstruction.</p></li>
+</ul>
+</li>
+</ul>
+</section>
 </section>
 </section>
 
@@ -476,11 +618,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="06.html"
+       href="../020/01.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">6. </span>Free and Open-Source Technologies for Design Process</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Analysis of Princeton Campus - Stadium Garage</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -502,19 +644,23 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geographic-information-system">5.1. Geographic Information System</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#citygml">5.1.1. CityGML</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#landinfra">5.1.2. LandInfra</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shapefile">5.1.3. Shapefile</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#digital-elevation-model-dem">5.1.4. Digital Elevation Model (DEM)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#laz">5.1.5. LAZ</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-data-models">5.1. Open Data Models</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geographic-information-system">5.1.1. Geographic Information System</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-information-modeling">5.1.2. Building Information Modeling</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-information-modeling">5.2. Building Information Modeling</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#industry-foundation-class-ifc">5.2.1. Industry Foundation Class (IFC)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-modeling">5.2. 3D Modeling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-drawings">5.3. 2D Drawings</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geographic-information-system-gis">5.4. Geographic Information System (GIS)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scripting">5.5. Scripting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#web-vizualization">5.6. Web Vizualization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-management">5.7. Data Management</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#communication">5.8. Communication</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collaboration">5.9. Collaboration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reality-capture">5.10. Reality Capture</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#photogrammetry">5.10.1. Photogrammetry</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#time-series">5.3. Time Series</a></li>
 </ul>
   </nav></div>
 
