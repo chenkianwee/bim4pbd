@@ -22,11 +22,8 @@ parts:
 - caption: Task
   numbered: true        
   chapters:
-  - file: docs/020/01
-  - file: docs/020/02
-  - file: docs/020/03
-  - file: docs/020/04
-  - file: docs/020/05
+  - file: docs/020/01_stadgarage
+  - file: docs/020/02_optenvcool
 - caption: Sub-Task
   numbered: true
   chapters:
