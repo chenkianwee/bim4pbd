@@ -7,18 +7,18 @@ parts:
 - caption: Motivation and Background
   numbered: true
   chapters:
-  - file: docs/010/01
-  - file: docs/010/02
-  - file: docs/010/03
+  - file: docs/010/01_aims
+  - file: docs/010/02_issues
+  - file: docs/010/03_0_process
     sections:
-    - file: docs/010/03_1
-  - file: docs/010/04
+    - file: docs/010/03_1_formulate
+  - file: docs/010/04_0_archsci
     sections:
-    - file: docs/010/04_1
-    - file: docs/010/04_2
-    - file: docs/010/04_3
-    - file: docs/010/04_4
-  - file: docs/010/05
+    - file: docs/010/04_1_thermcond
+    - file: docs/010/04_2_rad_trsf
+    - file: docs/010/04_3_climate
+    - file: docs/010/04_4_loads
+  - file: docs/010/05_tech
 - caption: Task
   numbered: true        
   chapters:
@@ -27,11 +27,11 @@ parts:
 - caption: Sub-Task
   numbered: true
   chapters:
-  - file: docs/030/01
-  - file: docs/030/02
-  - file: docs/030/03
-  - file: docs/030/04
-  - file: docs/030/05
+  - file: docs/030/01_tips
+  - file: docs/030/02_b3dsect
+  - file: docs/030/03_b3dplane
+  - file: docs/030/04_b3dimg
+  - file: docs/030/05_fcbim
 - caption: References
   numbered: true
   chapters:

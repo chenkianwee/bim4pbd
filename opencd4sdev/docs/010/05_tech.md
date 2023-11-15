@@ -7,6 +7,8 @@
 - Shapefile (https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/whitepapers/pdfs/shapefile.pdf)
 - Digital Elevation Model (DEM) (https://www.usgs.gov/faqs/what-digital-elevation-model-dem)
 - LAS (https://www.ogc.org/standard/LAS/)
+- Building footprint of the whole world (https://github.com/microsoft/GlobalMLBuildingFootprints)
+
 ### Building Information Modeling
 - Industry Foundation Class (IFC) 
     - Introduction: https://technical.buildingsmart.org/standards/ifc/

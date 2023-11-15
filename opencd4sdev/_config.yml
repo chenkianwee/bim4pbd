@@ -23,6 +23,7 @@ bibtex_bibfiles:
 sphinx:
   config:
     bibtex_reference_style: author_year
+    myst_heading_anchors: 3
     
 # Information about where the book exists on the web
 repository:
