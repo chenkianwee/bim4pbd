@@ -18,7 +18,7 @@
     :align: center
     ```
     <br/><br/>
-    
+
 ## Extruding an edge of a plane
 1. Choose the plane, then go to edit mode.
 2. Choose the edge to extrude. Make sure your select mode is Edge. Press 'e' then 'x','y' or 'z' to specify the direction of extrusion.

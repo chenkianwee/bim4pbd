@@ -1,7 +1,7 @@
 # Sectional perspective with Blender3D and LibreCAD
 I will attempt to model a space using LibreCAD and Blender3D and cut a sectional perspective. For a more comprehensive tutorial, refer to <a href="https://learning.oreilly.com/library/view/introduction-to-blender/9781484279540/" target="_blank">Introduction to Blender 3.0 : learn organic and architectural modeling, lighting, materials, painting, rendering, and compositing with Blender Chapter 3 Building a 3D Environment </a>
 
-1. Draw the following with the rectangle command and offset command in librecad ({doc}`../030/01`). Dimensions are in meters.
+1. Draw the following with the rectangle command and offset command in librecad ({doc}`../030/01_tips`). Dimensions are in meters.
     <br/><br/>
     ```{image} ../../_static/librecad/librecad1.png
     :width: 100%
@@ -10,7 +10,7 @@ I will attempt to model a space using LibreCAD and Blender3D and cut a sectional
     <br/><br/>
 
 2. Import it into Blender3D. Go to Edit -> Preferences -> Add-ons. Search for dxf. Activate the Import-Export: Import AutoCAD DXF Format (.dxf) add-on. Turn both import and export on.
-3. Make a collection for walls at the outliner. Add a plane. Resize the plane ({doc}`here <../030/03>`) and snap it to the outline to make the walls.
+3. Make a collection for walls at the outliner. Add a plane. Resize the plane ({doc}`here <../030/03_b3dplane>`) and snap it to the outline to make the walls.
     <br/><br/>
     ```{image} ../../_static/blender1/blender7.png
     :width: 100%
@@ -18,7 +18,7 @@ I will attempt to model a space using LibreCAD and Blender3D and cut a sectional
     ```
     <br/><br/>
 
-4. Extrude the walls ({doc}`here <../030/03>`).
+4. Extrude the walls following instructions [here](03_b3dplane.md#extruding-the-face-of-a-plane).
     <br/><br/>
     ```{image} ../../_static/blender1/blender8.png
     :width: 100%
@@ -56,5 +56,3 @@ I will attempt to model a space using LibreCAD and Blender3D and cut a sectional
     :align: center
     ```
     <br/><br/>
-    
-

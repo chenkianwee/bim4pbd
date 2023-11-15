@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>4.2. Radiant Heat Transfer: Reflectance, Absorptance and Emittance &#8212; Open Computational Design for Sustainable Development</title>
+    <title>4. Import background image and scale &#8212; Open Computational Design for Sustainable Development</title>
   
   
   
@@ -61,13 +61,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/010/04_2';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/030/04_b3dimg';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="4.3. Climate Classifications" href="04_3.html" />
-    <link rel="prev" title="4.1. Thermal Conductivity (λ or K-value), Resistance (R-value) and Transmittance (U-value)" href="04_1.html" />
+    <link rel="next" title="5. BIM with FreeCAD" href="05_fcbim.html" />
+    <link rel="prev" title="3. Blender3D plane" href="03_b3dplane.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -153,21 +151,21 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Motivation and Background</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="01.html">1. Design Aims</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02.html">2. Design Issues</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="03.html">3. Design Processes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="03_1.html">3.2. Formulating a Design Problem</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../010/01_aims.html">1. Design Aims</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../010/02_issues.html">2. Design Issues</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../010/03_0_process.html">3. Design Processes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../010/03_1_formulate.html">3.2. Formulating a Design Problem</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="04.html">4. Architectural Science</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="04_1.html">4.1. Thermal Conductivity (λ or K-value), Resistance (R-value) and Transmittance (U-value)</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">4.2. Radiant Heat Transfer: Reflectance, Absorptance and Emittance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="04_3.html">4.3. Climate Classifications</a></li>
-<li class="toctree-l2"><a class="reference internal" href="04_4.html">4.4. Cooling and Heating Loads</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../010/04_0_archsci.html">4. Architectural Science</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../010/04_1_thermcond.html">4.1. Thermal Conductivity (λ or K-value), Resistance (R-value) and Transmittance (U-value)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../010/04_2_rad_trsf.html">4.2. Radiant Heat Transfer: Reflectance, Absorptance and Emittance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../010/04_3_climate.html">4.3. Climate Classifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../010/04_4_loads.html">4.4. Cooling and Heating Loads</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="05.html">5. Free and Open-Source Technologies for Design Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../010/05_tech.html">5. Free and Open-Source Technologies for Design Process</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Task</span></p>
 <ul class="nav bd-sidenav">
@@ -175,12 +173,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../020/02_optenvcool.html">2. Multi-Objective Optimization of Building Form, Envelope and Cooling System</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Sub-Task</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../030/01.html">1. Shortcut keys and tips</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../030/02.html">2. Sectional perspective with Blender3D and LibreCAD</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../030/03.html">3. Blender3D plane</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../030/04.html">4. Import background image and scale</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../030/05.html">5. BIM with FreeCAD</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_tips.html">1. Shortcut keys and tips</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_b3dsect.html">2. Sectional perspective with Blender3D and LibreCAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_b3dplane.html">3. Blender3D plane</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">4. Import background image and scale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_fcbim.html">5. BIM with FreeCAD</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">References</span></p>
 <ul class="nav bd-sidenav">
@@ -256,7 +254,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/chenkianwee/opencd4susdev/issues/new?title=Issue%20on%20page%20%2Fdocs/010/04_2.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/chenkianwee/opencd4susdev/issues/new?title=Issue%20on%20page%20%2Fdocs/030/04_b3dimg.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -286,7 +284,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/docs/010/04_2.md" target="_blank"
+      <li><a href="../../_sources/docs/030/04_b3dimg.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -366,7 +364,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Radiant Heat Transfer: Reflectance, Absorptance and Emittance</h1>
+    <h1>Import background image and scale</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -380,28 +378,31 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="radiant-heat-transfer-reflectance-absorptance-and-emittance">
-<h1><span class="section-number">4.2. </span>Radiant Heat Transfer: Reflectance, Absorptance and Emittance<a class="headerlink" href="#radiant-heat-transfer-reflectance-absorptance-and-emittance" title="Permalink to this heading">#</a></h1>
-<p>These notes are based on these sources:</p>
-<ul class="simple">
-<li><p>Architectural science textbook <span id="id1">[<a class="reference internal" href="../biblio.html#id12" title="Steven V. Szokolay. Introduction to architectural science : the basis of sustainable design. Routledge, London, 3rd edition, 2014. ISBN 978-1-317-91859-2.">Szokolay, 2014</a>]</span> Pg 10-11.
-<Br></Br></p></li>
-<li><p><strong>Reflectance <span class="math notranslate nohighlight">\(\rho\)</span></strong>: decimal fraction indicating how much of the incident radiation is reflected by a surface.</p></li>
-<li><p><strong>Absorptance <span class="math notranslate nohighlight">\(\alpha\)</span></strong>: decimal fraction, a measure of the ability to absorb radiation, relative to the perfect black body where the absorptance is 1.</p>
-<ul>
-<li><p><strong>For any opaque surfaces reflectance + absorptance = 1</strong>.</p></li>
-<li><p>Absortance is high for dark surface and low for light/shiny metallic surfaces. e.g. 0.9 for black asphalt, 0.2 for shiny aluminium.</p></li>
-</ul>
+  <section class="tex2jax_ignore mathjax_ignore" id="import-background-image-and-scale">
+<h1><span class="section-number">4. </span>Import background image and scale<a class="headerlink" href="#import-background-image-and-scale" title="Permalink to this heading">#</a></h1>
+<ol class="arabic">
+<li><p>In the object mode. If you want the image to be on the xy plane, make sure you are in plan view. Click on the Z on the top right corner of the viewport. Go to Add -&gt; Image -&gt; Reference and choose the image.
+<br/><br/></p>
+<a class="reference internal image-reference" href="../../_images/blender3.png"><img alt="../../_images/blender3.png" class="align-center" src="../../_images/blender3.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
 </li>
-<li><p><strong>emittance <span class="math notranslate nohighlight">\(\epsilon\)</span></strong>: decimal fraction, a measure of the ability to emit radiation, relative to the ‘black body’, the perfect emitter.</p>
-<ul>
-<li><p><strong>For ordinary surfaces emittance = absorptance</strong> for the same wavelength (temperature) of radiation. However many surfaces have selective properties. For example:</p></li>
-<li><p>it is desireable for solar collectors to have high absorptance for solar (6000C), but low emittance at ordinary temperatures (&lt;100c).</p></li>
-<li><p>it is desireable for skyview passive cooling to have low absorptance for solar (6000C), but high emittance at ordinary temperatures (&lt;100c).</p></li>
-<li><p>A shiny metal surface is non-selective meaning emittance = absorptance.</p></li>
-</ul>
+<li><p>Select the image go to Object Properties -&gt; Viewport Display -&gt; Color. Click on color you can adjust the color of the image so it is easy to see the superposition.</p></li>
+<li><p>Put in a plane. Add -&gt; Mesh -&gt; Plane. Size it to one of the known dimesions. I have size it to be 0.412m here. If the dialogue box for sizing is gone press F9 to get it back.
+<br/><br/></p>
+<a class="reference internal image-reference" href="../../_images/blender4.png"><img alt="../../_images/blender4.png" class="align-center" src="../../_images/blender4.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
 </li>
-</ul>
+<li><p>Turn the viewport shading to wireframe. So you can see the superposition. Move it to the 412 dimension as shown below.
+<br/><br/></p>
+<a class="reference internal image-reference" href="../../_images/blender5.png"><img alt="../../_images/blender5.png" class="align-center" src="../../_images/blender5.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+</li>
+<li><p>Move the 3D cursor to the side of the plane. Change the transform pivot point to 3D cursor. Scale the image accordingly to get the right dimensions.
+<br/><br/></p>
+<a class="reference internal image-reference" href="../../_images/blender6.png"><img alt="../../_images/blender6.png" class="align-center" src="../../_images/blender6.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+</li>
+</ol>
 </section>
 
     <script type="text/x-thebe-config">
@@ -417,7 +418,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./docs/010"
+            path: "./docs/030"
         },
         predefinedOutput: true
     }
@@ -436,20 +437,20 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="04_1.html"
+       href="03_b3dplane.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">4.1. </span>Thermal Conductivity (λ or K-value), Resistance (R-value) and Transmittance (U-value)</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Blender3D plane</p>
       </div>
     </a>
     <a class="right-next"
-       href="04_3.html"
+       href="05_fcbim.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">4.3. </span>Climate Classifications</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>BIM with FreeCAD</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

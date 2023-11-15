@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>5. BIM with FreeCAD &#8212; Open Computational Design for Sustainable Development</title>
+    <title>2. Sectional perspective with Blender3D and LibreCAD &#8212; Open Computational Design for Sustainable Development</title>
   
   
   
@@ -61,11 +61,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/030/05';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/030/02_b3dsect';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="1. Bibliography" href="../biblio.html" />
-    <link rel="prev" title="4. Import background image and scale" href="04.html" />
+    <link rel="next" title="3. Blender3D plane" href="03_b3dplane.html" />
+    <link rel="prev" title="1. Shortcut keys and tips" href="01_tips.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -152,20 +152,20 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Motivation and Background</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../010/01.html">1. Design Aims</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../010/02.html">2. Design Issues</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../010/03.html">3. Design Processes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../010/03_1.html">3.2. Formulating a Design Problem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../010/01_aims.html">1. Design Aims</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../010/02_issues.html">2. Design Issues</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../010/03_0_process.html">3. Design Processes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../010/03_1_formulate.html">3.2. Formulating a Design Problem</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../010/04.html">4. Architectural Science</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../010/04_1.html">4.1. Thermal Conductivity (λ or K-value), Resistance (R-value) and Transmittance (U-value)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../010/04_2.html">4.2. Radiant Heat Transfer: Reflectance, Absorptance and Emittance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../010/04_3.html">4.3. Climate Classifications</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../010/04_4.html">4.4. Cooling and Heating Loads</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../010/04_0_archsci.html">4. Architectural Science</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../010/04_1_thermcond.html">4.1. Thermal Conductivity (λ or K-value), Resistance (R-value) and Transmittance (U-value)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../010/04_2_rad_trsf.html">4.2. Radiant Heat Transfer: Reflectance, Absorptance and Emittance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../010/04_3_climate.html">4.3. Climate Classifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../010/04_4_loads.html">4.4. Cooling and Heating Loads</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../010/05.html">5. Free and Open-Source Technologies for Design Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../010/05_tech.html">5. Free and Open-Source Technologies for Design Process</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Task</span></p>
 <ul class="nav bd-sidenav">
@@ -174,11 +174,11 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Sub-Task</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="01.html">1. Shortcut keys and tips</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02.html">2. Sectional perspective with Blender3D and LibreCAD</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03.html">3. Blender3D plane</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04.html">4. Import background image and scale</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">5. BIM with FreeCAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="01_tips.html">1. Shortcut keys and tips</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">2. Sectional perspective with Blender3D and LibreCAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_b3dplane.html">3. Blender3D plane</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_b3dimg.html">4. Import background image and scale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_fcbim.html">5. BIM with FreeCAD</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">References</span></p>
 <ul class="nav bd-sidenav">
@@ -254,7 +254,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/chenkianwee/opencd4susdev/issues/new?title=Issue%20on%20page%20%2Fdocs/030/05.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/chenkianwee/opencd4susdev/issues/new?title=Issue%20on%20page%20%2Fdocs/030/02_b3dsect.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -284,7 +284,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/docs/030/05.md" target="_blank"
+      <li><a href="../../_sources/docs/030/02_b3dsect.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -353,9 +353,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -366,20 +364,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>BIM with FreeCAD</h1>
+    <h1>Sectional perspective with Blender3D and LibreCAD</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-ifcopenshell-if-necessary">5.1. Installing IFCOpenShell if necessary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-with-freecad">5.2. Modeling with FreeCAD</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -389,58 +378,47 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="bim-with-freecad">
-<h1><span class="section-number">5. </span>BIM with FreeCAD<a class="headerlink" href="#bim-with-freecad" title="Permalink to this heading">#</a></h1>
-<p>This entry is based on these resources:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://wiki.freecad.org/Manual:BIM_modeling">https://wiki.freecad.org/Manual:BIM_modeling</a></p></li>
-<li><p><a class="reference external" href="https://wiki.freecad.org/Draft_Workbench">https://wiki.freecad.org/Draft_Workbench</a></p></li>
-<li><p><a class="reference external" href="https://wiki.freecad.org/Tutorials#Architecture_and_BIM">https://wiki.freecad.org/Tutorials#Architecture_and_BIM</a></p></li>
-</ul>
-<section id="installing-ifcopenshell-if-necessary">
-<h2><span class="section-number">5.1. </span>Installing IFCOpenShell if necessary<a class="headerlink" href="#installing-ifcopenshell-if-necessary" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>check the python console what version is FreeCAD using, check where is the path by typing</p>
-<ul>
-<li><p>sys.path</p></li>
-</ul>
-</li>
-<li><p>install ifcopenshell by downloading the prebuilt version <a class="reference external" href="https://blenderbim.org/docs-python/ifcopenshell-python/installation.html">https://blenderbim.org/docs-python/ifcopenshell-python/installation.html</a></p></li>
-<li><p>unzip and put it in the freecad python directory, you can find it by running sys.path and paying attention to the path printed.</p></li>
-</ul>
-</section>
-<section id="modeling-with-freecad">
-<h2><span class="section-number">5.2. </span>Modeling with FreeCAD<a class="headerlink" href="#modeling-with-freecad" title="Permalink to this heading">#</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="sectional-perspective-with-blender3d-and-librecad">
+<h1><span class="section-number">2. </span>Sectional perspective with Blender3D and LibreCAD<a class="headerlink" href="#sectional-perspective-with-blender3d-and-librecad" title="Permalink to this heading">#</a></h1>
+<p>I will attempt to model a space using LibreCAD and Blender3D and cut a sectional perspective. For a more comprehensive tutorial, refer to <a href="https://learning.oreilly.com/library/view/introduction-to-blender/9781484279540/" target="_blank">Introduction to Blender 3.0 : learn organic and architectural modeling, lighting, materials, painting, rendering, and compositing with Blender Chapter 3 Building a 3D Environment </a></p>
 <ol class="arabic">
-<li><p>Go to the Arch workbench.</p></li>
-<li><p>First draw the 500mm x 500mm rectangle. Turn it into a column by clicking on the structure button.
+<li><p>Draw the following with the rectangle command and offset command in librecad (<a class="reference internal" href="01_tips.html"><span class="doc">Shortcut keys and tips</span></a>). Dimensions are in meters.
 <br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/freecad_bim1.jpg"><img alt="../../_images/freecad_bim1.jpg" class="align-center" src="../../_images/freecad_bim1.jpg" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../_images/librecad1.png"><img alt="../../_images/librecad1.png" class="align-center" src="../../_images/librecad1.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
 </li>
-<li><p>Array it into a column grid using the array tool. Set the x interval to 9m and y interval to 9m, with number of array at x=3,y=2,z=1
+<li><p>Import it into Blender3D. Go to Edit -&gt; Preferences -&gt; Add-ons. Search for dxf. Activate the Import-Export: Import AutoCAD DXF Format (.dxf) add-on. Turn both import and export on.</p></li>
+<li><p>Make a collection for walls at the outliner. Add a plane. Resize the plane (<a class="reference internal" href="03_b3dplane.html"><span class="doc">here</span></a>) and snap it to the outline to make the walls.
 <br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/freecad_bim2.jpg"><img alt="../../_images/freecad_bim2.jpg" class="align-center" src="../../_images/freecad_bim2.jpg" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../_images/blender7.png"><img alt="../../_images/blender7.png" class="align-center" src="../../_images/blender7.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
 </li>
-<li><p>Draw lines to represent the walls. Then click on the line and click on the walls button to make the line a wall.
+<li><p>Extrude the walls following instructions <a class="reference internal" href="03_b3dplane.html#extruding-the-face-of-a-plane"><span class="std std-doc">here</span></a>.
 <br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/freecad_bim3.jpg"><img alt="../../_images/freecad_bim3.jpg" class="align-center" src="../../_images/freecad_bim3.jpg" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../_images/blender8.png"><img alt="../../_images/blender8.png" class="align-center" src="../../_images/blender8.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
 </li>
-<li><p>To combine two walls. Ctrl click on both of the walls and click on the plus sign on the tool bar to merge them.</p>
-<ul class="simple">
-<li><p>You can separate them by using the minus sign. Open the tree and choose the wall you want to separate and click on the minus sign.
-<br/><br/></p></li>
-</ul>
-<a class="reference internal image-reference" href="../../_images/freecad_bim4.jpg"><img alt="../../_images/freecad_bim4.jpg" class="align-center" src="../../_images/freecad_bim4.jpg" style="width: 100%;" /></a>
+<li><p>In the object mode. Select all the walls. Click the Move icon at the left side bar. Move them in the Z direction. While dragging the walls key in 0.3m. This is to make way for the floor slab.
+<br/><br/></p>
+<a class="reference internal image-reference" href="../../_images/blender9.png"><img alt="../../_images/blender9.png" class="align-center" src="../../_images/blender9.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
 </li>
-<li><p>To model windows. Draw the windows on 2d using the drafting tools. Then change the 2d shapes into a sketch by using the draft to sketch tool. Choose the sketch and click on the window tool.</p>
-<ul class="simple">
-<li><p>further configure the window by double clicking on the window and creating the frame and each glass panel component.
-<br/><br/></p></li>
-</ul>
-<a class="reference internal image-reference" href="../../_images/freecad_bim5.jpg"><img alt="../../_images/freecad_bim5.jpg" class="align-center" src="../../_images/freecad_bim5.jpg" style="width: 100%;" /></a>
+<li><p>Copy and paste the floor slab. Move the slab 4.3m up. It will be the roof.
+<br/><br/></p>
+<a class="reference internal image-reference" href="../../_images/blender10.png"><img alt="../../_images/blender10.png" class="align-center" src="../../_images/blender10.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+</li>
+<li><p>As Blender3d do not have a function to do sectional cuts. We turn off the visibility of one of the walls so we can see into the space. Set the camera interactively by going to the right hand side bar -&gt; View -&gt; View Lock -&gt; tick Camera to View.
+<br/><br/></p>
+<a class="reference internal image-reference" href="../../_images/blender11.png"><img alt="../../_images/blender11.png" class="align-center" src="../../_images/blender11.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+</li>
+<li><p>Add line rendering by ticking Freestyle in the Rendering Properties tab. Render the image by going to Render -&gt; Render Image. You can make the background transparent by going to the Render Properties -&gt; Film -&gt; Transparent.
+<br/><br/></p>
+<a class="reference internal image-reference" href="../../_images/blender13.png"><img alt="../../_images/blender13.png" class="align-center" src="../../_images/blender13.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
 </li>
 </ol>
-</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -475,20 +453,20 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="04.html"
+       href="01_tips.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">4. </span>Import background image and scale</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Shortcut keys and tips</p>
       </div>
     </a>
     <a class="right-next"
-       href="../biblio.html"
+       href="03_b3dplane.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">1. </span>Bibliography</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Blender3D plane</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -501,21 +479,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-ifcopenshell-if-necessary">5.1. Installing IFCOpenShell if necessary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-with-freecad">5.2. Modeling with FreeCAD</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
