@@ -1,5 +1,11 @@
 # Free and Open-Source Technologies for Design Process
 
+## Resources
+- Open Toolchain Foundation: https://opentoolchain-foundation.org/
+    - open source ecosystems for better engineering
+- https://osarch.org/
+    - Creating a built environment with free software, increased transparency, and a more ethical approach
+
 ## Open Data Models
 ### Geographic Information System
 - CityGML (https://www.ogc.org/standard/CityGML/)
@@ -13,11 +19,15 @@
 - Industry Foundation Class (IFC) 
     - Introduction: https://technical.buildingsmart.org/standards/ifc/
     - Formats: https://technical.buildingsmart.org/standards/ifc/ifc-formats/
-    - Specificaitons: https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/ 
+    - Specificaitons: https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/
+- COBie: https://www.nibs.org/nbims/cobie/v3
+- BIM Collaboration Format (BCF): https://technical.buildingsmart.org/standards/bcf/
 
 ## 3D Modeling
 - Blender 3D (https://www.blender.org/) - Visualization
 - FreeCAD (https://www.freecadweb.org/) - 3D Drafting
+    - Native IFC workbench just like BlenderBIM: https://github.com/yorikvanhavre/FreeCAD-NativeIFC
+    - Geodata workbench for importing geospatial data: https://github.com/microelly2/geodata
 
 ## 2D Drawings
 - LibreCAD (https://librecad.org/) - Drafting
