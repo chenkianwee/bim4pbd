@@ -28,6 +28,7 @@
 - FreeCAD (https://www.freecadweb.org/) - 3D Drafting
     - Native IFC workbench just like BlenderBIM: https://github.com/yorikvanhavre/FreeCAD-NativeIFC
     - Geodata workbench for importing geospatial data: https://github.com/microelly2/geodata
+- JupyterCAD (https://github.com/jupytercad/jupytercad) - Collaborative CAD environment. Works with FreeCAD.
 
 ## 2D Drawings
 - LibreCAD (https://librecad.org/) - Drafting
