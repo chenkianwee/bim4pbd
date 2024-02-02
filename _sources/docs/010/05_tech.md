@@ -1,10 +1,13 @@
-# Free and Open-Source Technologies for Design Process
+# Open-Source Technologies and Data for Design Process
 
 ## Resources
 - Open Toolchain Foundation: https://opentoolchain-foundation.org/
     - open source ecosystems for better engineering
 - https://osarch.org/
     - Creating a built environment with free software, increased transparency, and a more ethical approach
+
+## Datasets
+- US commercial building stocks (https://comstock.nrel.gov/)
 
 ## Open Data Models
 ### Geographic Information System
@@ -20,8 +23,17 @@
     - Introduction: https://technical.buildingsmart.org/standards/ifc/
     - Formats: https://technical.buildingsmart.org/standards/ifc/ifc-formats/
     - Specificaitons: https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/
-- COBie: https://www.nibs.org/nbims/cobie/v3
+- Constructon to Operations Building Information Exhcnage (COBie): https://www.nibs.org/nbims/cobie/v3
 - BIM Collaboration Format (BCF): https://technical.buildingsmart.org/standards/bcf/
+- Information Delivery Specification (IDS)
+    - https://technical.buildingsmart.org/projects/information-delivery-specification-ids/
+    - https://github.com/buildingSMART/IDS
+
+### Control Description Language (CDL)
+- CDL (https://obc.lbl.gov/specification/cdl.html#overview-of-cdl-and-terminology)
+
+### Building Performance Simulation
+- Openstudio Model (https://openstudio.net/) 
 
 ## 3D Modeling
 - Blender 3D (https://www.blender.org/) - Visualization
@@ -29,6 +41,7 @@
     - Native IFC workbench just like BlenderBIM: https://github.com/yorikvanhavre/FreeCAD-NativeIFC
     - Geodata workbench for importing geospatial data: https://github.com/microelly2/geodata
 - JupyterCAD (https://github.com/jupytercad/jupytercad) - Collaborative CAD environment. Works with FreeCAD.
+- Wikiifc (https://wikiifc.com/) - web-based ifc tool for viewing and limited editing of IFC files
 
 ## 2D Drawings
 - LibreCAD (https://librecad.org/) - Drafting
@@ -37,6 +50,13 @@
 
 ## Geographic Information System (GIS)
 - QGIS (https://qgis.org)
+
+## Building Performance Simulation
+- EnergyPlus (https://energyplus.net/)
+- Radiance (https://www.radiance-online.org/)
+- Modelica Building Library (https://simulationresearch.lbl.gov/modelica/)
+    - Spawn of Energyplus - coupling of energyplus with modelica building library
+- ladybug tools (https://www.ladybug.tools/index.html#header-slide-show)
 
 ## Scripting
 - Python (https://www.python.org/) - Batteries included programming language for automating the boring stuffs
@@ -54,6 +74,7 @@
 - Pyodide (https://pyodide.org/en/stable/) - run python in the browser
 - Pyscript (https://pyscript.net/) - framework for python in the browser
 - JupyterHub (https://jupyter.org/hub) - ide for coding in the browser
+- xeokit-bim-viewer: https://github.com/xeokit/xeokit-bim-viewer
 
 ## Data Management
 - 3DCityDB (https://www.3dcitydb.org/3dcitydb/)

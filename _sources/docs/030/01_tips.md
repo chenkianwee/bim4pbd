@@ -1,5 +1,37 @@
 # Shortcut keys and tips
 
+## FreeCAD
+- Hold down shift when drawing line to move orthogonally.
+
+## LibreCAD
+For a full list of shortcut <a href="https://wiki.librecad.org/index.php/A_short_manual_for_use_from_the_command_line" target="_blank">LibreCAD shortcuts</a>
+
+For a full list of shortcut for snaps <a href="https://librecad.readthedocs.io/en/latest/ref/snaps.html" target="_blank">LibreCAD snap shortcuts</a>
+
+Rectangle, to specify the relative x,y position use the @ shortcut
+```
+rec
+
+@xpos,ypos
+```
+
+Line, specify relative x,y position use the @ command
+```
+l
+
+@xpos,ypos
+```
+
+Trim line
+```
+tm
+```
+
+Offset
+```
+o
+```
+
 ## Blender3D
 Separate object into a independent mesh
 ```
@@ -85,33 +117,4 @@ Render tab -> Film -> Tick Transparent
 Duplicate object
 ```
 Shift + d
-```
-
-## LibreCAD
-For a full list of shortcut <a href="https://wiki.librecad.org/index.php/A_short_manual_for_use_from_the_command_line" target="_blank">LibreCAD shortcuts</a>
-
-For a full list of shortcut for snaps <a href="https://librecad.readthedocs.io/en/latest/ref/snaps.html" target="_blank">LibreCAD snap shortcuts</a>
-
-Rectangle, to specify the relative x,y position use the @ shortcut
-```
-rec
-
-@xpos,ypos
-```
-
-Line, specify relative x,y position use the @ command
-```
-l
-
-@xpos,ypos
-```
-
-Trim line
-```
-tm
-```
-
-Offset
-```
-o
 ```

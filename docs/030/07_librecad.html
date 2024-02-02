@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>4. Import background image and scale &#8212; Open Computational Design for Sustainable Development</title>
+    <title>7. Drafting with LibreCAD &#8212; Open Computational Design for Sustainable Development</title>
   
   
   
@@ -62,11 +62,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/030/04_b3dimg';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/030/07_librecad';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="5. BIM with FreeCAD" href="05_fcbim.html" />
-    <link rel="prev" title="3. Blender3D plane" href="03_b3dplane.html" />
+    <link rel="next" title="1. Bibliography" href="../biblio.html" />
+    <link rel="prev" title="6. Understanding the Openstudio Workflow" href="06_openstudiopy.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -197,10 +197,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="01_tips.html">1. Shortcut keys and tips</a></li>
 <li class="toctree-l1"><a class="reference internal" href="02_b3dsect.html">2. Sectional perspective with Blender3D and LibreCAD</a></li>
 <li class="toctree-l1"><a class="reference internal" href="03_b3dplane.html">3. Blender3D plane</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">4. Import background image and scale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_b3dimg.html">4. Import background image and scale</a></li>
 <li class="toctree-l1"><a class="reference internal" href="05_fcbim.html">5. BIM with FreeCAD</a></li>
 <li class="toctree-l1"><a class="reference internal" href="06_openstudiopy.html">6. Understanding the Openstudio Workflow</a></li>
-<li class="toctree-l1"><a class="reference internal" href="07_librecad.html">7. Drafting with LibreCAD</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">7. Drafting with LibreCAD</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">References</span></p>
 <ul class="nav bd-sidenav">
@@ -276,7 +276,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/chenkianwee/opencd4susdev/issues/new?title=Issue%20on%20page%20%2Fdocs/030/04_b3dimg.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/chenkianwee/opencd4susdev/issues/new?title=Issue%20on%20page%20%2Fdocs/030/07_librecad.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -306,7 +306,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/docs/030/04_b3dimg.md" target="_blank"
+      <li><a href="../../_sources/docs/030/07_librecad.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -377,7 +377,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -388,11 +390,19 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Import background image and scale</h1>
+    <h1>Drafting with LibreCAD</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#printing-to-pdf">7.1. Printing to PDF</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -402,31 +412,16 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="import-background-image-and-scale">
-<h1><span class="section-number">4. </span>Import background image and scale<a class="headerlink" href="#import-background-image-and-scale" title="Permalink to this heading">#</a></h1>
-<ol class="arabic">
-<li><p>In the object mode. If you want the image to be on the xy plane, make sure you are in plan view. Click on the Z on the top right corner of the viewport. Go to Add -&gt; Image -&gt; Reference and choose the image.
-<br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/blender3.png"><img alt="../../_images/blender3.png" class="align-center" src="../../_images/blender3.png" style="width: 100%;" /></a>
-<p><br/><br/></p>
-</li>
-<li><p>Select the image go to Object Properties -&gt; Viewport Display -&gt; Color. Click on color you can adjust the color of the image so it is easy to see the superposition.</p></li>
-<li><p>Put in a plane. Add -&gt; Mesh -&gt; Plane. Size it to one of the known dimesions. I have size it to be 0.412m here. If the dialogue box for sizing is gone press F9 to get it back.
-<br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/blender4.png"><img alt="../../_images/blender4.png" class="align-center" src="../../_images/blender4.png" style="width: 100%;" /></a>
-<p><br/><br/></p>
-</li>
-<li><p>Turn the viewport shading to wireframe. So you can see the superposition. Move it to the 412 dimension as shown below.
-<br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/blender5.png"><img alt="../../_images/blender5.png" class="align-center" src="../../_images/blender5.png" style="width: 100%;" /></a>
-<p><br/><br/></p>
-</li>
-<li><p>Move the 3D cursor to the side of the plane. Change the transform pivot point to 3D cursor. Scale the image accordingly to get the right dimensions.
-<br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/blender6.png"><img alt="../../_images/blender6.png" class="align-center" src="../../_images/blender6.png" style="width: 100%;" /></a>
-<p><br/><br/></p>
-</li>
+  <section class="tex2jax_ignore mathjax_ignore" id="drafting-with-librecad">
+<h1><span class="section-number">7. </span>Drafting with LibreCAD<a class="headerlink" href="#drafting-with-librecad" title="Permalink to this heading">#</a></h1>
+<section id="printing-to-pdf">
+<h2><span class="section-number">7.1. </span>Printing to PDF<a class="headerlink" href="#printing-to-pdf" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Go to File -&gt; Print Preview. You will be in a new print preview window.</p></li>
+<li><p>In this window you can adjust the scale of the drawing and position of it on the paper.</p></li>
+<li><p>To adjust the paper size go to Options -&gt; Current Drawing Preferences -&gt; Paper and change the size of the paper</p></li>
 </ol>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -460,20 +455,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="03_b3dplane.html"
+       href="06_openstudiopy.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">3. </span>Blender3D plane</p>
+        <p class="prev-next-title"><span class="section-number">6. </span>Understanding the Openstudio Workflow</p>
       </div>
     </a>
     <a class="right-next"
-       href="05_fcbim.html"
+       href="../biblio.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">5. </span>BIM with FreeCAD</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Bibliography</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -484,7 +479,20 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#printing-to-pdf">7.1. Printing to PDF</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

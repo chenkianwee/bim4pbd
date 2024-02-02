@@ -3,13 +3,13 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>5. Free and Open-Source Technologies for Design Process &#8212; Open Computational Design for Sustainable Development</title>
+    <title>5. Open-Source Technologies and Data for Design Process &#8212; Open Computational Design for Sustainable Development</title>
   
   
   
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -38,8 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -75,7 +76,16 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -109,12 +119,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -129,9 +147,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -165,7 +185,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="04_4_loads.html">4.4. Cooling and Heating Loads</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">5. Free and Open-Source Technologies for Design Process</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">5. Open-Source Technologies and Data for Design Process</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Task</span></p>
 <ul class="nav bd-sidenav">
@@ -179,6 +199,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../030/03_b3dplane.html">3. Blender3D plane</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../030/04_b3dimg.html">4. Import background image and scale</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../030/05_fcbim.html">5. BIM with FreeCAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../030/06_openstudiopy.html">6. Understanding the Openstudio Workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../030/07_librecad.html">7. Drafting with LibreCAD</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">References</span></p>
 <ul class="nav bd-sidenav">
@@ -336,20 +358,22 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -366,7 +390,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Free and Open-Source Technologies for Design Process</h1>
+    <h1>Open-Source Technologies and Data for Design Process</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -377,21 +401,25 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resources">5.1. Resources</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-data-models">5.2. Open Data Models</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geographic-information-system">5.2.1. Geographic Information System</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-information-modeling">5.2.2. Building Information Modeling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">5.2. Datasets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-data-models">5.3. Open Data Models</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geographic-information-system">5.3.1. Geographic Information System</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-information-modeling">5.3.2. Building Information Modeling</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#control-description-language-cdl">5.3.3. Control Description Language (CDL)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-performance-simulation">5.3.4. Building Performance Simulation</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-modeling">5.3. 3D Modeling</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-drawings">5.4. 2D Drawings</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geographic-information-system-gis">5.5. Geographic Information System (GIS)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scripting">5.6. Scripting</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#web-vizualization">5.7. Web Vizualization</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-management">5.8. Data Management</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#communication">5.9. Communication</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collaboration">5.10. Collaboration</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reality-capture">5.11. Reality Capture</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#photogrammetry">5.11.1. Photogrammetry</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-modeling">5.4. 3D Modeling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-drawings">5.5. 2D Drawings</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geographic-information-system-gis">5.6. Geographic Information System (GIS)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">5.7. Building Performance Simulation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scripting">5.8. Scripting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#web-vizualization">5.9. Web Vizualization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-management">5.10. Data Management</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#communication">5.11. Communication</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collaboration">5.12. Collaboration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reality-capture">5.13. Reality Capture</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#photogrammetry">5.13.1. Photogrammetry</a></li>
 </ul>
 </li>
 </ul>
@@ -403,10 +431,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="free-and-open-source-technologies-for-design-process">
-<h1><span class="section-number">5. </span>Free and Open-Source Technologies for Design Process<a class="headerlink" href="#free-and-open-source-technologies-for-design-process" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="open-source-technologies-and-data-for-design-process">
+<h1><span class="section-number">5. </span>Open-Source Technologies and Data for Design Process<a class="headerlink" href="#open-source-technologies-and-data-for-design-process" title="Permalink to this heading">#</a></h1>
 <section id="resources">
 <h2><span class="section-number">5.1. </span>Resources<a class="headerlink" href="#resources" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
@@ -422,10 +450,16 @@ document.write(`
 </li>
 </ul>
 </section>
+<section id="datasets">
+<h2><span class="section-number">5.2. </span>Datasets<a class="headerlink" href="#datasets" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>US commercial building stocks (<a class="reference external" href="https://comstock.nrel.gov/">https://comstock.nrel.gov/</a>)</p></li>
+</ul>
+</section>
 <section id="open-data-models">
-<h2><span class="section-number">5.2. </span>Open Data Models<a class="headerlink" href="#open-data-models" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">5.3. </span>Open Data Models<a class="headerlink" href="#open-data-models" title="Permalink to this heading">#</a></h2>
 <section id="geographic-information-system">
-<h3><span class="section-number">5.2.1. </span>Geographic Information System<a class="headerlink" href="#geographic-information-system" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">5.3.1. </span>Geographic Information System<a class="headerlink" href="#geographic-information-system" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>CityGML (<a class="reference external" href="https://www.ogc.org/standard/CityGML/">https://www.ogc.org/standard/CityGML/</a>)</p></li>
 <li><p>LandInfra (<a class="reference external" href="https://www.ogc.org/standard/infragml/">https://www.ogc.org/standard/infragml/</a>)</p></li>
@@ -436,7 +470,7 @@ document.write(`
 </ul>
 </section>
 <section id="building-information-modeling">
-<h3><span class="section-number">5.2.2. </span>Building Information Modeling<a class="headerlink" href="#building-information-modeling" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">5.3.2. </span>Building Information Modeling<a class="headerlink" href="#building-information-modeling" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Industry Foundation Class (IFC)</p>
 <ul>
@@ -445,13 +479,31 @@ document.write(`
 <li><p>Specificaitons: <a class="reference external" href="https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/">https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/</a></p></li>
 </ul>
 </li>
-<li><p>COBie: <a class="reference external" href="https://www.nibs.org/nbims/cobie/v3">https://www.nibs.org/nbims/cobie/v3</a></p></li>
+<li><p>Constructon to Operations Building Information Exhcnage (COBie): <a class="reference external" href="https://www.nibs.org/nbims/cobie/v3">https://www.nibs.org/nbims/cobie/v3</a></p></li>
 <li><p>BIM Collaboration Format (BCF): <a class="reference external" href="https://technical.buildingsmart.org/standards/bcf/">https://technical.buildingsmart.org/standards/bcf/</a></p></li>
+<li><p>Information Delivery Specification (IDS)</p>
+<ul>
+<li><p><a class="reference external" href="https://technical.buildingsmart.org/projects/information-delivery-specification-ids/">https://technical.buildingsmart.org/projects/information-delivery-specification-ids/</a></p></li>
+<li><p><a class="github reference external" href="https://github.com/buildingSMART/IDS">buildingSMART/IDS</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="control-description-language-cdl">
+<h3><span class="section-number">5.3.3. </span>Control Description Language (CDL)<a class="headerlink" href="#control-description-language-cdl" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>CDL (<a class="reference external" href="https://obc.lbl.gov/specification/cdl.html#overview-of-cdl-and-terminology">https://obc.lbl.gov/specification/cdl.html#overview-of-cdl-and-terminology</a>)</p></li>
+</ul>
+</section>
+<section id="building-performance-simulation">
+<h3><span class="section-number">5.3.4. </span>Building Performance Simulation<a class="headerlink" href="#building-performance-simulation" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Openstudio Model (<a class="reference external" href="https://openstudio.net/">https://openstudio.net/</a>)</p></li>
 </ul>
 </section>
 </section>
 <section id="d-modeling">
-<h2><span class="section-number">5.3. </span>3D Modeling<a class="headerlink" href="#d-modeling" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">5.4. </span>3D Modeling<a class="headerlink" href="#d-modeling" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Blender 3D (<a class="reference external" href="https://www.blender.org/">https://www.blender.org/</a>) - Visualization</p></li>
 <li><p>FreeCAD (<a class="reference external" href="https://www.freecadweb.org/">https://www.freecadweb.org/</a>) - 3D Drafting</p>
@@ -461,10 +513,11 @@ document.write(`
 </ul>
 </li>
 <li><p>JupyterCAD (<a class="github reference external" href="https://github.com/jupytercad/jupytercad">jupytercad/jupytercad</a>) - Collaborative CAD environment. Works with FreeCAD.</p></li>
+<li><p>Wikiifc (<a class="reference external" href="https://wikiifc.com/">https://wikiifc.com/</a>) - web-based ifc tool for viewing and limited editing of IFC files</p></li>
 </ul>
 </section>
 <section id="d-drawings">
-<h2><span class="section-number">5.4. </span>2D Drawings<a class="headerlink" href="#d-drawings" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">5.5. </span>2D Drawings<a class="headerlink" href="#d-drawings" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>LibreCAD (<a class="reference external" href="https://librecad.org/">https://librecad.org/</a>) - Drafting</p></li>
 <li><p>GIMP (<a class="reference external" href="https://www.gimp.org/">https://www.gimp.org/</a>) - Image editor</p></li>
@@ -472,13 +525,26 @@ document.write(`
 </ul>
 </section>
 <section id="geographic-information-system-gis">
-<h2><span class="section-number">5.5. </span>Geographic Information System (GIS)<a class="headerlink" href="#geographic-information-system-gis" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">5.6. </span>Geographic Information System (GIS)<a class="headerlink" href="#geographic-information-system-gis" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>QGIS (<a class="reference external" href="https://qgis.org">https://qgis.org</a>)</p></li>
 </ul>
 </section>
+<section id="id1">
+<h2><span class="section-number">5.7. </span>Building Performance Simulation<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>EnergyPlus (<a class="reference external" href="https://energyplus.net/">https://energyplus.net/</a>)</p></li>
+<li><p>Radiance (<a class="reference external" href="https://www.radiance-online.org/">https://www.radiance-online.org/</a>)</p></li>
+<li><p>Modelica Building Library (<a class="reference external" href="https://simulationresearch.lbl.gov/modelica/">https://simulationresearch.lbl.gov/modelica/</a>)</p>
+<ul>
+<li><p>Spawn of Energyplus - coupling of energyplus with modelica building library</p></li>
+</ul>
+</li>
+<li><p>ladybug tools (<a class="reference external" href="https://www.ladybug.tools/index.html#header-slide-show">https://www.ladybug.tools/index.html#header-slide-show</a>)</p></li>
+</ul>
+</section>
 <section id="scripting">
-<h2><span class="section-number">5.6. </span>Scripting<a class="headerlink" href="#scripting" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">5.8. </span>Scripting<a class="headerlink" href="#scripting" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Python (<a class="reference external" href="https://www.python.org/">https://www.python.org/</a>) - Batteries included programming language for automating the boring stuffs</p>
 <ul>
@@ -492,7 +558,7 @@ document.write(`
 </ul>
 </section>
 <section id="web-vizualization">
-<h2><span class="section-number">5.7. </span>Web Vizualization<a class="headerlink" href="#web-vizualization" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">5.9. </span>Web Vizualization<a class="headerlink" href="#web-vizualization" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>CesiumJS (<a class="reference external" href="https://cesium.com/platform/cesiumjs/">https://cesium.com/platform/cesiumjs/</a>)</p></li>
 <li><p>Itowns (<a class="github reference external" href="https://github.com/iTowns/itowns">iTowns/itowns</a>)</p></li>
@@ -501,10 +567,11 @@ document.write(`
 <li><p>Pyodide (<a class="reference external" href="https://pyodide.org/en/stable/">https://pyodide.org/en/stable/</a>) - run python in the browser</p></li>
 <li><p>Pyscript (<a class="reference external" href="https://pyscript.net/">https://pyscript.net/</a>) - framework for python in the browser</p></li>
 <li><p>JupyterHub (<a class="reference external" href="https://jupyter.org/hub">https://jupyter.org/hub</a>) - ide for coding in the browser</p></li>
+<li><p>xeokit-bim-viewer: <a class="github reference external" href="https://github.com/xeokit/xeokit-bim-viewer">xeokit/xeokit-bim-viewer</a></p></li>
 </ul>
 </section>
 <section id="data-management">
-<h2><span class="section-number">5.8. </span>Data Management<a class="headerlink" href="#data-management" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">5.10. </span>Data Management<a class="headerlink" href="#data-management" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>3DCityDB (<a class="reference external" href="https://www.3dcitydb.org/3dcitydb/">https://www.3dcitydb.org/3dcitydb/</a>)</p></li>
 <li><p>FROST-Server (<a class="github reference external" href="https://github.com/FraunhoferIOSB/FROST-Server">FraunhoferIOSB/FROST-Server</a>)</p></li>
@@ -517,21 +584,21 @@ document.write(`
 </ul>
 </section>
 <section id="communication">
-<h2><span class="section-number">5.9. </span>Communication<a class="headerlink" href="#communication" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">5.11. </span>Communication<a class="headerlink" href="#communication" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="http://Element.io">Element.io</a> (<a class="reference external" href="https://element.io/">https://element.io/</a>)</p></li>
 </ul>
 </section>
 <section id="collaboration">
-<h2><span class="section-number">5.10. </span>Collaboration<a class="headerlink" href="#collaboration" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">5.12. </span>Collaboration<a class="headerlink" href="#collaboration" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.goodfirms.co/collaboration-software/blog/best-free-open-source-collaboration-software">https://www.goodfirms.co/collaboration-software/blog/best-free-open-source-collaboration-software</a></p></li>
 </ul>
 </section>
 <section id="reality-capture">
-<h2><span class="section-number">5.11. </span>Reality Capture<a class="headerlink" href="#reality-capture" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">5.13. </span>Reality Capture<a class="headerlink" href="#reality-capture" title="Permalink to this heading">#</a></h2>
 <section id="photogrammetry">
-<h3><span class="section-number">5.11.1. </span>Photogrammetry<a class="headerlink" href="#photogrammetry" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">5.13.1. </span>Photogrammetry<a class="headerlink" href="#photogrammetry" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Article about photogrammetry software (<a class="reference external" href="https://all3dp.com/2/best-free-photogrammetry-software/">https://all3dp.com/2/best-free-photogrammetry-software/</a>)</p></li>
 <li><p>Conclusion</p>
@@ -624,11 +691,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="04_4_loads.html"
@@ -648,10 +714,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -660,6 +723,7 @@ document.write(`
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
@@ -667,21 +731,25 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resources">5.1. Resources</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-data-models">5.2. Open Data Models</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geographic-information-system">5.2.1. Geographic Information System</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-information-modeling">5.2.2. Building Information Modeling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">5.2. Datasets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-data-models">5.3. Open Data Models</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geographic-information-system">5.3.1. Geographic Information System</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-information-modeling">5.3.2. Building Information Modeling</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#control-description-language-cdl">5.3.3. Control Description Language (CDL)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-performance-simulation">5.3.4. Building Performance Simulation</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-modeling">5.3. 3D Modeling</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-drawings">5.4. 2D Drawings</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geographic-information-system-gis">5.5. Geographic Information System (GIS)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scripting">5.6. Scripting</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#web-vizualization">5.7. Web Vizualization</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-management">5.8. Data Management</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#communication">5.9. Communication</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collaboration">5.10. Collaboration</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reality-capture">5.11. Reality Capture</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#photogrammetry">5.11.1. Photogrammetry</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-modeling">5.4. 3D Modeling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-drawings">5.5. 2D Drawings</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geographic-information-system-gis">5.6. Geographic Information System (GIS)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">5.7. Building Performance Simulation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scripting">5.8. Scripting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#web-vizualization">5.9. Web Vizualization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-management">5.10. Data Management</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#communication">5.11. Communication</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collaboration">5.12. Collaboration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reality-capture">5.13. Reality Capture</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#photogrammetry">5.13.1. Photogrammetry</a></li>
 </ul>
 </li>
 </ul>
@@ -705,6 +773,7 @@ By Kian Wee Chen
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
       © Copyright 2022.
@@ -731,8 +800,8 @@ By Kian Wee Chen
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>

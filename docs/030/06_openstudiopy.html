@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>3. Blender3D plane &#8212; Open Computational Design for Sustainable Development</title>
+    <title>6. Understanding the Openstudio Workflow &#8212; Open Computational Design for Sustainable Development</title>
   
   
   
@@ -62,11 +62,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/030/03_b3dplane';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/030/06_openstudiopy';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="4. Import background image and scale" href="04_b3dimg.html" />
-    <link rel="prev" title="2. Sectional perspective with Blender3D and LibreCAD" href="02_b3dsect.html" />
+    <link rel="next" title="7. Drafting with LibreCAD" href="07_librecad.html" />
+    <link rel="prev" title="5. BIM with FreeCAD" href="05_fcbim.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -196,10 +196,10 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="01_tips.html">1. Shortcut keys and tips</a></li>
 <li class="toctree-l1"><a class="reference internal" href="02_b3dsect.html">2. Sectional perspective with Blender3D and LibreCAD</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Blender3D plane</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_b3dplane.html">3. Blender3D plane</a></li>
 <li class="toctree-l1"><a class="reference internal" href="04_b3dimg.html">4. Import background image and scale</a></li>
 <li class="toctree-l1"><a class="reference internal" href="05_fcbim.html">5. BIM with FreeCAD</a></li>
-<li class="toctree-l1"><a class="reference internal" href="06_openstudiopy.html">6. Understanding the Openstudio Workflow</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">6. Understanding the Openstudio Workflow</a></li>
 <li class="toctree-l1"><a class="reference internal" href="07_librecad.html">7. Drafting with LibreCAD</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">References</span></p>
@@ -276,7 +276,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/chenkianwee/opencd4susdev/issues/new?title=Issue%20on%20page%20%2Fdocs/030/03_b3dplane.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/chenkianwee/opencd4susdev/issues/new?title=Issue%20on%20page%20%2Fdocs/030/06_openstudiopy.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -306,7 +306,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/docs/030/03_b3dplane.md" target="_blank"
+      <li><a href="../../_sources/docs/030/06_openstudiopy.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -390,7 +390,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Blender3D plane</h1>
+    <h1>Understanding the Openstudio Workflow</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -400,9 +400,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sizing-a-plane-in-blender3d">3.1. Sizing a plane in blender3d</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extruding-an-edge-of-a-plane">3.2. Extruding an edge of a plane</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extruding-the-face-of-a-plane">3.3. Extruding the face of a plane</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weather-files">6.1. Weather Files</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#running-a-simple-simulation-with-openstudio-application">6.2. Running a simple simulation with OpenStudio Application</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-energy-modeling-with-python-openstudio-sdk">6.3. Building Energy Modeling with Python OpenStudio SDK</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ifc-to-osm">6.4. IFC to OSM</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resources">6.5. Resources</a></li>
 </ul>
             </nav>
         </div>
@@ -414,39 +416,135 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="blender3d-plane">
-<h1><span class="section-number">3. </span>Blender3D plane<a class="headerlink" href="#blender3d-plane" title="Permalink to this heading">#</a></h1>
-<section id="sizing-a-plane-in-blender3d">
-<h2><span class="section-number">3.1. </span>Sizing a plane in blender3d<a class="headerlink" href="#sizing-a-plane-in-blender3d" title="Permalink to this heading">#</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="understanding-the-openstudio-workflow">
+<h1><span class="section-number">6. </span>Understanding the Openstudio Workflow<a class="headerlink" href="#understanding-the-openstudio-workflow" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>OpenStudio Workflow (.osw file) - describes the workflow steps of OpenStudio <a href="https://nrel.github.io/OpenStudio-user-documentation/reference/command_line_interface/#osw-structure" target="_blank">official explanation here.</a></p>
+<ul>
+<li><p><a href="https://raw.githubusercontent.com/NREL/OpenStudio-workflow-gem/develop/spec/schema/osw_output.json" target="_blank">.osw schema</a></p></li>
+</ul>
+</li>
+<li><p>In an OpenStudio Workflow this happens:</p>
+<ol class="arabic simple">
+<li><p>An OpenStudio Model (.osm file) is loaded.</p>
+<ul>
+<li><p>OpenStudio Model - a model describing the building. This include the construction, thermal zones and simulation configurations etc (<a class="reference external" href="https://s3.amazonaws.com/openstudio-sdk-documentation/cpp/OpenStudio-3.7.0-doc/model/html/index.html#introduction_model">https://s3.amazonaws.com/openstudio-sdk-documentation/cpp/OpenStudio-3.7.0-doc/model/html/index.html#introduction_model</a>).</p></li>
+</ul>
+</li>
+<li><p>OpenStudio Measure are applied to the osm.</p>
+<ul>
+<li><p>A set of programmable instructions that make changes to the osm model (<a class="reference external" href="https://nrel.github.io/OpenStudio-user-documentation/getting_started/about_measures/">https://nrel.github.io/OpenStudio-user-documentation/getting_started/about_measures/</a>).</p></li>
+<li><p>A measure must consists of all the files listed <a href="https://nrel.github.io/OpenStudio-user-documentation/reference/measure_writing_guide/#measure-file-structure" target="_blank">here.</a></p></li>
+<li><p>You can find a library of Measures at the Building Component Library webpage (<a class="reference external" href="https://bcl.nrel.gov/">https://bcl.nrel.gov/</a>)</p></li>
+</ul>
+</li>
+<li><p>The osm model is then translated to either IDF for energyplus simulation or .RAD for radiance simulation depending on the measure. The measure will specify how the data from each simulation results feed into each other.</p>
+<ul>
+<li><p>for example “Radiance Daylighting Measure” (<a class="reference external" href="https://bcl.nrel.gov/api/download?uids=1e3cfef8-b051-4e60-8bb0-ed2d29d4f45f">https://bcl.nrel.gov/api/download?uids=1e3cfef8-b051-4e60-8bb0-ed2d29d4f45f</a>) - The OpenStudio model is converted to Radiance format. All spaces containing daylighting objects (illuminance map, daylighting control point, and optionally glare sensors) will have annual illuminance calculated using Radiance, and the OS model’s lighting schedules can be overwritten with those based on daylight responsive lighting controls.</p></li>
+</ul>
+</li>
+<li><p>Once the simulations are completed. The OpenStudio Reporting Measures are applied to generate reports of the simulation result.</p>
+<ul>
+<li><p>An error at any point will stop the execution. Whether successful or not an output OSW file is written to show the output of the workflow.</p></li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<section id="weather-files">
+<h2><span class="section-number">6.1. </span>Weather Files<a class="headerlink" href="#weather-files" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://climate.onebuilding.org/">https://climate.onebuilding.org/</a></p></li>
+<li><p><a class="reference external" href="https://energyplus.net/weather">https://energyplus.net/weather</a></p></li>
+</ul>
+</section>
+<section id="running-a-simple-simulation-with-openstudio-application">
+<h2><span class="section-number">6.2. </span>Running a simple simulation with OpenStudio Application<a class="headerlink" href="#running-a-simple-simulation-with-openstudio-application" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Download and install OpenStudio Application <a class="reference external" href="https://github.com/openstudiocoalition/OpenStudioApplication/releases">here</a></p></li>
+<li><p>Open OpenStudio. Go to File -&gt; Examples -&gt; Example Model</p></li>
+<li><p>In the site tab, specify the weather file. You can download weather file from <a class="reference external" href="https://www.ladybug.tools/epwmap/">here</a></p></li>
+<li><p>Save the file. A structure of files are created for OpenStudio Workflow run.</p></li>
+<li><p>Go to the Run Simulation tab and click run. The file structure will be populated with result file.</p></li>
+</ol>
+</section>
+<section id="building-energy-modeling-with-python-openstudio-sdk">
+<h2><span class="section-number">6.3. </span>Building Energy Modeling with Python OpenStudio SDK<a class="headerlink" href="#building-energy-modeling-with-python-openstudio-sdk" title="Permalink to this heading">#</a></h2>
 <ol class="arabic">
-<li><p>In the ‘Layout’ workspace go to Add -&gt; Mesh -&gt; Plane</p></li>
-<li><p>Go to edit mode by using the keyboard shortcup ‘Tab’ while selecting the plane.</p></li>
-<li><p>When in edit mode choose the ‘Move’ command from the left sidebar.</p></li>
-<li><p>On the top left hand corner. Make sure the select mode is Vertex. Make sure to turn on snapping (top-center), you can either snap to the vertex or other mode.
-<br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/blender1.png"><img alt="../../_images/blender1.png" class="align-center" src="../../_images/blender1.png" style="width: 100%;" /></a>
-<p><br/><br/></p>
+<li><p>Install the python binding of Openstudio</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">openstudio</span>
+</pre></div>
+</div>
 </li>
-<li><p>Choose the vertex and snap it to the respective location you want it to be.
-<br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/blender2.png"><img alt="../../_images/blender2.png" class="align-center" src="../../_images/blender2.png" style="width: 100%;" /></a>
-<p><br/><br/></p>
+<li><p>Example script</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">openstudio</span>
+<span class="kn">from</span> <span class="nn">openstudio</span> <span class="kn">import</span> <span class="n">model</span> <span class="k">as</span> <span class="n">osmod</span>
+
+<span class="n">m</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">Model</span><span class="p">()</span>
+<span class="n">mat</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">StandardOpaqueMaterial</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">mat</span><span class="o">.</span><span class="n">setThickness</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mat</span><span class="p">)</span>
+
+<span class="n">epw_path</span> <span class="o">=</span> <span class="s1">&#39;/epw/SGP_SG_Changi.Intl.AP.486980_TMYx.2007-2021.epw&#39;</span>
+<span class="n">epwfile</span> <span class="o">=</span> <span class="n">openstudio</span><span class="o">.</span><span class="n">openstudioutilitiesfiletypes</span><span class="o">.</span><span class="n">EpwFile</span><span class="p">(</span><span class="n">epw_path</span><span class="p">)</span>
+
+<span class="n">m</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">exampleModel</span><span class="p">()</span>
+<span class="n">oswf</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">getWeatherFile</span><span class="p">()</span>
+<span class="n">oswf</span><span class="o">.</span><span class="n">setWeatherFile</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">epwfile</span><span class="p">)</span>
+
+<span class="n">things</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">getSurfaces</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">thing</span> <span class="ow">in</span> <span class="n">things</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;construction&#39;</span><span class="p">,</span> <span class="n">thing</span><span class="o">.</span><span class="n">isConstructionDefaulted</span><span class="p">())</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;ufactor&#39;</span><span class="p">,</span> <span class="n">thing</span><span class="o">.</span><span class="n">uFactor</span><span class="p">())</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="n">thing</span><span class="o">.</span><span class="n">surfaceType</span><span class="p">())</span>
+    
+    <span class="n">vs</span> <span class="o">=</span> <span class="n">thing</span><span class="o">.</span><span class="n">vertices</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">vs</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">v</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">v</span><span class="o">.</span><span class="n">x</span><span class="p">(),</span> <span class="n">v</span><span class="o">.</span><span class="n">y</span><span class="p">(),</span> <span class="n">v</span><span class="o">.</span><span class="n">z</span><span class="p">())</span>
+    
+    <span class="n">things</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">getBuildingStorys</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">thing</span> <span class="ow">in</span> <span class="n">things</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">thing</span><span class="p">)</span>
+    
+<span class="n">ft</span> <span class="o">=</span> <span class="n">openstudio</span><span class="o">.</span><span class="n">energyplus</span><span class="o">.</span><span class="n">ForwardTranslator</span><span class="p">()</span>
+<span class="n">idf</span> <span class="o">=</span> <span class="n">ft</span><span class="o">.</span><span class="n">translateModel</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;out.idf&#39;</span>
+<span class="n">idf</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+
+<span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;test.osm&#39;</span>
+<span class="n">m</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
 </li>
 </ol>
 </section>
-<section id="extruding-an-edge-of-a-plane">
-<h2><span class="section-number">3.2. </span>Extruding an edge of a plane<a class="headerlink" href="#extruding-an-edge-of-a-plane" title="Permalink to this heading">#</a></h2>
+<section id="ifc-to-osm">
+<h2><span class="section-number">6.4. </span>IFC to OSM<a class="headerlink" href="#ifc-to-osm" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>Choose the plane, then go to edit mode.</p></li>
-<li><p>Choose the edge to extrude. Make sure your select mode is Edge. Press ‘e’ then ‘x’,’y’ or ‘z’ to specify the direction of extrusion.</p></li>
+<li><p>Model a IFC building model <a class="reference internal" href="05_fcbim.html"><span class="doc std std-doc">You can do it with FreeCAD</span></a> and then <a class="reference internal" href="05_fcbim.html#export-to-ifc-and-read-with-ifcopenshell"><span class="std std-doc">export it IFC</span></a>.</p></li>
+<li><p>Using the IFCOpenshell and the OpenStudio library convert the IFC model to OSM.</p></li>
 </ol>
 </section>
-<section id="extruding-the-face-of-a-plane">
-<h2><span class="section-number">3.3. </span>Extruding the face of a plane<a class="headerlink" href="#extruding-the-face-of-a-plane" title="Permalink to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p>Choose the plane, then go to edit mode.</p></li>
-<li><p>Choose the face to extrude. Make sure your select mode is Face. Press ‘e’ then ‘x’,’y’ or ‘z’ to specify the direction of extrusion.</p></li>
-</ol>
+<section id="resources">
+<h2><span class="section-number">6.5. </span>Resources<a class="headerlink" href="#resources" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>reference document (<a class="reference external" href="https://s3.amazonaws.com/openstudio-sdk-documentation/index.html">https://s3.amazonaws.com/openstudio-sdk-documentation/index.html</a>)</p></li>
+<li><p>openstudio resources (<a class="github reference external" href="https://github.com/NREL/OpenStudio-resources">NREL/OpenStudio-resources</a>)</p></li>
+<li><p>example script</p>
+<ul>
+<li><p>create material (<a class="reference external" href="https://unmethours.com/question/97305/create-a-new-material-with-python-bindings/">https://unmethours.com/question/97305/create-a-new-material-with-python-bindings/</a>)</p></li>
+<li><p>run energyplus + radiance simulation (<a class="reference external" href="https://unmethours.com/question/84025/co-simulation-with-e-and-radiance-in-openstudio/">https://unmethours.com/question/84025/co-simulation-with-e-and-radiance-in-openstudio/</a>)</p></li>
+<li><p>python example</p>
+<ul>
+<li><p><a class="github reference external" href="https://github.com/jmarrec/OpenStudio_to_EnergyPlusAPI/blob/main/OpenStudio_to_EnergyPlusAPI.ipynb">jmarrec/OpenStudio_to_EnergyPlusAPI</a></p></li>
+<li><p><a class="reference external" href="https://snyk.io/advisor/python/openstudio/functions/openstudio.model.getSpaces">https://snyk.io/advisor/python/openstudio/functions/openstudio.model.getSpaces</a></p></li>
+<li><p><a class="github reference external" href="https://github.com/GFlechas/Gabes_OpenStudio_shared_resources/blob/main/load_model_add_ruleset/load_model_add_ruleset_notebook.ipynb">GFlechas/Gabes_OpenStudio_shared_resources</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 </section>
 </section>
 
@@ -481,20 +579,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="02_b3dsect.html"
+       href="05_fcbim.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">2. </span>Sectional perspective with Blender3D and LibreCAD</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>BIM with FreeCAD</p>
       </div>
     </a>
     <a class="right-next"
-       href="04_b3dimg.html"
+       href="07_librecad.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">4. </span>Import background image and scale</p>
+        <p class="prev-next-title"><span class="section-number">7. </span>Drafting with LibreCAD</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -514,9 +612,11 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sizing-a-plane-in-blender3d">3.1. Sizing a plane in blender3d</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extruding-an-edge-of-a-plane">3.2. Extruding an edge of a plane</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extruding-the-face-of-a-plane">3.3. Extruding the face of a plane</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weather-files">6.1. Weather Files</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#running-a-simple-simulation-with-openstudio-application">6.2. Running a simple simulation with OpenStudio Application</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-energy-modeling-with-python-openstudio-sdk">6.3. Building Energy Modeling with Python OpenStudio SDK</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ifc-to-osm">6.4. IFC to OSM</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resources">6.5. Resources</a></li>
 </ul>
   </nav></div>
 
