@@ -32,6 +32,8 @@ parts:
   - file: docs/030/03_b3dplane
   - file: docs/030/04_b3dimg
   - file: docs/030/05_fcbim
+  - file: docs/030/06_openstudiopy
+  - file: docs/030/07_librecad
 - caption: References
   numbered: true
   chapters:
