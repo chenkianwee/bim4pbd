@@ -18,6 +18,7 @@ parts:
     - file: docs/010/04_2_rad_trsf
     - file: docs/010/04_3_climate
     - file: docs/010/04_4_loads
+    - file: docs/010/04_5_tcomf
   - file: docs/010/05_tech
 - caption: Task
   numbered: true        
