@@ -5,6 +5,7 @@
     - open source ecosystems for better engineering
 - https://osarch.org/
     - Creating a built environment with free software, increased transparency, and a more ethical approach
+- ASHRAE Standards and Guideline (https://www.ashrae.org/technical-resources/standards-and-guidelines/read-only-versions-of-ashrae-standards)
 
 ## Datasets
 - US commercial building stocks (https://comstock.nrel.gov/)
@@ -28,12 +29,25 @@
 - Information Delivery Specification (IDS)
     - https://technical.buildingsmart.org/projects/information-delivery-specification-ids/
     - https://github.com/buildingSMART/IDS
+- Standard 224-2023 -- Standard for the Application of Building Information Modeling (ANSI Approved) (https://ashrae.iwrapper.com/ASHRAE_PREVIEW_ONLY_STANDARDS/STD_224_2023)
 
-### Control Description Language (CDL)
+### Building Operations
+- Brick Schema (https://brickschema.org/)
+- Guideline 36-2021 -- High-Performance Sequences of Operation for HVAC Systems (https://ashrae.iwrapper.com/ASHRAE_PREVIEW_ONLY_STANDARDS/GL_36_2021) 
+- Standard 135-2020, BACnetTM A Data Communication Protocol for Building Automation and Control Networks (https://ashrae.iwrapper.com/ASHRAE_PREVIEW_ONLY_STANDARDS/STD_135_2020)
 - CDL (https://obc.lbl.gov/specification/cdl.html#overview-of-cdl-and-terminology)
+- Project Haystack (https://project-haystack.org/)
+- ASHRAE 223P
+    - https://open223.info/
+    - https://github.com/open223
+- BOPTest simulation based controls https://github.com/ibpsa/project1-boptest?tab=readme-ov-file
 
 ### Building Performance Simulation
 - Openstudio Model (https://openstudio.net/) 
+- Standard 90.1-2022 (S-I), Energy Standard for Buildings Except Low-Rise Residential Buildings (https://www.ashrae.org/technical-resources/standards-and-guidelines/read-only-versions-of-ashrae-standards)
+- Standard 90.2-2018, Energy Efficient Design of Low-Rise Residential Buildings (https://ashrae.iwrapper.com/ASHRAE_PREVIEW_ONLY_STANDARDS/STD_90.2_2018)
+- Standard 189.1-2020, Standard for the Design of High-Performance Green Buildings (https://www.ashrae.org/technical-resources/standards-and-guidelines/read-only-versions-of-ashrae-standards)
+- Standard 183-2007 (RA 2020) -- Peak Cooling and Heating Load Calculations in Buildings Except Low-Rise Residential Buildings (ACCA Co-sponsored) (https://ashrae.iwrapper.com/ASHRAE_PREVIEW_ONLY_STANDARDS/STD_183_2007_RA_2020)
 
 ## 3D Modeling
 - Blender 3D (https://www.blender.org/) - Visualization

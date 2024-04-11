@@ -1,9 +1,8 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../../" >
 
   <head>
     <meta charset="utf-8" />
@@ -29,39 +28,35 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
   <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
-    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/clipboard.min.js"></script>
-    <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/030/06_openstudiopy';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -160,7 +155,18 @@ const thebe_selector_output = ".output, .cell_output"
     <p class="title logo__title">Open Computational Design for Sustainable Development</p>
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -183,6 +189,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../010/04_2_rad_trsf.html">4.2. Radiant Heat Transfer: Reflectance, Absorptance and Emittance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../010/04_3_climate.html">4.3. Climate Classifications</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../010/04_4_loads.html">4.4. Cooling and Heating Loads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../010/04_5_tcomf.html">4.5. Thermal Comfort</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../010/05_tech.html">5. Open-Source Technologies and Data for Design Process</a></li>
@@ -400,11 +407,21 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weather-files">6.1. Weather Files</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weather-files">6.1. Weather Files</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generating-annual-meteorological-year-amy-epw-file">6.1.1. Generating Annual Meteorological Year (AMY) EPW file</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#running-a-simple-simulation-with-openstudio-application">6.2. Running a simple simulation with OpenStudio Application</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-energy-modeling-with-python-openstudio-sdk">6.3. Building Energy Modeling with Python OpenStudio SDK</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ifc-to-osm">6.4. IFC to OSM</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resources">6.5. Resources</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-python-measure">6.5. Writing Python Measure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#openstudio-code-snippets">6.6. Openstudio Code Snippets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-the-energyplus-output-variables">6.7. Understanding the energyplus output variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#python-openstudio-script-to-add-output-item-to-idf-files">6.7.1. Python Openstudio Script to add Output Item to Idf files</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#read-the-eplusout-sql">6.7.2. Read the eplusout.sql</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resources">6.8. Resources</a></li>
 </ul>
             </nav>
         </div>
@@ -417,7 +434,7 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="understanding-the-openstudio-workflow">
-<h1><span class="section-number">6. </span>Understanding the Openstudio Workflow<a class="headerlink" href="#understanding-the-openstudio-workflow" title="Permalink to this heading">#</a></h1>
+<h1><span class="section-number">6. </span>Understanding the Openstudio Workflow<a class="headerlink" href="#understanding-the-openstudio-workflow" title="Link to this heading">#</a></h1>
 <ul class="simple">
 <li><p>OpenStudio Workflow (.osw file) - describes the workflow steps of OpenStudio <a href="https://nrel.github.io/OpenStudio-user-documentation/reference/command_line_interface/#osw-structure" target="_blank">official explanation here.</a></p>
 <ul>
@@ -452,14 +469,21 @@ document.write(`
 </li>
 </ul>
 <section id="weather-files">
-<h2><span class="section-number">6.1. </span>Weather Files<a class="headerlink" href="#weather-files" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">6.1. </span>Weather Files<a class="headerlink" href="#weather-files" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://climate.onebuilding.org/">https://climate.onebuilding.org/</a></p></li>
 <li><p><a class="reference external" href="https://energyplus.net/weather">https://energyplus.net/weather</a></p></li>
 </ul>
+<section id="generating-annual-meteorological-year-amy-epw-file">
+<h3><span class="section-number">6.1.1. </span>Generating Annual Meteorological Year (AMY) EPW file<a class="headerlink" href="#generating-annual-meteorological-year-amy-epw-file" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Ladybug tools forum: <a class="reference external" href="https://discourse.ladybug.tools/t/generate-epw-file-for-any-location-any-year-from-1940/21263">https://discourse.ladybug.tools/t/generate-epw-file-for-any-location-any-year-from-1940/21263</a></p></li>
+<li><p><a class="github reference external" href="https://github.com/IMMM-SFA/diyepw">IMMM-SFA/diyepw</a></p></li>
+</ul>
+</section>
 </section>
 <section id="running-a-simple-simulation-with-openstudio-application">
-<h2><span class="section-number">6.2. </span>Running a simple simulation with OpenStudio Application<a class="headerlink" href="#running-a-simple-simulation-with-openstudio-application" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">6.2. </span>Running a simple simulation with OpenStudio Application<a class="headerlink" href="#running-a-simple-simulation-with-openstudio-application" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Download and install OpenStudio Application <a class="reference external" href="https://github.com/openstudiocoalition/OpenStudioApplication/releases">here</a></p></li>
 <li><p>Open OpenStudio. Go to File -&gt; Examples -&gt; Example Model</p></li>
@@ -469,7 +493,7 @@ document.write(`
 </ol>
 </section>
 <section id="building-energy-modeling-with-python-openstudio-sdk">
-<h2><span class="section-number">6.3. </span>Building Energy Modeling with Python OpenStudio SDK<a class="headerlink" href="#building-energy-modeling-with-python-openstudio-sdk" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">6.3. </span>Building Energy Modeling with Python OpenStudio SDK<a class="headerlink" href="#building-energy-modeling-with-python-openstudio-sdk" title="Link to this heading">#</a></h2>
 <ol class="arabic">
 <li><p>Install the python binding of Openstudio</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">openstudio</span>
@@ -477,589 +501,799 @@ document.write(`
 </div>
 </li>
 <li><p>Example script</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">openstudio</span>
-<span class="kn">from</span> <span class="nn">openstudio</span> <span class="kn">import</span> <span class="n">model</span> <span class="k">as</span> <span class="n">osmod</span>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Script to Examine the OSModel<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>import openstudio
+from openstudio import model as osmod
 
-<span class="n">m</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">Model</span><span class="p">()</span>
-<span class="n">mat</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">StandardOpaqueMaterial</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-<span class="n">mat</span><span class="o">.</span><span class="n">setThickness</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">mat</span><span class="p">)</span>
+m = osmod.Model()
+mat = osmod.StandardOpaqueMaterial(m)
+mat.setThickness(0.3)
+print(mat)
 
-<span class="n">epw_path</span> <span class="o">=</span> <span class="s1">&#39;/epw/SGP_SG_Changi.Intl.AP.486980_TMYx.2007-2021.epw&#39;</span>
-<span class="n">epwfile</span> <span class="o">=</span> <span class="n">openstudio</span><span class="o">.</span><span class="n">openstudioutilitiesfiletypes</span><span class="o">.</span><span class="n">EpwFile</span><span class="p">(</span><span class="n">epw_path</span><span class="p">)</span>
+epw_path = &#39;/epw/SGP_SG_Changi.Intl.AP.486980_TMYx.2007-2021.epw&#39;
+epwfile = openstudio.openstudioutilitiesfiletypes.EpwFile(epw_path)
 
-<span class="n">m</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">exampleModel</span><span class="p">()</span>
-<span class="n">oswf</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">getWeatherFile</span><span class="p">()</span>
-<span class="n">oswf</span><span class="o">.</span><span class="n">setWeatherFile</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">epwfile</span><span class="p">)</span>
+m = osmod.exampleModel()
+oswf = m.getWeatherFile()
+oswf.setWeatherFile(m, epwfile)
 
-<span class="n">things</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">getSurfaces</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">thing</span> <span class="ow">in</span> <span class="n">things</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;construction&#39;</span><span class="p">,</span> <span class="n">thing</span><span class="o">.</span><span class="n">isConstructionDefaulted</span><span class="p">())</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;ufactor&#39;</span><span class="p">,</span> <span class="n">thing</span><span class="o">.</span><span class="n">uFactor</span><span class="p">())</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="n">thing</span><span class="o">.</span><span class="n">surfaceType</span><span class="p">())</span>
+things = osmod.getSurfaces(m)
+for thing in things:
+    print(&#39;construction&#39;, thing.isConstructionDefaulted())
+    print(&#39;ufactor&#39;, thing.uFactor())
+    print(&#39;type&#39;, thing.surfaceType())
     
-    <span class="n">vs</span> <span class="o">=</span> <span class="n">thing</span><span class="o">.</span><span class="n">vertices</span><span class="p">()</span>
-    <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">vs</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">v</span><span class="p">))</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">v</span><span class="o">.</span><span class="n">x</span><span class="p">(),</span> <span class="n">v</span><span class="o">.</span><span class="n">y</span><span class="p">(),</span> <span class="n">v</span><span class="o">.</span><span class="n">z</span><span class="p">())</span>
+    vs = thing.vertices()
+    for v in vs:
+        print(type(v))
+        print(v.x(), v.y(), v.z())
     
-    <span class="n">things</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">getBuildingStorys</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">thing</span> <span class="ow">in</span> <span class="n">things</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">thing</span><span class="p">)</span>
+    things = osmod.getBuildingStorys(m)
+    for thing in things:
+        print(thing)
     
-<span class="n">ft</span> <span class="o">=</span> <span class="n">openstudio</span><span class="o">.</span><span class="n">energyplus</span><span class="o">.</span><span class="n">ForwardTranslator</span><span class="p">()</span>
-<span class="n">idf</span> <span class="o">=</span> <span class="n">ft</span><span class="o">.</span><span class="n">translateModel</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-<span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;out.idf&#39;</span>
-<span class="n">idf</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+ft = openstudio.energyplus.ForwardTranslator()
+idf = ft.translateModel(m)
+path = &#39;out.idf&#39;
+idf.save(path, True)
 
-<span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;test.osm&#39;</span>
-<span class="n">m</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+path = &#39;test.osm&#39;
+m.save(path, True)
 </pre></div>
 </div>
-</li>
+</div>
+</details></li>
 </ol>
 </section>
 <section id="ifc-to-osm">
-<h2><span class="section-number">6.4. </span>IFC to OSM<a class="headerlink" href="#ifc-to-osm" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">6.4. </span>IFC to OSM<a class="headerlink" href="#ifc-to-osm" title="Link to this heading">#</a></h2>
 <ol class="arabic">
-<li><p>Model a IFC building model <a class="reference internal" href="05_fcbim.html"><span class="doc std std-doc">You can do it with FreeCAD</span></a> and then <a class="reference internal" href="05_fcbim.html#export-to-ifc-and-read-with-ifcopenshell"><span class="std std-doc">export it IFC</span></a>.</p></li>
+<li><p>Model a IFC building model <a class="reference internal" href="05_fcbim.html"><span class="std std-doc">You can do it with FreeCAD</span></a> and then <a class="reference internal" href="05_fcbim.html#export-to-ifc-and-read-with-ifcopenshell"><span class="std std-ref">export it IFC</span></a>.</p></li>
 <li><p>Using the IFCOpenshell and the OpenStudio library convert the IFC model to OSM. Here is an example script that converts a IFC file to OSM and uses an ideal air loads calculation to get the cooling load.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
-<span class="kn">import</span> <span class="nn">pathlib</span>
-<span class="kn">import</span> <span class="nn">subprocess</span>
-<span class="kn">from</span> <span class="nn">distutils.dir_util</span> <span class="kn">import</span> <span class="n">copy_tree</span>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Script to Convert IFC to OSModel<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>import json
+import pathlib
+import subprocess
+from distutils.dir_util import copy_tree
 
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+import numpy as np
 
-<span class="kn">import</span> <span class="nn">ifcopenshell</span>
-<span class="kn">import</span> <span class="nn">ifcopenshell.geom</span>
+import ifcopenshell
+import ifcopenshell.geom
 
-<span class="kn">import</span> <span class="nn">geomie3d</span>
+import geomie3d
 
-<span class="kn">import</span> <span class="nn">openstudio</span>
-<span class="kn">from</span> <span class="nn">openstudio</span> <span class="kn">import</span> <span class="n">model</span> <span class="k">as</span> <span class="n">osmod</span>
+import openstudio
+from openstudio import model as osmod
 
-<span class="c1">#===================================================================================================</span>
-<span class="c1"># region: PARAMETERS</span>
-<span class="c1">#===================================================================================================</span>
-<span class="n">ifc_path</span> <span class="o">=</span> <span class="s1">&#39;/example.ifc&#39;</span>
-<span class="n">res_path</span> <span class="o">=</span> <span class="s1">&#39;/osm/res_folder&#39;</span>
-<span class="n">epw_path</span> <span class="o">=</span> <span class="s1">&#39;/epw/SGP_Singapore.486980_IWEC.epw&#39;</span>
-<span class="c1"># set measure type 0=ModelMeasure, 1=EnergyPlusMeasure, 2=UtilityMeasure, 3=ReportingMeasure</span>
-<span class="n">measure_folder_list</span> <span class="o">=</span> <span class="p">[</span>
-        <span class="p">{</span><span class="s1">&#39;dir&#39;</span><span class="p">:</span><span class="s1">&#39;/measures/ideal_air_loads_zone_hvac/&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="s1">&#39;arguments&#39;</span><span class="p">:</span> <span class="p">[{</span><span class="s1">&#39;argument&#39;</span><span class="p">:</span> <span class="s1">&#39;include_outdoor_air&#39;</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">}],</span>
-        <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;This OpenStudio measure will replace the existing HVAC system with ideal air loads objects for each conditioned zone and allow the user to specify input fields including availability schedules, humidity controls, outdoor air ventilation, demand controlled ventilation, economizer operation, and heat recovery.  The measure optionally creates custom meter and output meter objects that sum all ideal loads output variables for further analysis.&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;modeler_description&#39;</span><span class="p">:</span> <span class="s1">&#39;This measure creates ZoneHVACIdealLoadsAirSystem objects for each conditioned zone using the model_add_ideal_air_loads method in the openstudio-standards gem.  If the Include Outdoor Air Ventilation? option is set to false, the measure will remove all Design Specification Outdoor Air objects in the model so that they dont get written to the ideal loads objects during forward translation.&#39;</span>
-        <span class="p">},</span>
-        <span class="p">{</span><span class="s1">&#39;dir&#39;</span><span class="p">:</span><span class="s1">&#39;/measures/openstudio_results/&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
-        <span class="s1">&#39;arguments&#39;</span><span class="p">:</span> <span class="p">[{</span><span class="s1">&#39;argument&#39;</span><span class="p">:</span> <span class="s1">&#39;units&#39;</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="s1">&#39;SI&#39;</span><span class="p">}],</span>
-        <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;This measure creates high level tables and charts pulling both from model inputs and EnergyPlus results. It has building level information as well as detail on space types, thermal zones, HVAC systems, envelope characteristics, and economics. Click the heading above a chart to view a table of the chart data.&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;modeler_description&#39;</span><span class="p">:</span> <span class="s1">&#39;For the most part consumption data comes from the tabular EnergyPlus results, however there are a few requests added for time series results. Space type and loop details come from the OpenStudio model. The code for this is modular, making it easy to use as a template for your own custom reports. The structure of the report uses bootstrap, and the graphs use dimple js. The new measure warning section will show warnings generated by upstream measures. It will not show forward translation warnings, EnergyPlus warnings, or warnings that might be reported by this measure.&#39;</span>
-        <span class="p">},</span>
-    <span class="p">]</span>
+#===================================================================================================
+# region: PARAMETERS
+#===================================================================================================
+ifc_path = &#39;/example.ifc&#39;
+res_path = &#39;/osm/res_folder&#39;
+epw_path = &#39;/epw/SGP_Singapore.486980_IWEC.epw&#39;
+# set measure type 0=ModelMeasure, 1=EnergyPlusMeasure, 2=UtilityMeasure, 3=ReportingMeasure
+measure_folder_list = [
+        {&#39;dir&#39;:&#39;/measures/ideal_air_loads_zone_hvac/&#39;, &#39;type&#39;: 0,
+        &#39;arguments&#39;: [{&#39;argument&#39;: &#39;include_outdoor_air&#39;, &#39;value&#39;: True}],
+        &#39;description&#39;: &#39;This OpenStudio measure will replace the existing HVAC system with ideal air loads objects for each conditioned zone and allow the user to specify input fields including availability schedules, humidity controls, outdoor air ventilation, demand controlled ventilation, economizer operation, and heat recovery.  The measure optionally creates custom meter and output meter objects that sum all ideal loads output variables for further analysis.&#39;,
+        &#39;modeler_description&#39;: &#39;This measure creates ZoneHVACIdealLoadsAirSystem objects for each conditioned zone using the model_add_ideal_air_loads method in the openstudio-standards gem.  If the Include Outdoor Air Ventilation? option is set to false, the measure will remove all Design Specification Outdoor Air objects in the model so that they dont get written to the ideal loads objects during forward translation.&#39;
+        },
+        {&#39;dir&#39;:&#39;/measures/openstudio_results/&#39;, &#39;type&#39;: 3,
+        &#39;arguments&#39;: [{&#39;argument&#39;: &#39;units&#39;, &#39;value&#39;: &#39;SI&#39;}],
+        &#39;description&#39;: &#39;This measure creates high level tables and charts pulling both from model inputs and EnergyPlus results. It has building level information as well as detail on space types, thermal zones, HVAC systems, envelope characteristics, and economics. Click the heading above a chart to view a table of the chart data.&#39;,
+        &#39;modeler_description&#39;: &#39;For the most part consumption data comes from the tabular EnergyPlus results, however there are a few requests added for time series results. Space type and loop details come from the OpenStudio model. The code for this is modular, making it easy to use as a template for your own custom reports. The structure of the report uses bootstrap, and the graphs use dimple js. The new measure warning section will show warnings generated by upstream measures. It will not show forward translation warnings, EnergyPlus warnings, or warnings that might be reported by this measure.&#39;
+        },
+    ]
 
-<span class="c1"># endregion: PARAMETERS</span>
-<span class="c1">#===================================================================================================</span>
-<span class="c1"># region: FUNCTIONS</span>
-<span class="c1">#===================================================================================================</span>
-<span class="k">def</span> <span class="nf">g3dverts2ospt3d</span><span class="p">(</span><span class="n">g3dverts</span><span class="p">,</span> <span class="n">decimals</span> <span class="o">=</span> <span class="mi">6</span><span class="p">):</span>
-    <span class="n">pt3ds</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">g3dverts</span><span class="p">:</span>
-        <span class="n">xyz</span> <span class="o">=</span> <span class="n">v</span><span class="o">.</span><span class="n">point</span><span class="o">.</span><span class="n">xyz</span>
-        <span class="n">xyz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">xyz</span><span class="p">,</span> <span class="n">decimals</span><span class="o">=</span><span class="n">decimals</span><span class="p">)</span>
-        <span class="n">x</span> <span class="o">=</span> <span class="n">xyz</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-        <span class="n">y</span> <span class="o">=</span> <span class="n">xyz</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-        <span class="n">z</span> <span class="o">=</span> <span class="n">xyz</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-        <span class="n">pt3d</span> <span class="o">=</span> <span class="n">openstudio</span><span class="o">.</span><span class="n">openstudioutilitiesgeometry</span><span class="o">.</span><span class="n">Point3d</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">)</span>
-        <span class="n">pt3ds</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pt3d</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">pt3ds</span>
+# endregion: PARAMETERS
+#===================================================================================================
+# region: FUNCTIONS
+#===================================================================================================
+def g3dverts2ospt3d(g3dverts, decimals = 6):
+    pt3ds = []
+    for v in g3dverts:
+        xyz = v.point.xyz
+        xyz = np.round(xyz, decimals=decimals)
+        x = xyz[0]
+        y = xyz[1]
+        z = xyz[2]
+        pt3d = openstudio.openstudioutilitiesgeometry.Point3d(x,y,z)
+        pt3ds.append(pt3d)
+    return pt3ds
 
-<span class="k">def</span> <span class="nf">save_osw_project</span><span class="p">(</span><span class="n">proj_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">openstudio_model</span><span class="p">:</span> <span class="n">osmod</span><span class="p">,</span> <span class="n">measure_folder_list</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-    <span class="c1"># create all the necessary directory</span>
-    <span class="n">proj_path</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">proj_dir</span><span class="p">)</span>
-    <span class="n">proj_name</span> <span class="o">=</span> <span class="n">proj_path</span><span class="o">.</span><span class="n">stem</span>
-    <span class="n">wrkflow_dir</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">PurePath</span><span class="p">(</span><span class="n">proj_dir</span><span class="p">,</span> <span class="n">proj_name</span> <span class="o">+</span> <span class="s1">&#39;_wrkflw&#39;</span><span class="p">)</span>
-    <span class="n">dir_ls</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;files&#39;</span><span class="p">,</span> <span class="s1">&#39;measures&#39;</span><span class="p">,</span> <span class="s1">&#39;run&#39;</span><span class="p">]</span>
-    <span class="k">for</span> <span class="nb">dir</span> <span class="ow">in</span> <span class="n">dir_ls</span><span class="p">:</span>
-        <span class="n">dir_in_wrkflw</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">PurePath</span><span class="p">(</span><span class="n">wrkflow_dir</span><span class="p">,</span> <span class="nb">dir</span><span class="p">)</span>
-        <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">dir_in_wrkflw</span><span class="p">)</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+def save_osw_project(proj_dir: str, openstudio_model: osmod, measure_folder_list: list[dict]) -&gt; str:
+    # create all the necessary directory
+    proj_path = pathlib.Path(proj_dir)
+    proj_name = proj_path.stem
+    wrkflow_dir = pathlib.PurePath(proj_dir, proj_name + &#39;_wrkflw&#39;)
+    dir_ls = [&#39;files&#39;, &#39;measures&#39;, &#39;run&#39;]
+    for dir in dir_ls:
+        dir_in_wrkflw = pathlib.PurePath(wrkflow_dir, dir)
+        pathlib.Path(dir_in_wrkflw).mkdir(parents=True, exist_ok=True)
     
-    <span class="c1"># create the osm file</span>
-    <span class="n">osm_filename</span> <span class="o">=</span> <span class="n">proj_name</span> <span class="o">+</span> <span class="s1">&#39;.osm&#39;</span>
-    <span class="n">osm_path</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">PurePath</span><span class="p">(</span><span class="n">proj_dir</span><span class="p">,</span> <span class="n">osm_filename</span><span class="p">)</span>
-    <span class="n">openstudio_model</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">osm_path</span><span class="p">),</span> <span class="kc">True</span><span class="p">)</span>
+    # create the osm file
+    osm_filename = proj_name + &#39;.osm&#39;
+    osm_path = pathlib.PurePath(proj_dir, osm_filename)
+    openstudio_model.save(str(osm_path), True)
 
-    <span class="c1"># retrieve the osw file</span>
-    <span class="n">oswrkflw</span> <span class="o">=</span> <span class="n">openstudio_model</span><span class="o">.</span><span class="n">workflowJSON</span><span class="p">()</span>
-    <span class="n">oswrkflw</span><span class="o">.</span><span class="n">setSeedFile</span><span class="p">(</span><span class="s1">&#39;../&#39;</span> <span class="o">+</span> <span class="n">osm_filename</span><span class="p">)</span>
+    # retrieve the osw file
+    oswrkflw = openstudio_model.workflowJSON()
+    oswrkflw.setSeedFile(&#39;../&#39; + osm_filename)
 
-    <span class="c1"># create the result measure into the measures folder</span>
-    <span class="n">msteps</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">:</span> <span class="p">[],</span> <span class="mi">1</span><span class="p">:</span> <span class="p">[],</span> <span class="mi">2</span><span class="p">:</span> <span class="p">[],</span> <span class="mi">3</span><span class="p">:</span> <span class="p">[]}</span>
-    <span class="k">for</span> <span class="n">measure_folder</span> <span class="ow">in</span> <span class="n">measure_folder_list</span><span class="p">:</span>
-        <span class="n">measure_dir_orig</span> <span class="o">=</span> <span class="n">measure_folder</span><span class="p">[</span><span class="s1">&#39;dir&#39;</span><span class="p">]</span>
-        <span class="n">foldername</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">measure_dir_orig</span><span class="p">)</span><span class="o">.</span><span class="n">stem</span>
-        <span class="n">measure_dir_dest</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">PurePath</span><span class="p">(</span><span class="n">wrkflow_dir</span><span class="p">,</span> <span class="s1">&#39;measures&#39;</span><span class="p">,</span> <span class="n">foldername</span><span class="p">))</span>
-        <span class="n">copy_tree</span><span class="p">(</span><span class="n">measure_dir_orig</span><span class="p">,</span> <span class="n">measure_dir_dest</span><span class="p">)</span>
-        <span class="c1"># set measurestep</span>
-        <span class="n">mstep</span> <span class="o">=</span> <span class="n">openstudio</span><span class="o">.</span><span class="n">MeasureStep</span><span class="p">(</span><span class="n">measure_dir_dest</span><span class="p">)</span>
-        <span class="n">mstep</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="n">foldername</span><span class="p">)</span>
-        <span class="n">mstep</span><span class="o">.</span><span class="n">setDescription</span><span class="p">(</span><span class="n">measure_folder</span><span class="p">[</span><span class="s1">&#39;description&#39;</span><span class="p">])</span>
-        <span class="n">mstep</span><span class="o">.</span><span class="n">setModelerDescription</span><span class="p">(</span><span class="n">measure_folder</span><span class="p">[</span><span class="s1">&#39;modeler_description&#39;</span><span class="p">])</span>
-        <span class="k">if</span> <span class="s1">&#39;arguments&#39;</span> <span class="ow">in</span> <span class="n">measure_folder</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
-            <span class="n">arguments</span> <span class="o">=</span> <span class="n">measure_folder</span><span class="p">[</span><span class="s1">&#39;arguments&#39;</span><span class="p">]</span>
-            <span class="k">for</span> <span class="n">argument</span> <span class="ow">in</span> <span class="n">arguments</span><span class="p">:</span>
-                <span class="n">mstep</span><span class="o">.</span><span class="n">setArgument</span><span class="p">(</span><span class="n">argument</span><span class="p">[</span><span class="s1">&#39;argument&#39;</span><span class="p">],</span> <span class="n">argument</span><span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">])</span>
-        <span class="n">msteps</span><span class="p">[</span><span class="n">measure_folder</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mstep</span><span class="p">)</span>
+    # create the result measure into the measures folder
+    msteps = {0: [], 1: [], 2: [], 3: []}
+    for measure_folder in measure_folder_list:
+        measure_dir_orig = measure_folder[&#39;dir&#39;]
+        foldername = pathlib.Path(measure_dir_orig).stem
+        measure_dir_dest = str(pathlib.PurePath(wrkflow_dir, &#39;measures&#39;, foldername))
+        copy_tree(measure_dir_orig, measure_dir_dest)
+        # set measurestep
+        mstep = openstudio.MeasureStep(measure_dir_dest)
+        mstep.setName(foldername)
+        mstep.setDescription(measure_folder[&#39;description&#39;])
+        mstep.setModelerDescription(measure_folder[&#39;modeler_description&#39;])
+        if &#39;arguments&#39; in measure_folder.keys():
+            arguments = measure_folder[&#39;arguments&#39;]
+            for argument in arguments:
+                mstep.setArgument(argument[&#39;argument&#39;], argument[&#39;value&#39;])
+        msteps[measure_folder[&#39;type&#39;]].append(mstep)
     
-    <span class="k">for</span> <span class="n">mt_val</span> <span class="ow">in</span> <span class="n">msteps</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
-        <span class="n">measure_type</span> <span class="o">=</span> <span class="n">openstudio</span><span class="o">.</span><span class="n">MeasureType</span><span class="p">(</span><span class="n">mt_val</span><span class="p">)</span>
-        <span class="n">measure_steps</span> <span class="o">=</span> <span class="n">msteps</span><span class="p">[</span><span class="n">mt_val</span><span class="p">]</span>
-        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">measure_steps</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="n">oswrkflw</span><span class="o">.</span><span class="n">setMeasureSteps</span><span class="p">(</span><span class="n">measure_type</span><span class="p">,</span> <span class="n">measure_steps</span><span class="p">)</span>
+    for mt_val in msteps.keys():
+        measure_type = openstudio.MeasureType(mt_val)
+        measure_steps = msteps[mt_val]
+        if len(measure_steps) != 0:
+            oswrkflw.setMeasureSteps(measure_type, measure_steps)
     
-    <span class="n">wrkflw_path</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">PurePath</span><span class="p">(</span><span class="n">wrkflow_dir</span><span class="p">,</span> <span class="n">proj_name</span> <span class="o">+</span> <span class="s1">&#39;.osw&#39;</span><span class="p">))</span>
-    <span class="n">oswrkflw</span><span class="o">.</span><span class="n">saveAs</span><span class="p">(</span><span class="n">wrkflw_path</span><span class="p">)</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">wrkflw_path</span><span class="p">)</span> <span class="k">as</span> <span class="n">wrkflw_f</span><span class="p">:</span>
-        <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">wrkflw_f</span><span class="p">)</span>
-        <span class="n">steps</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;steps&#39;</span><span class="p">]</span>
-        <span class="k">for</span> <span class="n">step</span> <span class="ow">in</span> <span class="n">steps</span><span class="p">:</span>
-            <span class="n">dirname</span> <span class="o">=</span> <span class="n">step</span><span class="p">[</span><span class="s1">&#39;measure_dir_name&#39;</span><span class="p">]</span>
-            <span class="n">foldername</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">dirname</span><span class="p">)</span><span class="o">.</span><span class="n">stem</span>
-            <span class="n">step</span><span class="p">[</span><span class="s1">&#39;measure_dir_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">foldername</span>
+    wrkflw_path = str(pathlib.PurePath(wrkflow_dir, proj_name + &#39;.osw&#39;))
+    oswrkflw.saveAs(wrkflw_path)
+    with open(wrkflw_path) as wrkflw_f:
+        data = json.load(wrkflw_f)
+        steps = data[&#39;steps&#39;]
+        for step in steps:
+            dirname = step[&#39;measure_dir_name&#39;]
+            foldername = pathlib.Path(dirname).stem
+            step[&#39;measure_dir_name&#39;] = foldername
 
-    <span class="n">out_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">wrkflw_path</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> 
-    <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">out_file</span><span class="p">)</span>
-    <span class="n">out_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-    <span class="k">return</span> <span class="n">wrkflw_path</span>
+    out_file = open(wrkflw_path, &quot;w&quot;) 
+    json.dump(data, out_file)
+    out_file.close()
+    return wrkflw_path
 
-<span class="k">def</span> <span class="nf">save2idf</span><span class="p">(</span><span class="n">idf_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">openstudio_model</span><span class="p">:</span> <span class="n">osmod</span><span class="p">):</span>
-    <span class="n">ft</span> <span class="o">=</span> <span class="n">openstudio</span><span class="o">.</span><span class="n">energyplus</span><span class="o">.</span><span class="n">ForwardTranslator</span><span class="p">()</span>
-    <span class="n">idf</span> <span class="o">=</span> <span class="n">ft</span><span class="o">.</span><span class="n">translateModel</span><span class="p">(</span><span class="n">openstudio_model</span><span class="p">)</span>
-    <span class="n">idf</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">idf_path</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+def save2idf(idf_path: str, openstudio_model: osmod):
+    ft = openstudio.energyplus.ForwardTranslator()
+    idf = ft.translateModel(openstudio_model)
+    idf.save(idf_path, True)
 
-<span class="k">def</span> <span class="nf">get_ifc_facegeom</span><span class="p">(</span><span class="n">ifc_object</span><span class="p">:</span> <span class="n">ifcopenshell</span><span class="o">.</span><span class="n">entity_instance</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    get the face geometry of the ifc entty, only works with ifc entity with geometry</span>
-<span class="sd">    </span>
-<span class="sd">    Parameters</span>
-<span class="sd">    ----------</span>
-<span class="sd">    ifc_object : ifcopenshell.entity_instance.entity_instance</span>
-<span class="sd">        ifcopenshell entity.</span>
-<span class="sd">    </span>
-<span class="sd">    Returns</span>
-<span class="sd">    -------</span>
-<span class="sd">    result : tuple[np.ndarray, np.ndarray]</span>
-<span class="sd">        tuple[np.ndarray[number_of_verts, 3], np.ndarray[number_of_faces, 3]] </span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">settings</span> <span class="o">=</span> <span class="n">ifcopenshell</span><span class="o">.</span><span class="n">geom</span><span class="o">.</span><span class="n">settings</span><span class="p">()</span>
-    <span class="n">shape</span> <span class="o">=</span> <span class="n">ifcopenshell</span><span class="o">.</span><span class="n">geom</span><span class="o">.</span><span class="n">create_shape</span><span class="p">(</span><span class="n">settings</span><span class="p">,</span> <span class="n">ifc_object</span><span class="p">)</span>
-    <span class="n">verts</span> <span class="o">=</span> <span class="n">shape</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">verts</span> <span class="c1"># X Y Z of vertices in flattened list e.g. [v1x, v1y, v1z, v2x, v2y, v2z, ...]</span>
-    <span class="n">verts3d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">verts</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">verts</span><span class="p">)</span><span class="o">/</span><span class="mi">3</span><span class="p">),</span> <span class="mi">3</span><span class="p">))</span>
-    <span class="n">verts3d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">verts3d</span><span class="p">,</span> <span class="n">decimals</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span>
-    <span class="n">face_idx</span> <span class="o">=</span> <span class="n">shape</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">faces</span>
-    <span class="n">face_idx3d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">face_idx</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">face_idx</span><span class="p">)</span><span class="o">/</span><span class="mi">3</span><span class="p">),</span> <span class="mi">3</span><span class="p">))</span>
-    <span class="k">return</span> <span class="n">verts3d</span><span class="p">,</span> <span class="n">face_idx3d</span>
-
-<span class="k">def</span> <span class="nf">ifcopenshell_entity_geom2g3d</span><span class="p">(</span><span class="n">ifc_object</span><span class="p">:</span> <span class="n">ifcopenshell</span><span class="o">.</span><span class="n">entity_instance</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">geomie3d</span><span class="o">.</span><span class="n">topobj</span><span class="o">.</span><span class="n">Face</span><span class="p">]:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Retrive the triangulated faces from the ifc_object. Merge the triangulated face from the ifcopenshell geometry into a single geomie3d face. </span>
-
-<span class="sd">    Parameters</span>
-<span class="sd">    ----------</span>
-<span class="sd">    ifc_object: ifcopenshell.entity_instance.entity_instance</span>
-<span class="sd">        the ifc_object to retrieve geometry from.</span>
-<span class="sd">    </span>
-<span class="sd">    Returns</span>
-<span class="sd">    -------</span>
-<span class="sd">    faces : list[geomie3d.topobj.Face]</span>
-<span class="sd">        list of geomie3d faces.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">verts3d</span><span class="p">,</span> <span class="n">face_idx3d</span> <span class="o">=</span> <span class="n">get_ifc_facegeom</span><span class="p">(</span><span class="n">ifc_object</span><span class="p">)</span>
-    <span class="n">g3d_verts</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">create</span><span class="o">.</span><span class="n">vertex_list</span><span class="p">(</span><span class="n">verts3d</span><span class="p">)</span>
-    <span class="n">face_pts</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">take</span><span class="p">(</span><span class="n">g3d_verts</span><span class="p">,</span> <span class="n">face_idx3d</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">flist</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">fp</span> <span class="ow">in</span> <span class="n">face_pts</span><span class="p">:</span>
-        <span class="n">f</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">create</span><span class="o">.</span><span class="n">polygon_face_frm_verts</span><span class="p">(</span><span class="n">fp</span><span class="p">)</span>
-        <span class="n">flist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+def get_ifc_facegeom(ifc_object: ifcopenshell.entity_instance) -&gt; tuple[np.ndarray, np.ndarray]:
+    &quot;&quot;&quot;
+    get the face geometry of the ifc entty, only works with ifc entity with geometry
     
-    <span class="n">grp_faces</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">calculate</span><span class="o">.</span><span class="n">grp_faces_on_nrml</span><span class="p">(</span><span class="n">flist</span><span class="p">)</span>
-    <span class="n">mfs</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">grp_f</span> <span class="ow">in</span> <span class="n">grp_faces</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
-        <span class="n">outline</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">calculate</span><span class="o">.</span><span class="n">find_faces_outline</span><span class="p">(</span><span class="n">grp_f</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
-        <span class="c1"># geomie3d.viz.viz([{&#39;topo_list&#39;: outline, &#39;colour&#39;: &#39;blue&#39;}])</span>
-        <span class="n">n_loose_edges</span> <span class="o">=</span> <span class="mi">3</span>
-        <span class="n">loop_cnt</span> <span class="o">=</span> <span class="mi">0</span>
-        <span class="k">while</span> <span class="n">n_loose_edges</span> <span class="o">&gt;=</span> <span class="mi">3</span><span class="p">:</span>
-            <span class="n">path_dict</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">calculate</span><span class="o">.</span><span class="n">a_connected_path_from_edges</span><span class="p">(</span><span class="n">outline</span><span class="p">)</span>
-            <span class="n">outline</span> <span class="o">=</span> <span class="n">path_dict</span><span class="p">[</span><span class="s1">&#39;connected&#39;</span><span class="p">]</span>
-            <span class="c1"># geomie3d.viz.viz([{&#39;topo_list&#39;: outline, &#39;colour&#39;: &#39;blue&#39;}])</span>
-            <span class="n">bwire</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">create</span><span class="o">.</span><span class="n">wire_frm_edges</span><span class="p">(</span><span class="n">outline</span><span class="p">)</span>
-            <span class="n">mf</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">create</span><span class="o">.</span><span class="n">polygon_face_frm_wires</span><span class="p">(</span><span class="n">bwire</span><span class="p">)</span>
-            <span class="n">mfs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mf</span><span class="p">)</span>
-            <span class="n">outline</span> <span class="o">=</span> <span class="n">path_dict</span><span class="p">[</span><span class="s1">&#39;loose&#39;</span><span class="p">]</span>
-            <span class="k">if</span> <span class="n">loop_cnt</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-                <span class="n">n_loose_edges</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">path_dict</span><span class="p">[</span><span class="s1">&#39;loose&#39;</span><span class="p">])</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="k">if</span> <span class="n">n_loose_edges</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">path_dict</span><span class="p">[</span><span class="s1">&#39;loose&#39;</span><span class="p">])</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-                    <span class="n">n_loose_edges</span> <span class="o">=</span> <span class="mi">0</span>
-                <span class="k">else</span><span class="p">:</span>        
-                    <span class="n">n_loose_edges</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">path_dict</span><span class="p">[</span><span class="s1">&#39;loose&#39;</span><span class="p">])</span>
-            <span class="n">loop_cnt</span><span class="o">+=</span><span class="mi">1</span>
-    <span class="k">return</span> <span class="n">mfs</span>
-
-<span class="k">def</span> <span class="nf">create_rays_frm_verts</span><span class="p">(</span><span class="n">vertices</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">geomie3d</span><span class="o">.</span><span class="n">topobj</span><span class="o">.</span><span class="n">Vertex</span><span class="p">],</span> <span class="n">dir_xyz</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">float</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">geomie3d</span><span class="o">.</span><span class="n">utility</span><span class="o">.</span><span class="n">Ray</span><span class="p">]:</span>
-    <span class="n">rays</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">vertices</span><span class="p">:</span>
-        <span class="n">ray</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">create</span><span class="o">.</span><span class="n">ray</span><span class="p">(</span><span class="n">v</span><span class="o">.</span><span class="n">point</span><span class="o">.</span><span class="n">xyz</span><span class="p">,</span> <span class="n">dir_xyz</span><span class="p">)</span>
-        <span class="n">rays</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ray</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">rays</span>
-
-<span class="k">def</span> <span class="nf">extract_intx_frm_hit_rays</span><span class="p">(</span><span class="n">hit_rays</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">geomie3d</span><span class="o">.</span><span class="n">utility</span><span class="o">.</span><span class="n">Ray</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">geomie3d</span><span class="o">.</span><span class="n">topobj</span><span class="o">.</span><span class="n">Vertex</span><span class="p">]:</span>
-    <span class="n">vs</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">hit_rays</span><span class="p">:</span>
-        <span class="n">att</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">attributes</span><span class="p">[</span><span class="s1">&#39;rays_faces_intersection&#39;</span><span class="p">]</span>
-        <span class="n">intx</span> <span class="o">=</span> <span class="n">att</span><span class="p">[</span><span class="s1">&#39;intersection&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-        <span class="n">v</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">create</span><span class="o">.</span><span class="n">vertex</span><span class="p">(</span><span class="n">intx</span><span class="p">)</span>
-        <span class="n">vs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">vs</span>
-
-<span class="k">def</span> <span class="nf">setup_ppl_schedule</span><span class="p">(</span><span class="n">ruleset</span><span class="p">:</span> <span class="n">osmod</span><span class="o">.</span><span class="n">ScheduleRuleset</span><span class="p">,</span> <span class="n">act_ruleset</span><span class="p">:</span><span class="n">osmod</span><span class="o">.</span><span class="n">ScheduleRuleset</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">osmod</span><span class="o">.</span><span class="n">People</span><span class="p">:</span>
-    <span class="c1"># occupancy definition</span>
-    <span class="n">ppl_def</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">PeopleDefinition</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-    <span class="n">ppl</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">People</span><span class="p">(</span><span class="n">ppl_def</span><span class="p">)</span>
-    <span class="n">ppl</span><span class="o">.</span><span class="n">setNumberofPeopleSchedule</span><span class="p">(</span><span class="n">ruleset</span><span class="p">)</span>
-    <span class="n">ppl</span><span class="o">.</span><span class="n">setActivityLevelSchedule</span><span class="p">(</span><span class="n">act_ruleset</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">name</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="n">ppl_def</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;definition&#39;</span><span class="p">)</span>
-        <span class="n">ppl</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">ppl</span>
-
-<span class="k">def</span> <span class="nf">setup_light_schedule</span><span class="p">(</span><span class="n">ruleset</span><span class="p">:</span> <span class="n">osmod</span><span class="o">.</span><span class="n">ScheduleRuleset</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">osmod</span><span class="o">.</span><span class="n">Lights</span><span class="p">:</span>
-    <span class="c1"># light definition</span>
-    <span class="n">light_def</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">LightsDefinition</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-    <span class="n">light</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">Lights</span><span class="p">(</span><span class="n">light_def</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">name</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="n">light_def</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;_definition&#39;</span><span class="p">)</span>
-        <span class="n">light</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-    <span class="n">light</span><span class="o">.</span><span class="n">setSchedule</span><span class="p">(</span><span class="n">ruleset</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">light</span>
-
-<span class="k">def</span> <span class="nf">setup_elec_equip_schedule</span><span class="p">(</span><span class="n">ruleset</span><span class="p">:</span> <span class="n">osmod</span><span class="o">.</span><span class="n">ScheduleRuleset</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">osmod</span><span class="o">.</span><span class="n">ElectricEquipment</span><span class="p">:</span>
-    <span class="c1"># light definition</span>
-    <span class="n">elec_def</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">ElectricEquipmentDefinition</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-    <span class="n">elec_equip</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">ElectricEquipment</span><span class="p">(</span><span class="n">elec_def</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">name</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="n">elec_def</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;_definition&#39;</span><span class="p">)</span>
-        <span class="n">elec_equip</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-    <span class="n">elec_equip</span><span class="o">.</span><span class="n">setSchedule</span><span class="p">(</span><span class="n">ruleset</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">elec_equip</span>
-
-<span class="k">def</span> <span class="nf">execute_workflow</span><span class="p">(</span><span class="n">wrkflow_path</span><span class="p">:</span><span class="nb">str</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;executing workflow ...&#39;</span><span class="p">)</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">([</span><span class="s1">&#39;openstudio&#39;</span><span class="p">,</span> <span class="s1">&#39;run&#39;</span><span class="p">,</span> <span class="s1">&#39;-w&#39;</span><span class="p">,</span> <span class="n">wrkflow_path</span><span class="p">],</span> <span class="n">capture_output</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">stdout</span><span class="p">)</span>
-
-<span class="c1"># endregion: FUNCTIONS</span>
-<span class="c1">#===================================================================================================</span>
-<span class="c1"># region: MAIN</span>
-<span class="c1">#===================================================================================================</span>
-<span class="c1"># region: read the ifc file and extract all the necessary information for conversion to osm</span>
-<span class="n">model</span> <span class="o">=</span> <span class="n">ifcopenshell</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">ifc_path</span><span class="p">)</span>
-
-<span class="n">spaces</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">by_type</span><span class="p">(</span><span class="s1">&#39;IfcSpace&#39;</span><span class="p">)</span>
-<span class="n">envelope</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">space</span> <span class="ow">in</span> <span class="n">spaces</span><span class="p">:</span>
-    <span class="n">space_info</span> <span class="o">=</span> <span class="n">space</span><span class="o">.</span><span class="n">get_info</span><span class="p">()</span>
-    <span class="n">space_name</span> <span class="o">=</span> <span class="n">space_info</span><span class="p">[</span><span class="s1">&#39;LongName&#39;</span><span class="p">]</span>
-    <span class="n">mfs</span> <span class="o">=</span> <span class="n">ifcopenshell_entity_geom2g3d</span><span class="p">(</span><span class="n">space</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">cnt</span><span class="p">,</span> <span class="n">mf</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">mfs</span><span class="p">):</span>
-        <span class="n">geomie3d</span><span class="o">.</span><span class="n">modify</span><span class="o">.</span><span class="n">update_topo_att</span><span class="p">(</span><span class="n">mf</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;space&#39;</span><span class="p">:</span> <span class="n">space_name</span><span class="p">})</span>
-        <span class="n">geomie3d</span><span class="o">.</span><span class="n">modify</span><span class="o">.</span><span class="n">update_topo_att</span><span class="p">(</span><span class="n">mf</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="n">space_name</span> <span class="o">+</span> <span class="s1">&#39;_envelope_&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">cnt</span><span class="p">)})</span>
-    <span class="n">envelope</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">mfs</span><span class="p">)</span>
-
-<span class="c1"># geomie3d.viz.viz([{&#39;topo_list&#39;: envelope, &#39;colour&#39;: &#39;blue&#39;, &#39;attribute&#39;: &#39;space&#39;}])</span>
-
-<span class="n">ifc_windows</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">by_type</span><span class="p">(</span><span class="s1">&#39;IfcWindow&#39;</span><span class="p">)</span>
-<span class="n">windows</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">win</span> <span class="ow">in</span> <span class="n">ifc_windows</span><span class="p">:</span>
-    <span class="c1"># find the center point of the window</span>
-    <span class="n">verts3d</span><span class="p">,</span> <span class="n">face_idx3d</span> <span class="o">=</span> <span class="n">get_ifc_facegeom</span><span class="p">(</span><span class="n">win</span><span class="p">)</span>
-    <span class="n">g3d_verts</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">create</span><span class="o">.</span><span class="n">vertex_list</span><span class="p">(</span><span class="n">verts3d</span><span class="p">)</span>
-    <span class="n">bbox</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">calculate</span><span class="o">.</span><span class="n">bbox_frm_xyzs</span><span class="p">(</span><span class="n">verts3d</span><span class="p">)</span>
-    <span class="n">center_xyz</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">calculate</span><span class="o">.</span><span class="n">bbox_centre</span><span class="p">(</span><span class="n">bbox</span><span class="p">)</span>
-    <span class="n">center_vert</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">create</span><span class="o">.</span><span class="n">vertex</span><span class="p">(</span><span class="n">center_xyz</span><span class="p">)</span>
-    <span class="c1"># using the center point, project rays out and find the closest envelope surfaces</span>
-    <span class="n">rays</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">create</span><span class="o">.</span><span class="n">rays_d4pi_frm_verts</span><span class="p">([</span><span class="n">center_vert</span><span class="p">],</span> <span class="n">ndirs</span> <span class="o">=</span> <span class="mi">12</span><span class="p">,</span> <span class="n">vert_id</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
-    <span class="n">ray_res</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">calculate</span><span class="o">.</span><span class="n">rays_faces_intersection</span><span class="p">(</span><span class="n">rays</span><span class="p">,</span> <span class="n">envelope</span><span class="p">)</span>
-    <span class="n">hit_rays</span> <span class="o">=</span> <span class="n">ray_res</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">dists</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">hit_faces</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">hit_rays</span><span class="p">:</span>
-        <span class="n">orig</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">origin</span>
-        <span class="n">att</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">attributes</span><span class="p">[</span><span class="s1">&#39;rays_faces_intersection&#39;</span><span class="p">]</span>
-        <span class="n">hit_face</span> <span class="o">=</span> <span class="n">att</span><span class="p">[</span><span class="s1">&#39;hit_face&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-        <span class="n">intx</span> <span class="o">=</span> <span class="n">att</span><span class="p">[</span><span class="s1">&#39;intersection&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-        <span class="n">dist</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">calculate</span><span class="o">.</span><span class="n">dist_btw_xyzs</span><span class="p">(</span><span class="n">orig</span><span class="p">,</span> <span class="n">intx</span><span class="p">)</span>
-        <span class="n">hit_faces</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">hit_face</span><span class="p">)</span>
-        <span class="n">dists</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">dist</span><span class="p">)</span>
+    Parameters
+    ----------
+    ifc_object : ifcopenshell.entity_instance.entity_instance
+        ifcopenshell entity.
     
-    <span class="n">min_id</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">dists</span><span class="p">)</span>
-    <span class="n">min_face</span> <span class="o">=</span> <span class="n">hit_faces</span><span class="p">[</span><span class="n">min_id</span><span class="p">]</span>
+    Returns
+    -------
+    result : tuple[np.ndarray, np.ndarray]
+        tuple[np.ndarray[number_of_verts, 3], np.ndarray[number_of_faces, 3]] 
+    &quot;&quot;&quot;
+    settings = ifcopenshell.geom.settings()
+    shape = ifcopenshell.geom.create_shape(settings, ifc_object)
+    verts = shape.geometry.verts # X Y Z of vertices in flattened list e.g. [v1x, v1y, v1z, v2x, v2y, v2z, ...]
+    verts3d = np.reshape(verts, (int(len(verts)/3), 3))
+    verts3d = np.round(verts3d, decimals = 2)
+    face_idx = shape.geometry.faces
+    face_idx3d = np.reshape(face_idx, (int(len(face_idx)/3), 3))
+    return verts3d, face_idx3d
 
-    <span class="c1"># project the bbox onto the closest surface base on the reverse surface normal</span>
-    <span class="n">n</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">get</span><span class="o">.</span><span class="n">face_normal</span><span class="p">(</span><span class="n">min_face</span><span class="p">)</span>
-    <span class="n">n</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">calculate</span><span class="o">.</span><span class="n">reverse_vectorxyz</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-    <span class="n">n</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">decimals</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-    <span class="n">box</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">create</span><span class="o">.</span><span class="n">boxes_frm_bboxes</span><span class="p">([</span><span class="n">bbox</span><span class="p">])[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">box_faces</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">get</span><span class="o">.</span><span class="n">faces_frm_solid</span><span class="p">(</span><span class="n">box</span><span class="p">)</span>
-    <span class="n">fuse1</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">box_face</span> <span class="ow">in</span> <span class="n">box_faces</span><span class="p">:</span>
-        <span class="n">verts</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">get</span><span class="o">.</span><span class="n">vertices_frm_face</span><span class="p">(</span><span class="n">box_face</span><span class="p">)</span>
-        <span class="n">bface_rays</span> <span class="o">=</span> <span class="n">create_rays_frm_verts</span><span class="p">(</span><span class="n">verts</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
-        <span class="n">ray_res2</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">calculate</span><span class="o">.</span><span class="n">rays_faces_intersection</span><span class="p">(</span><span class="n">bface_rays</span><span class="p">,</span> <span class="p">[</span><span class="n">min_face</span><span class="p">])</span>
-        <span class="n">hit_rays2</span> <span class="o">=</span> <span class="n">ray_res2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-        <span class="n">intx_v</span> <span class="o">=</span> <span class="n">extract_intx_frm_hit_rays</span><span class="p">(</span><span class="n">hit_rays2</span><span class="p">)</span>
-        <span class="n">fused_intx</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">modify</span><span class="o">.</span><span class="n">fuse_vertices</span><span class="p">(</span><span class="n">intx_v</span><span class="p">,</span> <span class="n">decimals</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
-        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">fused_intx</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">:</span>
-            <span class="n">fuse1</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">fused_intx</span><span class="p">)</span>
-    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">fuse1</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="n">fuse2</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">modify</span><span class="o">.</span><span class="n">fuse_vertices</span><span class="p">(</span><span class="n">fuse1</span><span class="p">,</span> <span class="n">decimals</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
-        <span class="n">fuse_face</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">create</span><span class="o">.</span><span class="n">polygon_face_frm_verts</span><span class="p">(</span><span class="n">fuse2</span><span class="p">)</span>
-        <span class="k">if</span> <span class="s1">&#39;children&#39;</span> <span class="ow">in</span> <span class="n">min_face</span><span class="o">.</span><span class="n">attributes</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
-            <span class="n">min_face</span><span class="o">.</span><span class="n">attributes</span><span class="p">[</span><span class="s1">&#39;children&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fuse_face</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">min_face</span><span class="o">.</span><span class="n">attributes</span><span class="p">[</span><span class="s1">&#39;children&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">fuse_face</span><span class="p">]</span>
-        <span class="n">windows</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fuse_face</span><span class="p">)</span>
+def ifcopenshell_entity_geom2g3d(ifc_object: ifcopenshell.entity_instance) -&gt; list[geomie3d.topobj.Face]:
+    &quot;&quot;&quot;
+    Retrive the triangulated faces from the ifc_object. Merge the triangulated face from the ifcopenshell geometry into a single geomie3d face. 
 
-<span class="c1"># win_nrml_edges = geomie3d.create.pline_edges_frm_face_normals(windows)</span>
-<span class="c1"># env_nrml_edges = geomie3d.create.pline_edges_frm_face_normals(envelope)</span>
-<span class="c1"># geomie3d.viz.viz([{&#39;topo_list&#39;: windows, &#39;colour&#39;: &#39;blue&#39;},</span>
-<span class="c1">#                   {&#39;topo_list&#39;: envelope, &#39;colour&#39;: &#39;red&#39;},</span>
-<span class="c1">#                   {&#39;topo_list&#39;: win_nrml_edges, &#39;colour&#39;: &#39;green&#39;},</span>
-<span class="c1">#                   {&#39;topo_list&#39;: env_nrml_edges, &#39;colour&#39;: &#39;white&#39;}])</span>
+    Parameters
+    ----------
+    ifc_object: ifcopenshell.entity_instance.entity_instance
+        the ifc_object to retrieve geometry from.
+    
+    Returns
+    -------
+    faces : list[geomie3d.topobj.Face]
+        list of geomie3d faces.
+    &quot;&quot;&quot;
+    verts3d, face_idx3d = get_ifc_facegeom(ifc_object)
+    g3d_verts = geomie3d.create.vertex_list(verts3d)
+    face_pts = np.take(g3d_verts, face_idx3d, axis=0)
+    flist = []
+    for fp in face_pts:
+        f = geomie3d.create.polygon_face_frm_verts(fp)
+        flist.append(f)
+    
+    grp_faces = geomie3d.calculate.grp_faces_on_nrml(flist)
+    mfs = []
+    for grp_f in grp_faces[0]:
+        outline = geomie3d.calculate.find_faces_outline(grp_f)[0]
+        # geomie3d.viz.viz([{&#39;topo_list&#39;: outline, &#39;colour&#39;: &#39;blue&#39;}])
+        n_loose_edges = 3
+        loop_cnt = 0
+        while n_loose_edges &gt;= 3:
+            path_dict = geomie3d.calculate.a_connected_path_from_edges(outline)
+            outline = path_dict[&#39;connected&#39;]
+            # geomie3d.viz.viz([{&#39;topo_list&#39;: outline, &#39;colour&#39;: &#39;blue&#39;}])
+            bwire = geomie3d.create.wire_frm_edges(outline)
+            mf = geomie3d.create.polygon_face_frm_wires(bwire)
+            mfs.append(mf)
+            outline = path_dict[&#39;loose&#39;]
+            if loop_cnt == 0:
+                n_loose_edges = len(path_dict[&#39;loose&#39;])
+            else:
+                if n_loose_edges - len(path_dict[&#39;loose&#39;]) == 0:
+                    n_loose_edges = 0
+                else:        
+                    n_loose_edges = len(path_dict[&#39;loose&#39;])
+            loop_cnt+=1
+    return mfs
+
+def create_rays_frm_verts(vertices: list[geomie3d.topobj.Vertex], dir_xyz: list[float]) -&gt; list[geomie3d.utility.Ray]:
+    rays = []
+    for v in vertices:
+        ray = geomie3d.create.ray(v.point.xyz, dir_xyz)
+        rays.append(ray)
+    return rays
+
+def extract_intx_frm_hit_rays(hit_rays: list[geomie3d.utility.Ray]) -&gt; list[geomie3d.topobj.Vertex]:
+    vs = []
+    for r in hit_rays:
+        att = r.attributes[&#39;rays_faces_intersection&#39;]
+        intx = att[&#39;intersection&#39;][0]
+        v = geomie3d.create.vertex(intx)
+        vs.append(v)
+    return vs
+
+def setup_ppl_schedule(ruleset: osmod.ScheduleRuleset, act_ruleset:osmod.ScheduleRuleset, name: str = None) -&gt; osmod.People:
+    # occupancy definition
+    ppl_def = osmod.PeopleDefinition(m)
+    ppl = osmod.People(ppl_def)
+    ppl.setNumberofPeopleSchedule(ruleset)
+    ppl.setActivityLevelSchedule(act_ruleset)
+    if name != None:
+        ppl_def.setName(name + &#39;definition&#39;)
+        ppl.setName(name)
+    return ppl
+
+def setup_light_schedule(ruleset: osmod.ScheduleRuleset, name: str = None) -&gt; osmod.Lights:
+    # light definition
+    light_def = osmod.LightsDefinition(m)
+    light = osmod.Lights(light_def)
+    if name != None:
+        light_def.setName(name + &#39;_definition&#39;)
+        light.setName(name)
+    light.setSchedule(ruleset)
+    return light
+
+def setup_elec_equip_schedule(ruleset: osmod.ScheduleRuleset, name: str = None) -&gt; osmod.ElectricEquipment:
+    # light definition
+    elec_def = osmod.ElectricEquipmentDefinition(m)
+    elec_equip = osmod.ElectricEquipment(elec_def)
+    if name != None:
+        elec_def.setName(name + &#39;_definition&#39;)
+        elec_equip.setName(name)
+    elec_equip.setSchedule(ruleset)
+    return elec_equip
+
+def execute_workflow(wrkflow_path:str):
+    print(&#39;executing workflow ...&#39;)
+    result = subprocess.run([&#39;openstudio&#39;, &#39;run&#39;, &#39;-w&#39;, wrkflow_path], capture_output=True, text=True)
+    print(result.stdout)
+
+#endregion: FUNCTIONS
+#===================================================================================================
+# region: MAIN
+#===================================================================================================
+# region: read the ifc file and extract all the necessary information for conversion to osm
+model = ifcopenshell.open(ifc_path)
+
+spaces = model.by_type(&#39;IfcSpace&#39;)
+envelope = []
+for space in spaces:
+    space_info = space.get_info()
+    space_name = space_info[&#39;LongName&#39;]
+    mfs = ifcopenshell_entity_geom2g3d(space)
+    for cnt, mf in enumerate(mfs):
+        geomie3d.modify.update_topo_att(mf, {&#39;space&#39;: space_name})
+        geomie3d.modify.update_topo_att(mf, {&#39;name&#39;: space_name + &#39;_envelope_&#39; + str(cnt)})
+    envelope.extend(mfs)
+
+#geomie3d.viz.viz([{&#39;topo_list&#39;: envelope, &#39;colour&#39;: &#39;blue&#39;, &#39;attribute&#39;: &#39;space&#39;}])
+
+ifc_windows = model.by_type(&#39;IfcWindow&#39;)
+windows = []
+for win in ifc_windows:
+    # find the center point of the window
+    verts3d, face_idx3d = get_ifc_facegeom(win)
+    g3d_verts = geomie3d.create.vertex_list(verts3d)
+    bbox = geomie3d.calculate.bbox_frm_xyzs(verts3d)
+    center_xyz = geomie3d.calculate.bbox_centre(bbox)
+    center_vert = geomie3d.create.vertex(center_xyz)
+    # using the center point, project rays out and find the closest envelope surfaces
+    rays = geomie3d.create.rays_d4pi_frm_verts([center_vert], ndirs = 12, vert_id = False)
+    ray_res = geomie3d.calculate.rays_faces_intersection(rays, envelope)
+    hit_rays = ray_res[0]
+    dists = []
+    hit_faces = []
+    for r in hit_rays:
+        orig = r.origin
+        att = r.attributes[&#39;rays_faces_intersection&#39;]
+        hit_face = att[&#39;hit_face&#39;][0]
+        intx = att[&#39;intersection&#39;][0]
+        dist = geomie3d.calculate.dist_btw_xyzs(orig, intx)
+        hit_faces.append(hit_face)
+        dists.append(dist)
+    
+    min_id = np.argmin(dists)
+    min_face = hit_faces[min_id]
+
+    # project the bbox onto the closest surface base on the reverse surface normal
+    n = geomie3d.get.face_normal(min_face)
+    n = geomie3d.calculate.reverse_vectorxyz(n)
+    n = np.round(n, decimals=3)
+    box = geomie3d.create.boxes_frm_bboxes([bbox])[0]
+    box_faces = geomie3d.get.faces_frm_solid(box)
+    fuse1 = []
+    for box_face in box_faces:
+        verts = geomie3d.get.vertices_frm_face(box_face)
+        bface_rays = create_rays_frm_verts(verts, n)
+        ray_res2 = geomie3d.calculate.rays_faces_intersection(bface_rays, [min_face])
+        hit_rays2 = ray_res2[0]
+        intx_v = extract_intx_frm_hit_rays(hit_rays2)
+        fused_intx = geomie3d.modify.fuse_vertices(intx_v, decimals=4)
+        if len(fused_intx) &gt; 3:
+            fuse1.extend(fused_intx)
+    if len(fuse1) != 0:
+        fuse2 = geomie3d.modify.fuse_vertices(fuse1, decimals=4)
+        fuse_face = geomie3d.create.polygon_face_frm_verts(fuse2)
+        if &#39;children&#39; in min_face.attributes.keys():
+            min_face.attributes[&#39;children&#39;].append(fuse_face)
+        else:
+            min_face.attributes[&#39;children&#39;] = [fuse_face]
+        windows.append(fuse_face)
+
+# win_nrml_edges = geomie3d.create.pline_edges_frm_face_normals(windows)
+# env_nrml_edges = geomie3d.create.pline_edges_frm_face_normals(envelope)
+# geomie3d.viz.viz([{&#39;topo_list&#39;: windows, &#39;colour&#39;: &#39;blue&#39;},
+#                   {&#39;topo_list&#39;: envelope, &#39;colour&#39;: &#39;red&#39;},
+#                   {&#39;topo_list&#39;: win_nrml_edges, &#39;colour&#39;: &#39;green&#39;},
+#                   {&#39;topo_list&#39;: env_nrml_edges, &#39;colour&#39;: &#39;white&#39;}])
         
-<span class="c1"># endregion</span>
-<span class="c1">#------------------------------------------------------------------------------------------------------</span>
-<span class="c1"># region: convert the geometry to openstudio</span>
-<span class="c1">#------------------------------------------------------------------------------------------------------</span>
-<span class="n">m</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">Model</span><span class="p">()</span>
-<span class="n">osbldgstry</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">BuildingStory</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-<span class="n">osbldgstry</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s1">&#39;Mezzanine Level&#39;</span><span class="p">)</span>
+# endregion
+#------------------------------------------------------------------------------------------------------
+# region: convert the geometry to openstudio
+#------------------------------------------------------------------------------------------------------
+m = osmod.Model()
+osbldgstry = osmod.BuildingStory(m)
+osbldgstry.setName(&#39;Mezzanine Level&#39;)
 
-<span class="n">epwfile</span> <span class="o">=</span> <span class="n">openstudio</span><span class="o">.</span><span class="n">openstudioutilitiesfiletypes</span><span class="o">.</span><span class="n">EpwFile</span><span class="p">(</span><span class="n">epw_path</span><span class="p">)</span>
-<span class="n">oswrkflw</span> <span class="o">=</span> <span class="n">openstudio</span><span class="o">.</span><span class="n">WorkflowJSON</span><span class="p">()</span>
-<span class="n">m</span><span class="o">.</span><span class="n">setWorkflowJSON</span><span class="p">(</span><span class="n">oswrkflw</span><span class="p">)</span>
-<span class="n">oswf</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">getWeatherFile</span><span class="p">()</span>
-<span class="n">oswf</span><span class="o">.</span><span class="n">setWeatherFile</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">epwfile</span><span class="p">)</span>
+epwfile = openstudio.openstudioutilitiesfiletypes.EpwFile(epw_path)
+oswrkflw = openstudio.WorkflowJSON()
+m.setWorkflowJSON(oswrkflw)
+oswf = m.getWeatherFile()
+oswf.setWeatherFile(m, epwfile)
 
-<span class="n">osm_sitegrd</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">SiteGroundTemperatureBuildingSurface</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">12</span><span class="p">):</span>
-    <span class="n">temp</span> <span class="o">=</span> <span class="n">osm_sitegrd</span><span class="o">.</span><span class="n">setTemperatureByMonth</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="mf">25.0</span><span class="p">)</span>
+osm_sitegrd = osmod.SiteGroundTemperatureBuildingSurface(m)
+for i in range(12):
+    temp = osm_sitegrd.setTemperatureByMonth(i+1, 25.0)
 
-<span class="c1"># create wall materials and construction</span>
-<span class="n">metal_clad_mat</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">MasslessOpaqueMaterial</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="s2">&quot;Rough&quot;</span><span class="p">,</span> <span class="mf">0.36</span><span class="p">)</span>
-<span class="n">metal_clad_mat</span><span class="o">.</span><span class="n">setThermalAbsorptance</span><span class="p">(</span><span class="mf">0.9</span><span class="p">)</span>
-<span class="n">metal_clad_mat</span><span class="o">.</span><span class="n">setSolarAbsorptance</span> <span class="p">(</span><span class="mf">0.7</span><span class="p">)</span>
-<span class="n">metal_clad_mat</span><span class="o">.</span><span class="n">setVisibleAbsorptance</span> <span class="p">(</span><span class="mf">0.7</span><span class="p">)</span>
+# create wall materials and construction
+metal_clad_mat = osmod.MasslessOpaqueMaterial(m, &quot;Rough&quot;, 0.36)
+metal_clad_mat.setThermalAbsorptance(0.9)
+metal_clad_mat.setSolarAbsorptance (0.7)
+metal_clad_mat.setVisibleAbsorptance (0.7)
 
-<span class="n">cement_board_mat</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">StandardOpaqueMaterial</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="s2">&quot;Smooth&quot;</span><span class="p">,</span> <span class="mf">0.009</span><span class="p">,</span> 
-                                                <span class="mf">0.58</span><span class="p">,</span> <span class="mi">1900</span><span class="p">,</span> <span class="mi">1400</span><span class="p">)</span>
-<span class="n">wall_const</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">Construction</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-<span class="n">wall_const</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s1">&#39;wall_construction&#39;</span><span class="p">)</span>
-<span class="n">wall_const</span><span class="o">.</span><span class="n">setLayers</span><span class="p">([</span><span class="n">metal_clad_mat</span><span class="p">,</span> <span class="n">cement_board_mat</span><span class="p">])</span>
+cement_board_mat = osmod.StandardOpaqueMaterial(m, &quot;Smooth&quot;, 0.009, 
+                                                0.58, 1900, 1400)
+wall_const = osmod.Construction(m)
+wall_const.setName(&#39;wall_construction&#39;)
+wall_const.setLayers([metal_clad_mat, cement_board_mat])
 
-<span class="c1"># create window material and construction</span>
-<span class="n">lowe_glz_mat</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">SimpleGlazing</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="mf">1.4</span><span class="p">,</span> <span class="mf">0.62</span><span class="p">)</span>
-<span class="n">lowe_glz_mat</span><span class="o">.</span><span class="n">setVisibleTransmittance</span><span class="p">(</span><span class="mf">0.78</span><span class="p">)</span>
-<span class="n">win_const</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">Construction</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-<span class="n">win_const</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s1">&#39;win_construction&#39;</span><span class="p">)</span>
-<span class="n">win_const</span><span class="o">.</span><span class="n">setLayers</span><span class="p">([</span><span class="n">lowe_glz_mat</span><span class="p">])</span>
+# create window material and construction
+lowe_glz_mat = osmod.SimpleGlazing(m, 1.4, 0.62)
+lowe_glz_mat.setVisibleTransmittance(0.78)
+win_const = osmod.Construction(m)
+win_const.setName(&#39;win_construction&#39;)
+win_const.setLayers([lowe_glz_mat])
 
-<span class="n">space_ls</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">env_srf</span> <span class="ow">in</span> <span class="n">envelope</span><span class="p">:</span>
-    <span class="n">srf_att</span> <span class="o">=</span> <span class="n">env_srf</span><span class="o">.</span><span class="n">attributes</span>
-    <span class="n">osspace_name</span> <span class="o">=</span> <span class="n">srf_att</span><span class="p">[</span><span class="s1">&#39;space&#39;</span><span class="p">]</span>
-    <span class="k">if</span> <span class="n">osspace_name</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">space_ls</span><span class="p">:</span>
-        <span class="n">oszone</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">ThermalZone</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-        <span class="c1"># oszone.setUseIdealAirLoads(True)</span>
-        <span class="n">osspace</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">Space</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-        <span class="n">osspace</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="n">osspace_name</span><span class="p">)</span>
-        <span class="n">osspace</span><span class="o">.</span><span class="n">setBuildingStory</span><span class="p">(</span><span class="n">osbldgstry</span><span class="p">)</span>
-        <span class="n">osspace</span><span class="o">.</span><span class="n">setThermalZone</span><span class="p">(</span><span class="n">oszone</span><span class="p">)</span>
-        <span class="n">space_ls</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">osspace_name</span><span class="p">)</span>
+space_ls = []
+for env_srf in envelope:
+    srf_att = env_srf.attributes
+    osspace_name = srf_att[&#39;space&#39;]
+    if osspace_name not in space_ls:
+        oszone = osmod.ThermalZone(m)
+        # oszone.setUseIdealAirLoads(True)
+        osspace = osmod.Space(m)
+        osspace.setName(osspace_name)
+        osspace.setBuildingStory(osbldgstry)
+        osspace.setThermalZone(oszone)
+        space_ls.append(osspace_name)
 
-    <span class="n">nrml</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">get</span><span class="o">.</span><span class="n">face_normal</span><span class="p">(</span><span class="n">env_srf</span><span class="p">)</span>
-    <span class="n">vs</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">get</span><span class="o">.</span><span class="n">vertices_frm_face</span><span class="p">(</span><span class="n">env_srf</span><span class="p">)</span>
-    <span class="n">pt3ds</span> <span class="o">=</span> <span class="n">g3dverts2ospt3d</span><span class="p">(</span><span class="n">vs</span><span class="p">,</span> <span class="n">decimals</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
-    <span class="n">ossrf</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">Surface</span><span class="p">(</span><span class="n">pt3ds</span><span class="p">,</span> <span class="n">m</span><span class="p">)</span>
-    <span class="n">ossrf</span><span class="o">.</span><span class="n">setSpace</span><span class="p">(</span><span class="n">osspace</span><span class="p">)</span>
-    <span class="n">ossrf</span><span class="o">.</span><span class="n">setConstruction</span><span class="p">(</span><span class="n">wall_const</span><span class="p">)</span>
+    nrml = geomie3d.get.face_normal(env_srf)
+    vs = geomie3d.get.vertices_frm_face(env_srf)
+    pt3ds = g3dverts2ospt3d(vs, decimals = 1)
+    ossrf = osmod.Surface(pt3ds, m)
+    ossrf.setSpace(osspace)
+    ossrf.setConstruction(wall_const)
 
-    <span class="k">if</span> <span class="s1">&#39;children&#39;</span> <span class="ow">in</span> <span class="n">srf_att</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
-        <span class="n">children</span> <span class="o">=</span> <span class="n">env_srf</span><span class="o">.</span><span class="n">attributes</span><span class="p">[</span><span class="s1">&#39;children&#39;</span><span class="p">]</span>
-        <span class="n">parent_nrml</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">get</span><span class="o">.</span><span class="n">face_normal</span><span class="p">(</span><span class="n">env_srf</span><span class="p">)</span>
-        <span class="n">parent_nrml</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">parent_nrml</span><span class="p">,</span> <span class="n">decimals</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-        <span class="k">for</span> <span class="n">child_srf</span> <span class="ow">in</span> <span class="n">children</span><span class="p">:</span>
-            <span class="n">child_nrml</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">get</span><span class="o">.</span><span class="n">face_normal</span><span class="p">(</span><span class="n">child_srf</span><span class="p">)</span>
-            <span class="n">child_nrml</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">child_nrml</span><span class="p">,</span> <span class="n">decimals</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-            <span class="n">child_vs</span> <span class="o">=</span> <span class="n">geomie3d</span><span class="o">.</span><span class="n">get</span><span class="o">.</span><span class="n">vertices_frm_face</span><span class="p">(</span><span class="n">child_srf</span><span class="p">)</span>
-            <span class="n">child_pt3ds</span> <span class="o">=</span> <span class="n">g3dverts2ospt3d</span><span class="p">(</span><span class="n">child_vs</span><span class="p">,</span> <span class="n">decimals</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-            <span class="c1"># print(child_nrml, parent_nrml)</span>
-            <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">child_nrml</span> <span class="o">==</span> <span class="n">parent_nrml</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
-                <span class="n">child_pt3ds</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
-            <span class="c1"># for pt in child_pt3ds:</span>
-            <span class="c1">#     print(pt.x(), pt.y(), pt.z())</span>
-            <span class="n">child_ossrf</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">SubSurface</span><span class="p">(</span><span class="n">child_pt3ds</span><span class="p">,</span> <span class="n">m</span><span class="p">)</span>
-            <span class="n">child_ossrf</span><span class="o">.</span><span class="n">setSurface</span><span class="p">(</span><span class="n">ossrf</span><span class="p">)</span>
-            <span class="n">child_ossrf</span><span class="o">.</span><span class="n">setConstruction</span><span class="p">(</span><span class="n">win_const</span><span class="p">)</span>
-            <span class="c1"># print(child_ossrf)</span>
+    if &#39;children&#39; in srf_att.keys():
+        children = env_srf.attributes[&#39;children&#39;]
+        parent_nrml = geomie3d.get.face_normal(env_srf)
+        parent_nrml = np.round(parent_nrml, decimals=3)
+        for child_srf in children:
+            child_nrml = geomie3d.get.face_normal(child_srf)
+            child_nrml = np.round(child_nrml, decimals=3)
+            child_vs = geomie3d.get.vertices_frm_face(child_srf)
+            child_pt3ds = g3dverts2ospt3d(child_vs, decimals=1)
+            # print(child_nrml, parent_nrml)
+            if not (child_nrml == parent_nrml).all():
+                child_pt3ds.reverse()
+            # for pt in child_pt3ds:
+            #     print(pt.x(), pt.y(), pt.z())
+            child_ossrf = osmod.SubSurface(child_pt3ds, m)
+            child_ossrf.setSurface(ossrf)
+            child_ossrf.setConstruction(win_const)
+            # print(child_ossrf)
 
-<span class="c1"># setup time</span>
-<span class="n">time9</span> <span class="o">=</span> <span class="n">openstudio</span><span class="o">.</span><span class="n">openstudioutilitiestime</span><span class="o">.</span><span class="n">Time</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">time17</span> <span class="o">=</span> <span class="n">openstudio</span><span class="o">.</span><span class="n">openstudioutilitiestime</span><span class="o">.</span><span class="n">Time</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">17</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">time24</span> <span class="o">=</span> <span class="n">openstudio</span><span class="o">.</span><span class="n">openstudioutilitiestime</span><span class="o">.</span><span class="n">Time</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">24</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+# setup time
+time9 = openstudio.openstudioutilitiestime.Time(0,9,0,0)
+time17 = openstudio.openstudioutilitiestime.Time(0,17,0,0)
+time24 = openstudio.openstudioutilitiestime.Time(0,24,0,0)
 
-<span class="c1"># region:setup schedule type limits</span>
-<span class="n">sch_type_lim_frac</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">ScheduleTypeLimits</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-<span class="n">sch_type_lim_frac</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s1">&#39;fractional&#39;</span><span class="p">)</span>
-<span class="n">sch_type_lim_frac</span><span class="o">.</span><span class="n">setLowerLimitValue</span><span class="p">(</span><span class="mf">0.0</span><span class="p">)</span>
-<span class="n">sch_type_lim_frac</span><span class="o">.</span><span class="n">setUpperLimitValue</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span>
-<span class="n">sch_type_lim_frac</span><span class="o">.</span><span class="n">setNumericType</span><span class="p">(</span><span class="s1">&#39;Continuous&#39;</span><span class="p">)</span>
+# region:setup schedule type limits
+sch_type_lim_frac = osmod.ScheduleTypeLimits(m)
+sch_type_lim_frac.setName(&#39;fractional&#39;)
+sch_type_lim_frac.setLowerLimitValue(0.0)
+sch_type_lim_frac.setUpperLimitValue(1.0)
+sch_type_lim_frac.setNumericType(&#39;Continuous&#39;)
 
-<span class="n">sch_type_lim_temp</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">ScheduleTypeLimits</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-<span class="n">sch_type_lim_temp</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s1">&#39;temperature&#39;</span><span class="p">)</span>
-<span class="n">sch_type_lim_temp</span><span class="o">.</span><span class="n">setLowerLimitValue</span><span class="p">(</span><span class="o">-</span><span class="mi">60</span><span class="p">)</span>
-<span class="n">sch_type_lim_temp</span><span class="o">.</span><span class="n">setUpperLimitValue</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
-<span class="n">sch_type_lim_temp</span><span class="o">.</span><span class="n">setNumericType</span><span class="p">(</span><span class="s1">&#39;Continuous&#39;</span><span class="p">)</span>
-<span class="n">sch_type_lim_temp</span><span class="o">.</span><span class="n">setUnitType</span><span class="p">(</span><span class="s1">&#39;Temperature&#39;</span><span class="p">)</span>
+sch_type_lim_temp = osmod.ScheduleTypeLimits(m)
+sch_type_lim_temp.setName(&#39;temperature&#39;)
+sch_type_lim_temp.setLowerLimitValue(-60)
+sch_type_lim_temp.setUpperLimitValue(200)
+sch_type_lim_temp.setNumericType(&#39;Continuous&#39;)
+sch_type_lim_temp.setUnitType(&#39;Temperature&#39;)
 
-<span class="n">sch_type_lim_act</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">ScheduleTypeLimits</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-<span class="n">sch_type_lim_act</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s1">&#39;activity&#39;</span><span class="p">)</span>
-<span class="n">sch_type_lim_act</span><span class="o">.</span><span class="n">setLowerLimitValue</span><span class="p">(</span><span class="mi">75</span><span class="p">)</span>
-<span class="c1"># sch_type_lim_act.setUpperLimitValue(500)</span>
-<span class="n">sch_type_lim_act</span><span class="o">.</span><span class="n">setNumericType</span><span class="p">(</span><span class="s1">&#39;Continuous&#39;</span><span class="p">)</span>
-<span class="n">sch_type_lim_act</span><span class="o">.</span><span class="n">setUnitType</span><span class="p">(</span><span class="s1">&#39;ActivityLevel&#39;</span><span class="p">)</span>
-<span class="c1"># endregion:setup schedule type limits</span>
-<span class="c1"># region: setup occ schedule</span>
-<span class="n">sch_day_occ</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">ScheduleDay</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-<span class="n">sch_day_occ</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s1">&#39;weekday occupancy&#39;</span><span class="p">)</span>
-<span class="n">sch_day_occ</span><span class="o">.</span><span class="n">setScheduleTypeLimits</span><span class="p">(</span><span class="n">sch_type_lim_frac</span><span class="p">)</span>
-<span class="n">sch_day_occ</span><span class="o">.</span><span class="n">addValue</span><span class="p">(</span><span class="n">time9</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
-<span class="n">sch_day_occ</span><span class="o">.</span><span class="n">addValue</span><span class="p">(</span><span class="n">time17</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
+sch_type_lim_act = osmod.ScheduleTypeLimits(m)
+sch_type_lim_act.setName(&#39;activity&#39;)
+sch_type_lim_act.setLowerLimitValue(75)
+# sch_type_lim_act.setUpperLimitValue(500)
+sch_type_lim_act.setNumericType(&#39;Continuous&#39;)
+sch_type_lim_act.setUnitType(&#39;ActivityLevel&#39;)
+# endregion:setup schedule type limits
+# region: setup occ schedule
+sch_day_occ = osmod.ScheduleDay(m)
+sch_day_occ.setName(&#39;weekday occupancy&#39;)
+sch_day_occ.setScheduleTypeLimits(sch_type_lim_frac)
+sch_day_occ.addValue(time9, 0.0)
+sch_day_occ.addValue(time17, 1.0)
 
-<span class="n">sch_ruleset_occ</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">ScheduleRuleset</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-<span class="n">sch_ruleset_occ</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s1">&#39;occupancy schedule&#39;</span><span class="p">)</span>
-<span class="n">sch_ruleset_occ</span><span class="o">.</span><span class="n">setScheduleTypeLimits</span><span class="p">(</span><span class="n">sch_type_lim_frac</span><span class="p">)</span>
+sch_ruleset_occ = osmod.ScheduleRuleset(m)
+sch_ruleset_occ.setName(&#39;occupancy schedule&#39;)
+sch_ruleset_occ.setScheduleTypeLimits(sch_type_lim_frac)
 
-<span class="n">sch_rule_occ</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">ScheduleRule</span><span class="p">(</span><span class="n">sch_ruleset_occ</span><span class="p">,</span> <span class="n">sch_day_occ</span><span class="p">)</span>
-<span class="n">sch_rule_occ</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s1">&#39;occupancy weekdays&#39;</span><span class="p">)</span>
-<span class="n">sch_rule_occ</span><span class="o">.</span><span class="n">setApplyWeekdays</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
-<span class="c1"># endregion: setup occ schedule</span>
-<span class="c1"># region: setup activity schedule</span>
-<span class="n">sch_day_act</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">ScheduleDay</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-<span class="n">sch_day_act</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s1">&#39;weekday activity&#39;</span><span class="p">)</span>
-<span class="n">sch_day_act</span><span class="o">.</span><span class="n">setScheduleTypeLimits</span><span class="p">(</span><span class="n">sch_type_lim_act</span><span class="p">)</span>
-<span class="n">sch_day_act</span><span class="o">.</span><span class="n">addValue</span><span class="p">(</span><span class="n">time24</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
+sch_rule_occ = osmod.ScheduleRule(sch_ruleset_occ, sch_day_occ)
+sch_rule_occ.setName(&#39;occupancy weekdays&#39;)
+sch_rule_occ.setApplyWeekdays(True)
+# endregion: setup occ schedule
+# region: setup activity schedule
+sch_day_act = osmod.ScheduleDay(m)
+sch_day_act.setName(&#39;weekday activity&#39;)
+sch_day_act.setScheduleTypeLimits(sch_type_lim_act)
+sch_day_act.addValue(time24, 90)
 
-<span class="n">sch_ruleset_act</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">ScheduleRuleset</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-<span class="n">sch_ruleset_act</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s1">&#39;activity schedule&#39;</span><span class="p">)</span>
-<span class="n">sch_ruleset_act</span><span class="o">.</span><span class="n">setScheduleTypeLimits</span><span class="p">(</span><span class="n">sch_type_lim_act</span><span class="p">)</span>
+sch_ruleset_act = osmod.ScheduleRuleset(m)
+sch_ruleset_act.setName(&#39;activity schedule&#39;)
+sch_ruleset_act.setScheduleTypeLimits(sch_type_lim_act)
 
-<span class="n">sch_rule_act</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">ScheduleRule</span><span class="p">(</span><span class="n">sch_ruleset_act</span><span class="p">,</span> <span class="n">sch_day_act</span><span class="p">)</span>
-<span class="n">sch_rule_act</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s1">&#39;activity weekdays&#39;</span><span class="p">)</span>
-<span class="n">sch_rule_act</span><span class="o">.</span><span class="n">setApplyWeekdays</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
-<span class="c1"># endregion: setup activity schedule</span>
-<span class="c1"># region: setup thermostat cooling setpoint</span>
-<span class="n">sch_day_cool_tstat</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">ScheduleDay</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-<span class="n">sch_day_cool_tstat</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s1">&#39;thermostat cooling weekday schedule&#39;</span><span class="p">)</span>
-<span class="n">sch_day_cool_tstat</span><span class="o">.</span><span class="n">setScheduleTypeLimits</span><span class="p">(</span><span class="n">sch_type_lim_temp</span><span class="p">)</span>
-<span class="n">sch_day_cool_tstat</span><span class="o">.</span><span class="n">addValue</span><span class="p">(</span><span class="n">time9</span><span class="p">,</span> <span class="mf">60.0</span><span class="p">)</span>
-<span class="n">sch_day_cool_tstat</span><span class="o">.</span><span class="n">addValue</span><span class="p">(</span><span class="n">time17</span><span class="p">,</span> <span class="mf">25.0</span><span class="p">)</span>
-<span class="n">sch_day_cool_tstat</span><span class="o">.</span><span class="n">addValue</span><span class="p">(</span><span class="n">time24</span><span class="p">,</span> <span class="mf">60.0</span><span class="p">)</span>
+sch_rule_act = osmod.ScheduleRule(sch_ruleset_act, sch_day_act)
+sch_rule_act.setName(&#39;activity weekdays&#39;)
+sch_rule_act.setApplyWeekdays(True)
+# endregion: setup activity schedule
+# region: setup thermostat cooling setpoint
+sch_day_cool_tstat = osmod.ScheduleDay(m)
+sch_day_cool_tstat.setName(&#39;thermostat cooling weekday schedule&#39;)
+sch_day_cool_tstat.setScheduleTypeLimits(sch_type_lim_temp)
+sch_day_cool_tstat.addValue(time9, 60.0)
+sch_day_cool_tstat.addValue(time17, 25.0)
+sch_day_cool_tstat.addValue(time24, 60.0)
 
-<span class="n">sch_day_cool_tstat2</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">ScheduleDay</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-<span class="n">sch_day_cool_tstat2</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s1">&#39;thermostat cooling weekends schedule&#39;</span><span class="p">)</span>
-<span class="n">sch_day_cool_tstat2</span><span class="o">.</span><span class="n">setScheduleTypeLimits</span><span class="p">(</span><span class="n">sch_type_lim_temp</span><span class="p">)</span>
-<span class="n">sch_day_cool_tstat2</span><span class="o">.</span><span class="n">addValue</span><span class="p">(</span><span class="n">time24</span><span class="p">,</span> <span class="mf">60.0</span><span class="p">)</span>
+sch_day_cool_tstat2 = osmod.ScheduleDay(m)
+sch_day_cool_tstat2.setName(&#39;thermostat cooling weekends schedule&#39;)
+sch_day_cool_tstat2.setScheduleTypeLimits(sch_type_lim_temp)
+sch_day_cool_tstat2.addValue(time24, 60.0)
 
-<span class="n">sch_ruleset_cool_tstat</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">ScheduleRuleset</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-<span class="n">sch_ruleset_cool_tstat</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s1">&#39;thermostat cooling ruleset&#39;</span><span class="p">)</span>
-<span class="n">sch_ruleset_cool_tstat</span><span class="o">.</span><span class="n">setScheduleTypeLimits</span><span class="p">(</span><span class="n">sch_type_lim_temp</span><span class="p">)</span>
+sch_ruleset_cool_tstat = osmod.ScheduleRuleset(m)
+sch_ruleset_cool_tstat.setName(&#39;thermostat cooling ruleset&#39;)
+sch_ruleset_cool_tstat.setScheduleTypeLimits(sch_type_lim_temp)
 
-<span class="n">sch_rule_cool_tstat</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">ScheduleRule</span><span class="p">(</span><span class="n">sch_ruleset_cool_tstat</span><span class="p">,</span> <span class="n">sch_day_cool_tstat</span><span class="p">)</span>
-<span class="n">sch_rule_cool_tstat</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s1">&#39;thermostat cooling weekday rule&#39;</span><span class="p">)</span>
-<span class="n">sch_rule_cool_tstat</span><span class="o">.</span><span class="n">setApplyWeekdays</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+sch_rule_cool_tstat = osmod.ScheduleRule(sch_ruleset_cool_tstat, sch_day_cool_tstat)
+sch_rule_cool_tstat.setName(&#39;thermostat cooling weekday rule&#39;)
+sch_rule_cool_tstat.setApplyWeekdays(True)
 
-<span class="n">sch_rule_cool_tstat</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">ScheduleRule</span><span class="p">(</span><span class="n">sch_ruleset_cool_tstat</span><span class="p">,</span> <span class="n">sch_day_cool_tstat2</span><span class="p">)</span>
-<span class="n">sch_rule_cool_tstat</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s1">&#39;thermostat cooling weekend rule&#39;</span><span class="p">)</span>
-<span class="n">sch_rule_cool_tstat</span><span class="o">.</span><span class="n">setApplyWeekends</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+sch_rule_cool_tstat = osmod.ScheduleRule(sch_ruleset_cool_tstat, sch_day_cool_tstat2)
+sch_rule_cool_tstat.setName(&#39;thermostat cooling weekend rule&#39;)
+sch_rule_cool_tstat.setApplyWeekends(True)
 
-<span class="c1"># endregion: setup thermostat cooling setpoint</span>
-<span class="c1"># region: setup thermostat heating setpoint</span>
-<span class="n">sch_day_hot_tstat</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">ScheduleDay</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-<span class="n">sch_day_hot_tstat</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s1">&#39;thermostat heating weekday schedule&#39;</span><span class="p">)</span>
-<span class="n">sch_day_hot_tstat</span><span class="o">.</span><span class="n">setScheduleTypeLimits</span><span class="p">(</span><span class="n">sch_type_lim_temp</span><span class="p">)</span>
-<span class="n">sch_day_hot_tstat</span><span class="o">.</span><span class="n">addValue</span><span class="p">(</span><span class="n">time9</span><span class="p">,</span> <span class="o">-</span><span class="mf">10.0</span><span class="p">)</span>
-<span class="n">sch_day_hot_tstat</span><span class="o">.</span><span class="n">addValue</span><span class="p">(</span><span class="n">time17</span><span class="p">,</span> <span class="o">-</span><span class="mf">10.0</span><span class="p">)</span>
-<span class="n">sch_day_hot_tstat</span><span class="o">.</span><span class="n">addValue</span><span class="p">(</span><span class="n">time24</span><span class="p">,</span> <span class="o">-</span><span class="mf">10.0</span><span class="p">)</span>
+# endregion: setup thermostat cooling setpoint
+# region: setup thermostat heating setpoint
+sch_day_hot_tstat = osmod.ScheduleDay(m)
+sch_day_hot_tstat.setName(&#39;thermostat heating weekday schedule&#39;)
+sch_day_hot_tstat.setScheduleTypeLimits(sch_type_lim_temp)
+sch_day_hot_tstat.addValue(time9, -10.0)
+sch_day_hot_tstat.addValue(time17, -10.0)
+sch_day_hot_tstat.addValue(time24, -10.0)
 
-<span class="n">sch_ruleset_hot_tstat</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">ScheduleRuleset</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-<span class="n">sch_ruleset_hot_tstat</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s1">&#39;thermostat heating ruleset&#39;</span><span class="p">)</span>
-<span class="n">sch_ruleset_hot_tstat</span><span class="o">.</span><span class="n">setScheduleTypeLimits</span><span class="p">(</span><span class="n">sch_type_lim_temp</span><span class="p">)</span>
+sch_ruleset_hot_tstat = osmod.ScheduleRuleset(m)
+sch_ruleset_hot_tstat.setName(&#39;thermostat heating ruleset&#39;)
+sch_ruleset_hot_tstat.setScheduleTypeLimits(sch_type_lim_temp)
 
-<span class="n">sch_rule_hot_tstat</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">ScheduleRule</span><span class="p">(</span><span class="n">sch_ruleset_hot_tstat</span><span class="p">,</span> <span class="n">sch_day_hot_tstat</span><span class="p">)</span>
-<span class="n">sch_rule_hot_tstat</span><span class="o">.</span><span class="n">setName</span><span class="p">(</span><span class="s1">&#39;thermostat heating weekday rule&#39;</span><span class="p">)</span>
-<span class="n">sch_rule_hot_tstat</span><span class="o">.</span><span class="n">setApplyAllDays</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
-<span class="c1"># endregion: setup thermostat heating setpoint</span>
+sch_rule_hot_tstat = osmod.ScheduleRule(sch_ruleset_hot_tstat, sch_day_hot_tstat)
+sch_rule_hot_tstat.setName(&#39;thermostat heating weekday rule&#39;)
+sch_rule_hot_tstat.setApplyAllDays(True)
+# endregion: setup thermostat heating setpoint
 
-<span class="n">tstat</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">ThermostatSetpointDualSetpoint</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-<span class="n">tstat</span><span class="o">.</span><span class="n">setCoolingSetpointTemperatureSchedule</span><span class="p">(</span><span class="n">sch_ruleset_cool_tstat</span><span class="p">)</span>
-<span class="n">tstat</span><span class="o">.</span><span class="n">setHeatingSetpointTemperatureSchedule</span><span class="p">(</span><span class="n">sch_ruleset_hot_tstat</span><span class="p">)</span>
+tstat = osmod.ThermostatSetpointDualSetpoint(m)
+tstat.setCoolingSetpointTemperatureSchedule(sch_ruleset_cool_tstat)
+tstat.setHeatingSetpointTemperatureSchedule(sch_ruleset_hot_tstat)
 
-<span class="c1"># set the internal loads of the space</span>
-<span class="c1"># setup the lighting schedule</span>
-<span class="n">light</span> <span class="o">=</span> <span class="n">setup_light_schedule</span><span class="p">(</span><span class="n">sch_ruleset_occ</span><span class="p">)</span>
-<span class="c1"># setup electric equipment schedule</span>
-<span class="n">elec_equip</span> <span class="o">=</span> <span class="n">setup_elec_equip_schedule</span><span class="p">(</span><span class="n">sch_ruleset_occ</span><span class="p">)</span>
+# set the internal loads of the space
+# setup the lighting schedule
+light = setup_light_schedule(sch_ruleset_occ)
+# setup electric equipment schedule
+elec_equip = setup_elec_equip_schedule(sch_ruleset_occ)
 
-<span class="n">spaces</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">getSpaces</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-<span class="c1"># occ_numbers = [34, 71]</span>
-<span class="n">occ_numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">25</span><span class="p">,</span> <span class="mi">50</span><span class="p">]</span>
-<span class="n">light_watts_m2</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">elec_watts_m2</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="k">for</span> <span class="n">cnt</span><span class="p">,</span> <span class="n">space</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">spaces</span><span class="p">):</span>
-    <span class="n">space_name</span> <span class="o">=</span> <span class="n">space</span><span class="o">.</span><span class="n">nameString</span><span class="p">()</span>
-    <span class="n">space</span><span class="o">.</span><span class="n">autocalculateFloorArea</span><span class="p">()</span>
-    <span class="n">outdoor_air</span> <span class="o">=</span> <span class="n">osmod</span><span class="o">.</span><span class="n">DesignSpecificationOutdoorAir</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-    <span class="n">outdoor_air</span><span class="o">.</span><span class="n">setOutdoorAirFlowperPerson</span><span class="p">(</span><span class="mf">0.006</span><span class="p">)</span> <span class="c1">#m3/s</span>
-    <span class="n">space</span><span class="o">.</span><span class="n">setDesignSpecificationOutdoorAir</span><span class="p">(</span><span class="n">outdoor_air</span><span class="p">)</span>
-    <span class="c1"># setup people schedule</span>
-    <span class="n">ppl</span> <span class="o">=</span> <span class="n">setup_ppl_schedule</span><span class="p">(</span><span class="n">sch_ruleset_occ</span><span class="p">,</span> <span class="n">sch_ruleset_act</span><span class="p">,</span> <span class="n">name</span> <span class="o">=</span> <span class="n">space_name</span> <span class="o">+</span> <span class="s1">&#39;_people&#39;</span><span class="p">)</span>
-    <span class="n">space</span><span class="o">.</span><span class="n">setNumberOfPeople</span><span class="p">(</span><span class="n">occ_numbers</span><span class="p">[</span><span class="n">cnt</span><span class="p">],</span> <span class="n">ppl</span><span class="p">)</span>
-    <span class="n">space</span><span class="o">.</span><span class="n">setLightingPowerPerFloorArea</span><span class="p">(</span><span class="n">light_watts_m2</span><span class="p">,</span> <span class="n">light</span><span class="p">)</span>
-    <span class="n">space</span><span class="o">.</span><span class="n">setElectricEquipmentPowerPerFloorArea</span><span class="p">(</span><span class="n">elec_watts_m2</span><span class="p">,</span> <span class="n">elec_equip</span><span class="p">)</span>
-    <span class="c1"># setup the thermostat schedule</span>
-    <span class="n">thermalzone</span> <span class="o">=</span> <span class="n">space</span><span class="o">.</span><span class="n">thermalZone</span><span class="p">()</span>
-    <span class="k">if</span> <span class="n">thermalzone</span><span class="o">.</span><span class="n">empty</span><span class="p">()</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
-        <span class="n">thermalzone_real</span> <span class="o">=</span> <span class="n">thermalzone</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
-        <span class="n">thermalzone_real</span><span class="o">.</span><span class="n">setThermostatSetpointDualSetpoint</span><span class="p">(</span><span class="n">tstat</span><span class="p">)</span>
+spaces = osmod.getSpaces(m)
+# occ_numbers = [34, 71]
+occ_numbers = [25, 50]
+light_watts_m2 = 5
+elec_watts_m2 = 10
+for cnt, space in enumerate(spaces):
+    space_name = space.nameString()
+    space.autocalculateFloorArea()
+    outdoor_air = osmod.DesignSpecificationOutdoorAir(m)
+    outdoor_air.setOutdoorAirFlowperPerson(0.006) #m3/s
+    space.setDesignSpecificationOutdoorAir(outdoor_air)
+    # setup people schedule
+    ppl = setup_ppl_schedule(sch_ruleset_occ, sch_ruleset_act, name = space_name + &#39;_people&#39;)
+    space.setNumberOfPeople(occ_numbers[cnt], ppl)
+    space.setLightingPowerPerFloorArea(light_watts_m2, light)
+    space.setElectricEquipmentPowerPerFloorArea(elec_watts_m2, elec_equip)
+    # setup the thermostat schedule
+    thermalzone = space.thermalZone()
+    if thermalzone.empty() == False:
+        thermalzone_real = thermalzone.get()
+        thermalzone_real.setThermostatSetpointDualSetpoint(tstat)
 
-<span class="n">wrkflw_path</span> <span class="o">=</span> <span class="n">save_osw_project</span><span class="p">(</span><span class="n">res_path</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">measure_folder_list</span><span class="p">)</span>
-<span class="n">execute_workflow</span><span class="p">(</span><span class="n">wrkflw_path</span><span class="p">)</span>
-<span class="c1"># save2idf(idf_path, m)</span>
-<span class="c1"># endregion</span>
-<span class="c1"># endregion: MAIN</span>
+wrkflw_path = save_osw_project(res_path, m, measure_folder_list)
+execute_workflow(wrkflw_path)
+# save2idf(idf_path, m)
+# endregion
+# endregion: MAIN
+</pre></div>
+</div>
+</div>
+</details></li>
+</ol>
+</section>
+<section id="writing-python-measure">
+<h2><span class="section-number">6.5. </span>Writing Python Measure<a class="headerlink" href="#writing-python-measure" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>Create a new measure with the openstudio core</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">openstudio</span> <span class="n">measure</span> <span class="n">new</span> <span class="o">--</span><span class="n">class</span><span class="o">-</span><span class="n">name</span> <span class="n">HVACResults</span> <span class="o">--</span><span class="nb">type</span> <span class="n">EnergyPlusMeasure</span> <span class="o">--</span><span class="n">language</span> <span class="n">Python</span> <span class="o">--</span><span class="n">name</span> <span class="s2">&quot;My energyplus measure&quot;</span> <span class="o">--</span><span class="n">description</span> <span class="s2">&quot;this is my measure&quot;</span> <span class="o">--</span><span class="n">modeler</span><span class="o">-</span><span class="n">description</span> <span class="s2">&quot;this does complicated stuff&quot;</span> <span class="o">--</span><span class="n">taxonomy</span><span class="o">-</span><span class="n">tag</span> <span class="s2">&quot;Reporting.QAQC&quot;</span> <span class="o">./</span><span class="n">measures</span><span class="o">/</span><span class="n">hvac_results</span>
+</pre></div>
+</div>
+<ul>
+<li><p>you can look at the help with this command</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">openstudio</span> <span class="n">measure</span> <span class="o">--</span><span class="n">help</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p>You can update the measure.xml file with this command</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">openstudio</span> <span class="n">measure</span> <span class="o">-</span><span class="n">u</span> <span class="o">./</span><span class="n">measures</span><span class="o">/</span><span class="n">hvac_results</span>
 </pre></div>
 </div>
 </li>
 </ol>
 </section>
-<section id="resources">
-<h2><span class="section-number">6.5. </span>Resources<a class="headerlink" href="#resources" title="Permalink to this heading">#</a></h2>
+<section id="openstudio-code-snippets">
+<h2><span class="section-number">6.6. </span>Openstudio Code Snippets<a class="headerlink" href="#openstudio-code-snippets" title="Link to this heading">#</a></h2>
+<ul>
+<li><p>Removing objects from workspace</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">meter_objs</span> <span class="o">=</span> <span class="n">workspace</span><span class="o">.</span><span class="n">getObjectsByType</span><span class="p">(</span><span class="s1">&#39;Output:Meter&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;found these objs&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">meter_objs</span><span class="p">))</span>
+<span class="n">workspace</span><span class="o">.</span><span class="n">removeObject</span><span class="p">(</span><span class="n">meter_objs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">handle</span><span class="p">())</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id="understanding-the-energyplus-output-variables">
+<h2><span class="section-number">6.7. </span>Understanding the energyplus output variables<a class="headerlink" href="#understanding-the-energyplus-output-variables" title="Link to this heading">#</a></h2>
+<p>The output variables is the lowest level result you can output from an energyplus simulation. These variables can be aggregated into meters where a meter is made up of a list of variables. On the highest level, you have the tables (report), where it is an aggregation of various variables and meters to form a complete performance view of the building.</p>
 <ul class="simple">
-<li><p>reference document (<a class="reference external" href="https://s3.amazonaws.com/openstudio-sdk-documentation/index.html">https://s3.amazonaws.com/openstudio-sdk-documentation/index.html</a>)</p></li>
+<li><p>Energyplus documentation on output details: <a class="reference external" href="https://energyplus.net/assets/nrel_custom/pdfs/pdfs_v23.2.0/OutputDetailsAndExamples.pdf">https://energyplus.net/assets/nrel_custom/pdfs/pdfs_v23.2.0/OutputDetailsAndExamples.pdf</a></p></li>
+<li><p>Energyplus input output reference: <a class="reference external" href="https://energyplus.net/assets/nrel_custom/pdfs/pdfs_v23.2.0/InputOutputReference.pdf">https://energyplus.net/assets/nrel_custom/pdfs/pdfs_v23.2.0/InputOutputReference.pdf</a></p></li>
+<li><p>Energyplus Output Files</p>
+<ul>
+<li><p><strong>eplusout.eso</strong>: Standard Output File (contains results from both Output:Variable and Output:Meter objects).</p></li>
+<li><p><strong>eplusout.rdd</strong>: Variable names that are applicable for reporting in the current simulation.</p></li>
+<li><p><strong>eplusout.mtr</strong>: Similar to .eso but only has Output:Meter outputs.</p></li>
+<li><p><strong>eplusout.mtd</strong>: Meter details report – what variables are on what meters and vice versa. This shows the meters on which the Zone: Lights Electric Energy appear as well as the contents of the Electricity:Facility meter</p></li>
+<li><p><strong>eplusout.mdd</strong>: Meter names that are applicable for reporting in the current simulation.</p></li>
+<li><p><strong>eplusout.sql</strong>: Mirrors the data in the .eso and .mtr files but is in SQLite format (for viewing with SQLite tools).</p></li>
+</ul>
+</li>
+</ul>
+<ol class="arabic">
+<li><p>To output a variable, one needs to specify that output variable in the idf file for the simulation. Refer to the eplusout.rdd for the variable name.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Output:Variable,
+    ,                                       !- Key Value
+    Zone Air Temperature,                   !- Variable Name
+    hourly;                                 !- Reporting Frequency
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>the key value can be either the ‘zone name’ or a ‘surface name’ so you are reporting on a specific reference.</p></li>
+</ul>
+</li>
+<li><p>To output a meter, one needs to specify that output meter in the idf file for the simulation. Refer to the eplusout.mtd for the meter name.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Output:Meter,
+    Electricity:Facility,                   !- Key Name
+    Timestep;                               !- Reporting Frequency
+</pre></div>
+</div>
+<ul>
+<li><p>A meter is the sum of all the variable under the meter. For example the meter ‘EnergyTransfer:HVAC’, the meter is the sum of the two variable listed below.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="n">For</span> <span class="n">Meter</span><span class="o">=</span><span class="n">EnergyTransfer</span><span class="p">:</span><span class="n">HVAC</span> <span class="p">[</span><span class="n">J</span><span class="p">],</span> <span class="n">ResourceType</span><span class="o">=</span><span class="n">EnergyTransfer</span><span class="p">,</span> <span class="n">Group</span><span class="o">=</span><span class="n">HVAC</span><span class="p">,</span> <span class="n">contents</span> <span class="n">are</span><span class="p">:</span>
+    <span class="n">THERMAL</span> <span class="n">ZONE</span> <span class="mi">1</span><span class="n">PTAC</span> <span class="n">NO</span> <span class="n">HEAT</span><span class="p">:</span><span class="n">Heating</span> <span class="n">Coil</span> <span class="n">Heating</span> <span class="n">Energy</span>
+    <span class="n">THERMAL</span> <span class="n">ZONE</span> <span class="mi">1</span><span class="n">PTAC</span> <span class="mi">1</span><span class="n">SPD</span> <span class="n">DX</span> <span class="n">AC</span> <span class="n">CLG</span> <span class="n">COIL</span><span class="p">:</span><span class="n">Cooling</span> <span class="n">Coil</span> <span class="n">Total</span> <span class="n">Cooling</span> <span class="n">Energy</span>
+</pre></div>
+</div>
+</li>
+<li><p>In the .mtd file you can also see the variable ‘THERMAL ZONE 1PTAC NO HEAT:Heating Coil Heating Energy’ is in these meters.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Meters</span> <span class="k">for</span> <span class="mi">7</span><span class="p">,</span><span class="n">THERMAL</span> <span class="n">ZONE</span> <span class="mi">1</span><span class="n">PTAC</span> <span class="n">NO</span> <span class="n">HEAT</span><span class="p">:</span><span class="n">Heating</span> <span class="n">Coil</span> <span class="n">Heating</span> <span class="n">Energy</span> <span class="p">[</span><span class="n">J</span><span class="p">]</span>
+    <span class="n">OnMeter</span><span class="o">=</span><span class="n">EnergyTransfer</span><span class="p">:</span><span class="n">Facility</span> <span class="p">[</span><span class="n">J</span><span class="p">]</span>
+    <span class="n">OnMeter</span><span class="o">=</span><span class="n">EnergyTransfer</span><span class="p">:</span><span class="n">HVAC</span> <span class="p">[</span><span class="n">J</span><span class="p">]</span>
+    <span class="n">OnMeter</span><span class="o">=</span><span class="n">HeatingCoils</span><span class="p">:</span><span class="n">EnergyTransfer</span> <span class="p">[</span><span class="n">J</span><span class="p">]</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p>To output a table, one needs to specify the output table in the idf file for the simulation. Refer to the eplusout.rdd for variable name and eplusout.mtd for the meter name. For a more detail description of the output tables and report refer to (<a class="reference external" href="https://energyplus.net/assets/nrel_custom/pdfs/pdfs_v23.2.0/InputOutputReference.pdf">https://energyplus.net/assets/nrel_custom/pdfs/pdfs_v23.2.0/InputOutputReference.pdf</a>) Chapter 7: Standard Output Reports, Pg 2846. There are various ways to output tables in energyplus.</p>
+<ul>
+<li><p>Output:Table:TimeBins</p></li>
+<li><p>Output:Table:Monthly</p></li>
+<li><p>Output:Table:Annual</p></li>
+<li><p>Output:Table:ReportPeriod</p></li>
+<li><p>Output:Table:SummaryReports - There are a number of predefine reports. If you specify ‘AllSummary’, all the report will be generated.</p></li>
+<li><p>Output:Table:TableStyle - specify the different format of the output report ‘Comma’, ‘Tab’, ‘Fixed’, ‘HTML’, ‘XML’, ‘CommaAndHTML’, ‘TabAndHTML’, ‘XMLAndHTML’ and ‘All’.</p></li>
+<li><p>An example of Output:Table:Monthly</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Output:Table:Monthly ,
+    Building Monthly Cooling Load Report,       ! Name
+    3,                                          ! Digits After Decimal
+    Zone Air System Sensible Cooling Energy,    ! Variable or Meter 1 Name
+    SumOrAverage,                               ! Aggregation Type for Variable or Meter 1
+    Zone Air System Sensible Cooling Energy,    ! Variable or Meter 2 Name
+    Maximum,                                    ! Aggregation Type for Variable or Meter 2
+    Site Outdoor Air Drybulb Temperature,       ! Variable or Meter 3 Name
+    ValueWhenMaxMin;                            ! Aggregation Type for Variable or Meter 3
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<section id="python-openstudio-script-to-add-output-item-to-idf-files">
+<h3><span class="section-number">6.7.1. </span>Python Openstudio Script to add Output Item to Idf files<a class="headerlink" href="#python-openstudio-script-to-add-output-item-to-idf-files" title="Link to this heading">#</a></h3>
+<ul>
+<li><p>output variable</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">idfObject</span> <span class="o">=</span> <span class="n">openstudio</span><span class="o">.</span><span class="n">IdfObject</span><span class="p">(</span><span class="n">openstudio</span><span class="o">.</span><span class="n">IddObjectType</span><span class="p">(</span><span class="s1">&#39;Output:Variable&#39;</span><span class="p">))</span>
+<span class="n">idfObject</span><span class="o">.</span><span class="n">setString</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;Zone Air Temperature&#39;</span><span class="p">)</span>
+<span class="n">idfObject</span><span class="o">.</span><span class="n">setString</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;hourly&#39;</span><span class="p">)</span>
+<span class="n">wsObject_</span> <span class="o">=</span> <span class="n">workspace</span><span class="o">.</span><span class="n">addObject</span><span class="p">(</span><span class="n">idfObject</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>output meter</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">idfObject</span> <span class="o">=</span> <span class="n">openstudio</span><span class="o">.</span><span class="n">IdfObject</span><span class="p">(</span><span class="n">openstudio</span><span class="o">.</span><span class="n">IddObjectType</span><span class="p">(</span><span class="s1">&#39;Output:Meter&#39;</span><span class="p">))</span>
+<span class="n">idfObject</span><span class="o">.</span><span class="n">setString</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;EnergyTransfer:Facility&#39;</span><span class="p">)</span>
+<span class="n">idfObject</span><span class="o">.</span><span class="n">setString</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;Timestep&#39;</span><span class="p">)</span>
+<span class="n">wsObject_</span> <span class="o">=</span> <span class="n">workspace</span><span class="o">.</span><span class="n">addObject</span><span class="p">(</span><span class="n">idfObject</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>output table monthly</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">idfObject</span> <span class="o">=</span> <span class="n">openstudio</span><span class="o">.</span><span class="n">IdfObject</span><span class="p">(</span><span class="n">openstudio</span><span class="o">.</span><span class="n">IddObjectType</span><span class="p">(</span><span class="s1">&#39;Output:Table:Monthly&#39;</span><span class="p">))</span>
+<span class="n">idfObject</span><span class="o">.</span><span class="n">setString</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;Building Monthly Cooling Load Report&#39;</span><span class="p">)</span>
+<span class="n">idfObject</span><span class="o">.</span><span class="n">setString</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;3&#39;</span><span class="p">)</span>
+<span class="n">idfObject</span><span class="o">.</span><span class="n">setString</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;Zone Air System Sensible Cooling Energy&#39;</span><span class="p">)</span>
+<span class="n">idfObject</span><span class="o">.</span><span class="n">setString</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;SumOrAverage&#39;</span><span class="p">)</span>
+<span class="n">idfObject</span><span class="o">.</span><span class="n">setString</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;Zone Air System Sensible Cooling Energy&#39;</span><span class="p">)</span>
+<span class="n">idfObject</span><span class="o">.</span><span class="n">setString</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;Maximum&#39;</span><span class="p">)</span>
+<span class="n">wsObject_</span> <span class="o">=</span> <span class="n">workspace</span><span class="o">.</span><span class="n">addObject</span><span class="p">(</span><span class="n">idfObject</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id="read-the-eplusout-sql">
+<h3><span class="section-number">6.7.2. </span>Read the eplusout.sql<a class="headerlink" href="#read-the-eplusout-sql" title="Link to this heading">#</a></h3>
+<p>I will use the Ladybug tools library to read the sql generated from the energyplus result. Install the ladybug tool with pip.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ladybug</span><span class="o">-</span><span class="n">core</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ladybug.sql</span> <span class="kn">import</span> <span class="n">SQLiteResult</span>
+<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+
+<span class="n">eplusout_sql_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="s1">&#39;ifc2osm_eg_result&#39;</span><span class="p">,</span> <span class="s1">&#39;ifc2osm_eg_result_wrkflw&#39;</span><span class="p">,</span> <span class="s1">&#39;run&#39;</span><span class="p">,</span> <span class="s1">&#39;eplusout.sql&#39;</span><span class="p">)</span>
+<span class="n">sql_obj</span> <span class="o">=</span> <span class="n">SQLiteResult</span><span class="p">(</span><span class="n">eplusout_sql_path</span><span class="o">.</span><span class="fm">__str__</span><span class="p">())</span>
+<span class="n">avail_output_names</span> <span class="o">=</span> <span class="n">sql_obj</span><span class="o">.</span><span class="n">available_outputs</span>
+<span class="n">run_indxs</span> <span class="o">=</span> <span class="n">sql_obj</span><span class="o">.</span><span class="n">run_period_indices</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">avail_output_names</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">run_indxs</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">sql_obj</span><span class="o">.</span><span class="n">data_collections_by_output_name_run_period</span><span class="p">(</span><span class="s1">&#39;Zone Air Temperature&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">analysis_period</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">metadata</span><span class="p">)</span>
+
+<span class="c1"># data_collect = sql_obj.data_collections_by_output_name(&#39;Zone Air Relative Humidity&#39;)</span>
+<span class="c1"># print(data_collect)</span>
+<span class="c1"># zone_air_year = data_collect[2]</span>
+<span class="c1"># dts = zone_air_year.datetimes</span>
+<span class="c1"># print(dts[10].isoformat())</span>
+<span class="c1"># for a_zair in zone_air_year:</span>
+<span class="c1">#     print(a_zair)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="resources">
+<h2><span class="section-number">6.8. </span>Resources<a class="headerlink" href="#resources" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>API reference document (<a class="reference external" href="https://s3.amazonaws.com/openstudio-sdk-documentation/index.html">https://s3.amazonaws.com/openstudio-sdk-documentation/index.html</a>)</p></li>
+<li><p>Resources</p>
+<ul>
 <li><p>openstudio resources (<a class="github reference external" href="https://github.com/NREL/OpenStudio-resources">NREL/OpenStudio-resources</a>)</p></li>
+<li><p>openstudio wiki (<a class="github reference external" href="https://github.com/NREL/OpenStudio/wiki">NREL/OpenStudio</a>)</p></li>
+<li><p>openstudio-standards ruby library API (<a class="reference external" href="https://www.rubydoc.info/gems/openstudio-standards/">https://www.rubydoc.info/gems/openstudio-standards/</a>)</p></li>
+<li><p>Radiant slab measure (<a class="reference external" href="https://bcl.nrel.gov/api/download?uids=8091a0c3-7760-4da6-adf4-133d55872816">https://bcl.nrel.gov/api/download?uids=8091a0c3-7760-4da6-adf4-133d55872816</a>)</p>
+<ul>
+<li><p>model_add_low_temp_radiant (<a class="reference external" href="https://www.rubydoc.info/gems/openstudio-standards/Standard#model_add_low_temp_radiant-instance_method">https://www.rubydoc.info/gems/openstudio-standards/Standard#model_add_low_temp_radiant-instance_method</a>)</p></li>
+<li><p>model_add_doas (<a class="reference external" href="https://www.rubydoc.info/gems/openstudio-standards/Standard#model_add_doas-instance_method">https://www.rubydoc.info/gems/openstudio-standards/Standard#model_add_doas-instance_method</a>)</p></li>
+</ul>
+</li>
+<li><p>Adding Packaged Terminal Air-Conditioning</p>
+<ul>
+<li><p><a class="reference external" href="https://www.rubydoc.info/gems/openstudio-standards/Standard#model_add_ptac-instance_method">https://www.rubydoc.info/gems/openstudio-standards/Standard#model_add_ptac-instance_method</a></p></li>
+</ul>
+</li>
+<li><p>Sizing_run: <a class="github reference external" href="https://github.com/NREL/openstudio-standards/blob/master/lib/openstudio-standards/utilities/simulation.rb#L173-L181">NREL/openstudio-standards</a></p></li>
+<li><p>Parsing stat file: <a class="github reference external" href="https://github.com/NREL/openstudio-standards/blob/master/lib/openstudio-standards/weather/stat_file.rb">NREL/openstudio-standards</a></p></li>
+<li><p>Natural ventilation measure (<a class="reference external" href="https://bcl.nrel.gov/api/download?uids=c1290ecc-ef5b-4c64-8df5-367cc1129841">https://bcl.nrel.gov/api/download?uids=c1290ecc-ef5b-4c64-8df5-367cc1129841</a>)</p></li>
+</ul>
+</li>
 <li><p>example script</p>
 <ul>
 <li><p>create material (<a class="reference external" href="https://unmethours.com/question/97305/create-a-new-material-with-python-bindings/">https://unmethours.com/question/97305/create-a-new-material-with-python-bindings/</a>)</p></li>
@@ -1141,11 +1375,21 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weather-files">6.1. Weather Files</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weather-files">6.1. Weather Files</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generating-annual-meteorological-year-amy-epw-file">6.1.1. Generating Annual Meteorological Year (AMY) EPW file</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#running-a-simple-simulation-with-openstudio-application">6.2. Running a simple simulation with OpenStudio Application</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-energy-modeling-with-python-openstudio-sdk">6.3. Building Energy Modeling with Python OpenStudio SDK</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ifc-to-osm">6.4. IFC to OSM</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resources">6.5. Resources</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-python-measure">6.5. Writing Python Measure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#openstudio-code-snippets">6.6. Openstudio Code Snippets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-the-energyplus-output-variables">6.7. Understanding the energyplus output variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#python-openstudio-script-to-add-output-item-to-idf-files">6.7.1. Python Openstudio Script to add Output Item to Idf files</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#read-the-eplusout-sql">6.7.2. Read the eplusout.sql</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resources">6.8. Resources</a></li>
 </ul>
   </nav></div>
 
