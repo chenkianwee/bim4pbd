@@ -745,6 +745,9 @@ print(data[1].header.metadata)
 
 ## Resources
 - API reference document (https://s3.amazonaws.com/openstudio-sdk-documentation/index.html)
+- Openstudio-standards: the ruby library that is very useful for providing all the function uesful for energy modeling
+    - structure of the big library - https://github.com/NREL/openstudio-standards/blob/master/docs/RepositoryStructure.md
+    - 
 - Resources
     - openstudio resources (https://github.com/NREL/OpenStudio-resources)
     - openstudio wiki (https://github.com/NREL/OpenStudio/wiki)

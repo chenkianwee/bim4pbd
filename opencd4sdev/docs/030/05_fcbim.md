@@ -121,3 +121,4 @@ This entry is based on these resources:
 ## Print from 3D view
 1. Go to Edit -> Preferences -> Display -> Camera type -> Perspective rendering
 2. Minimize the window. The print preview will be accurate.
+
