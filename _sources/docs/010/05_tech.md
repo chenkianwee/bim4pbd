@@ -71,6 +71,8 @@
 - Modelica Building Library (https://simulationresearch.lbl.gov/modelica/)
     - Spawn of Energyplus - coupling of energyplus with modelica building library
 - ladybug tools (https://www.ladybug.tools/index.html#header-slide-show)
+- Blender3d Vi-suite: https://blogs.brighton.ac.uk/visuite/
+- Python HVAC - https://pythoncvc.net/?author=1&lang=en
 
 ## Scripting
 - Python (https://www.python.org/) - Batteries included programming language for automating the boring stuffs
@@ -79,6 +81,7 @@
   - IFCopenshell (http://ifcopenshell.org/) - Read and write IFC files
   - Scikit-learn (https://scikit-learn.org/stable/index.html) - machine learning
   - networkx (https://networkx.org/) - network modeling
+- Programming for Designers: https://www.coursera.org/specializations/programming-for-designers
 
 ## Web Vizualization
 - CesiumJS (https://cesium.com/platform/cesiumjs/)

@@ -384,7 +384,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -400,6 +402,16 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculate-radiative-heat-transfer-between-two-surfaces">4.2.1. Calculate Radiative Heat Transfer between Two Surfaces</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solar-radiation-irradiance-irradiation-insolation">4.2.2. Solar Radiation, Irradiance, Irradiation, Insolation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instruments-to-measure-radiative-heat-transfer">4.2.3. Instruments to measure radiative heat transfer</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -430,7 +442,62 @@ document.write(`
 <li><p>A shiny metal surface is non-selective meaning emittance = absorptance.</p></li>
 </ul>
 </li>
+<li><p><strong>Transmittance</strong>: decimal fraction indicating how much of the incident radiation is transmitted through the surface. Usually for transparent materials like glass.</p></li>
 </ul>
+<section id="calculate-radiative-heat-transfer-between-two-surfaces">
+<h2><span class="section-number">4.2.1. </span>Calculate Radiative Heat Transfer between Two Surfaces<a class="headerlink" href="#calculate-radiative-heat-transfer-between-two-surfaces" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>ASHRAE handbook  heating, ventilating, and air-conditioning systems and equipment, Chapter 6.2</p></li>
+<li><p>qr = s * Fr * (Tp<strong>4 - Tr</strong>4)</p>
+<ul>
+<li><p>qr = radiative heat transfer (W)</p></li>
+<li><p>s = Stefan-Boltzmann constant = 5.67 * 10–8 W/(m2·K4)</p></li>
+<li><p>Fr = radiation exchange factor (dimensionless)</p></li>
+<li><p>Tp = effective temperature of heating (cooling) panel surface, K</p></li>
+<li><p>Tr = temperature of fictitious surface (unheated or uncooled), K</p></li>
+</ul>
+</li>
+<li><p>Fr = 1/((1/Fpr) + (1/Ep - 1) + (Ap/Ar)*(1/Er-1))</p>
+<ul>
+<li><p>Fpr = radiation angle factor from panel to fictitious surface (1.0 for flat panel) (View factor)</p></li>
+<li><p>Ap, Ar = area of panel surface and fictitious surface, respectively</p></li>
+<li><p>Ep , Er = thermal emittance of panel surface and fictitious surface, respectively (dimensionless) (in a room is usually 0.9)</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="solar-radiation-irradiance-irradiation-insolation">
+<h2><span class="section-number">4.2.2. </span>Solar Radiation, Irradiance, Irradiation, Insolation<a class="headerlink" href="#solar-radiation-irradiance-irradiation-insolation" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Solar radiation, often called the solar resource or just sunlight, is a general term for the electromagnetic radiation emitted by the sun.</p>
+<ul>
+<li><p><a class="reference external" href="https://www.energy.gov/eere/solar/solar-radiation-basics">https://www.energy.gov/eere/solar/solar-radiation-basics</a></p></li>
+</ul>
+</li>
+<li><p>There are many different words and meanings such as solar radiation (electromagnetic), solar irradiance (for power), solar irradiation (for energy), as well as solar insolation to describe the amount of sunlight that is available at any particular location.</p>
+<ul>
+<li><p><a class="reference external" href="https://www.alternative-energy-tutorials.com/solar-power/solar-irradiance.html">https://www.alternative-energy-tutorials.com/solar-power/solar-irradiance.html</a></p></li>
+</ul>
+</li>
+<li><p>Solar Irradiance (W/m2): the amount of solar power landing on a surface</p></li>
+<li><p>Solar Irradiation (kWh/m2): this is the same as Insolation. Integration of Solar Irradiance. The SI unit is Joule per sqm (J/m2).</p></li>
+</ul>
+</section>
+<section id="instruments-to-measure-radiative-heat-transfer">
+<h2><span class="section-number">4.2.3. </span>Instruments to measure radiative heat transfer<a class="headerlink" href="#instruments-to-measure-radiative-heat-transfer" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Pyrgeometer (<a class="reference external" href="https://en.wikipedia.org/wiki/Pyrgeometer">https://en.wikipedia.org/wiki/Pyrgeometer</a>)</p>
+<ul>
+<li><p>measures near-surface infra-red (IR) radiation, approximately from 4.5 μm to 100 μm on the electromagnetic spectrum (thereby excluding solar radiation).</p></li>
+</ul>
+</li>
+<li><p>Pyranometer (<a class="reference external" href="https://en.wikipedia.org/wiki/Pyranometer">https://en.wikipedia.org/wiki/Pyranometer</a>)</p>
+<ul>
+<li><p>measuring solar irradiance on a planar surface and it is designed to measure the solar radiation flux density (W/m2) from the hemisphere above within a wavelength range 0.3 μm to 3 μm.</p></li>
+</ul>
+</li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -488,7 +555,22 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculate-radiative-heat-transfer-between-two-surfaces">4.2.1. Calculate Radiative Heat Transfer between Two Surfaces</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solar-radiation-irradiance-irradiation-insolation">4.2.2. Solar Radiation, Irradiance, Irradiation, Insolation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instruments-to-measure-radiative-heat-transfer">4.2.3. Instruments to measure radiative heat transfer</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
