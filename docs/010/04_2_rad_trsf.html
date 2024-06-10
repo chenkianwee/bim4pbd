@@ -448,23 +448,41 @@ document.write(`
 <h2><span class="section-number">4.2.1. </span>Calculate Radiative Heat Transfer between Two Surfaces<a class="headerlink" href="#calculate-radiative-heat-transfer-between-two-surfaces" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>ASHRAE handbook  heating, ventilating, and air-conditioning systems and equipment, Chapter 6.2</p></li>
-<li><p>qr = s * Fr * (Tp<strong>4 - Tr</strong>4)</p>
-<ul>
-<li><p>qr = radiative heat transfer (W)</p></li>
+<li><p>You can simplify the calculation by assuming it to be a 2 surfaces enclosure. Caculate the AUST with eqn 2 and use eqn 4 to calculate qr</p></li>
+<li><p>if you have surface temperatures of the whole room and a 3D scene of the room. You can calculate the heat transfer to each surfaces with eqn 1 and 3.</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>qr = s * Fr * (Tp<sup>4</sup> - Tr<sup>4</sup>)</p>
+<ul class="simple">
+<li><p>qr = radiative heat transfer (W/m2)</p></li>
 <li><p>s = Stefan-Boltzmann constant = 5.67 * 10–8 W/(m2·K4)</p></li>
 <li><p>Fr = radiation exchange factor (dimensionless)</p></li>
 <li><p>Tp = effective temperature of heating (cooling) panel surface, K</p></li>
 <li><p>Tr = temperature of fictitious surface (unheated or uncooled), K</p></li>
 </ul>
 </li>
+<li><p>Tr = ((A1 * E1 * T1) + (A2 * E3 * T3) + … + (Aj * Ej * Tj)) / ((A1 * E1) + (A2 * E2) + … + (Aj * Ej))</p>
+<ul class="simple">
+<li><p>Tj = temperature of surfaces other than panels, K</p></li>
+<li><p>Aj = area of surfaces other than panels, m2</p></li>
+<li><p>Ej = thermal emittance of surfaces other than panel(s) (dimensionless)</p></li>
+<li><p>This is the AUST calculation.</p></li>
+</ul>
+</li>
 <li><p>Fr = 1/((1/Fpr) + (1/Ep - 1) + (Ap/Ar)*(1/Er-1))</p>
-<ul>
+<ul class="simple">
 <li><p>Fpr = radiation angle factor from panel to fictitious surface (1.0 for flat panel) (View factor)</p></li>
 <li><p>Ap, Ar = area of panel surface and fictitious surface, respectively</p></li>
 <li><p>Ep , Er = thermal emittance of panel surface and fictitious surface, respectively (dimensionless) (in a room is usually 0.9)</p></li>
 </ul>
 </li>
+<li><p>qr = 5 * 10<sup>-8</sup> * ((tp + 273.15)<sup>4</sup> – (AUST + 273.15)<sup>4</sup>)</p>
+<ul class="simple">
+<li><p>tp = effective panel surface temperature, °C</p></li>
+<li><p>AUST = area-weighted temperature of all indoor surfaces of walls, ceiling, floor, windows, doors, etc. (excluding active panel surfaces), °C</p></li>
 </ul>
+</li>
+</ol>
 </section>
 <section id="solar-radiation-irradiance-irradiation-insolation">
 <h2><span class="section-number">4.2.2. </span>Solar Radiation, Irradiance, Irradiation, Insolation<a class="headerlink" href="#solar-radiation-irradiance-irradiation-insolation" title="Link to this heading">#</a></h2>
