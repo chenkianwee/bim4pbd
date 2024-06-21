@@ -44,6 +44,7 @@ These notes are based on these sources:
 - Solar radiation, often called the solar resource or just sunlight, is a general term for the electromagnetic radiation emitted by the sun.
   - https://www.energy.gov/eere/solar/solar-radiation-basics
 - There are many different words and meanings such as solar radiation (electromagnetic), solar irradiance (for power), solar irradiation (for energy), as well as solar insolation to describe the amount of sunlight that is available at any particular location.
+  - https://en.wikipedia.org/wiki/Solar_irradiance
   - https://www.alternative-energy-tutorials.com/solar-power/solar-irradiance.html
 - Solar Irradiance (W/m2): the amount of solar power landing on a surface
 - Solar Irradiation (kWh/m2): this is the same as Insolation. Integration of Solar Irradiance. The SI unit is Joule per sqm (J/m2).

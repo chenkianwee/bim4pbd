@@ -13,6 +13,10 @@
     4. Once the simulations are completed. The OpenStudio Reporting Measures are applied to generate reports of the simulation result.
         - An error at any point will stop the execution. Whether successful or not an output OSW file is written to show the output of the workflow. 
 
+## Prototype buildings and standards
+- ASHRAE 90.1
+- IECC
+
 ## Weather Files
 - https://climate.onebuilding.org/
 - https://energyplus.net/weather
@@ -747,7 +751,7 @@ print(data[1].header.metadata)
 - API reference document (https://s3.amazonaws.com/openstudio-sdk-documentation/index.html)
 - Openstudio-standards: the ruby library that is very useful for providing all the function uesful for energy modeling
     - structure of the big library - https://github.com/NREL/openstudio-standards/blob/master/docs/RepositoryStructure.md
-    - 
+
 - Resources
     - openstudio resources (https://github.com/NREL/OpenStudio-resources)
     - openstudio wiki (https://github.com/NREL/OpenStudio/wiki)
@@ -768,3 +772,6 @@ print(data[1].header.metadata)
         - https://github.com/jmarrec/OpenStudio_to_EnergyPlusAPI/blob/main/OpenStudio_to_EnergyPlusAPI.ipynb
         - https://snyk.io/advisor/python/openstudio/functions/openstudio.model.getSpaces
         - https://github.com/GFlechas/Gabes_OpenStudio_shared_resources/blob/main/load_model_add_ruleset/load_model_add_ruleset_notebook.ipynb
+
+- prototype buildings
+    - https://www.energycodes.gov/prototype-building-models

@@ -190,6 +190,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../010/04_3_climate.html">4.3. Climate Classifications</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../010/04_4_loads.html">4.4. Cooling and Heating Loads</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../010/04_5_tcomf.html">4.5. Thermal Comfort</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../010/04_6_lighting.html">4.6. Lighting</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../010/05_tech.html">5. Open-Source Technologies and Data for Design Process</a></li>
@@ -415,8 +416,12 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-property-set-of-ifc-elements">5.6. Setting property set of IFC elements</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#export-to-ifc-and-read-with-ifcopenshell">5.7. Export to IFC and read with IFCOpenshell</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sectional-cuts-with-freecad">5.8. Sectional Cuts with FreeCAD</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#views-with-techdraw">5.9. Views with TechDraw</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#print-from-3d-view">5.10. Print from 3D view</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#views-with-techdraw">5.9. Views with TechDraw</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#techdraw-templates">5.9.1. TechDraw Templates</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rendering-with-the-render-workbench">5.10. Rendering with the Render Workbench</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#print-from-3d-view">5.11. Print from 3D view</a></li>
 </ul>
             </nav>
         </div>
@@ -467,6 +472,14 @@ document.write(`
 <ol class="arabic simple">
 <li><p>Right click on the object -&gt; Appearance and adjust the transparent and materials as accordingly.</p></li>
 <li><p>These options will be reflected in the GLTF export.</p></li>
+<li><p>For windows and doors:</p>
+<ul class="simple">
+<li><p>first change the appearance</p></li>
+<li><p>double click into the window/door</p></li>
+<li><p>edit one of the component and update</p></li>
+<li><p>that should update the appearance of the component.</p></li>
+</ul>
+</li>
 </ol>
 </section>
 <section id="modeling-with-freecad">
@@ -554,12 +567,13 @@ document.write(`
 <section id="sectional-cuts-with-freecad">
 <h2><span class="section-number">5.8. </span>Sectional Cuts with FreeCAD<a class="headerlink" href="#sectional-cuts-with-freecad" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>Choose a working plane and then Go to Arch &gt; Section Plane. A section plane will be created on the selected plane. Move the plan accordingly to where you want your cut to be. Double click on the section plane to add new objects into the section plane.</p>
+<li><p>Choose a working plane and then Go to BIM &gt; Section Plane. A section plane will be created on the selected plane. Move the plan accordingly to where you want your cut to be. Double click on the section plane to add new objects into the section plane.</p>
 <ul class="simple">
 <li><p>double click on the section plane, then go to the model tab where you can choose all the objects you want to be included in the section cut.</p></li>
+<li><p>You can trigger the sectional cut by right-click -&gt; Toggle Cutview</p></li>
 </ul>
 </li>
-<li><p>In the arch workbench go to Draft -&gt; Modification -&gt; Shape 2D view. This will project the section onto the xy plane. You might have to turn off the visibility of your 3d model to see the projected lines below it.</p></li>
+<li><p>In the BIM workbench go to Annotation -&gt; Shape-based view. This will project the section onto the xy plane. You might have to turn off the visibility of your 3d model to see the projected lines below it.</p></li>
 <li><p>Go to the TechDraw workbench. Go to TechDraw -&gt; Page -&gt; Insert Default Page. You will see a new view opened called a Page.</p></li>
 <li><p>On the model view, select the section you want to insert into the page. Go to TechDraw -&gt; Views from Other Workbenches -&gt; Insert Arch Workbench Object.</p>
 <ul class="simple">
@@ -575,16 +589,52 @@ document.write(`
 <section id="views-with-techdraw">
 <h2><span class="section-number">5.9. </span>Views with TechDraw<a class="headerlink" href="#views-with-techdraw" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
+<li><p>Go to TechDraw workbench -&gt; TechDraw -&gt; Page -&gt; Insert Page using Tempate</p>
+<ul class="simple">
+<li><p>choose the right template and create the page</p></li>
+</ul>
+</li>
+<li><p>In the BIM workbench insert view by first selecting the section cut object then go to Annotation -&gt; View and it will insert that view onto that page.</p></li>
 <li><p>Choose the Part you want to be in the TechDraw page. Go to TechDraw -&gt; TechDraw Views -&gt; Insert View</p>
 <ul class="simple">
 <li><p>scale the view as accordingly</p></li>
 </ul>
 </li>
 <li><p>Once that you have a view, you can cut section using that view in TechDraw.</p></li>
+<li><p>You can do dimension with the BIM workbench. You can customize the dimension by applying annotation styles onto the dimensions.</p></li>
+</ol>
+<section id="techdraw-templates">
+<h3><span class="section-number">5.9.1. </span>TechDraw Templates<a class="headerlink" href="#techdraw-templates" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>customize your own template <a class="reference external" href="https://blog.freecad.org/2023/12/19/tutorial-create-custom-techdraw-templates/">https://blog.freecad.org/2023/12/19/tutorial-create-custom-techdraw-templates/</a></p></li>
+</ol>
+</section>
+</section>
+<section id="rendering-with-the-render-workbench">
+<h2><span class="section-number">5.10. </span>Rendering with the Render Workbench<a class="headerlink" href="#rendering-with-the-render-workbench" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="github reference external" href="https://github.com/FreeCAD/FreeCAD-render?tab=readme-ov-file#usage">FreeCAD/FreeCAD-render</a></p></li>
+<li><p><a class="github reference external" href="https://github.com/FreeCAD/FreeCAD-render/blob/master/docs/EngineInstall.md#povray">FreeCAD/FreeCAD-render</a></p></li>
+</ul>
+<ol class="arabic">
+<li><p>Install povray with the command</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">povray</span>
+</pre></div>
+</div>
+</li>
+<li><p>Install the Render workbench using the workbench manager</p></li>
+<li><p>Go to the Render Workbench, go to Render -&gt; Render</p>
+<ul class="simple">
+<li><p>In workbench settings, enter /usr/bin/povray in ‘PovRay executable path’.</p></li>
+</ul>
+</li>
+<li><p>Create a rendering project go to Render -&gt; Projects -&gt; Povray Projects. Choosen the povray_studio_light.pov</p></li>
+<li><p>Select the objects you want to render and ctrl+click the povray project. Then click on the Rendering View icon. A render view will be created in the project.</p></li>
+<li><p>Change to perspective view and to the scene you want to render. Click on the Project on the tree view and click Render.</p></li>
 </ol>
 </section>
 <section id="print-from-3d-view">
-<h2><span class="section-number">5.10. </span>Print from 3D view<a class="headerlink" href="#print-from-3d-view" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">5.11. </span>Print from 3D view<a class="headerlink" href="#print-from-3d-view" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Go to Edit -&gt; Preferences -&gt; Display -&gt; Camera type -&gt; Perspective rendering</p></li>
 <li><p>Minimize the window. The print preview will be accurate.</p></li>
@@ -664,8 +714,12 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-property-set-of-ifc-elements">5.6. Setting property set of IFC elements</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#export-to-ifc-and-read-with-ifcopenshell">5.7. Export to IFC and read with IFCOpenshell</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sectional-cuts-with-freecad">5.8. Sectional Cuts with FreeCAD</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#views-with-techdraw">5.9. Views with TechDraw</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#print-from-3d-view">5.10. Print from 3D view</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#views-with-techdraw">5.9. Views with TechDraw</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#techdraw-templates">5.9.1. TechDraw Templates</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rendering-with-the-render-workbench">5.10. Rendering with the Render Workbench</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#print-from-3d-view">5.11. Print from 3D view</a></li>
 </ul>
   </nav></div>
 

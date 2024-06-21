@@ -7,6 +7,8 @@ This entry is based on these resources:
 ## Native IFC FreeCAD
 - https://github.com/yorikvanhavre/FreeCAD-NativeIFC?tab=readme-ov-file
 
+
+
 ## Installing IFCOpenShell if necessary
 - check the python console what version is FreeCAD using, check where is the path by typing
     - sys.path
@@ -21,6 +23,11 @@ This entry is based on these resources:
 ## Change transparency of 3D objects through appearance options
 1. Right click on the object -> Appearance and adjust the transparent and materials as accordingly.
 2. These options will be reflected in the GLTF export.
+3. For windows and doors:
+    - first change the appearance
+    - double click into the window/door
+    - edit one of the component and update
+    - that should update the appearance of the component.
 
 ## Modeling with FreeCAD
 1. Go to the Arch workbench.
@@ -97,10 +104,11 @@ This entry is based on these resources:
          print(mat)
     ```
 ## Sectional Cuts with FreeCAD
-1. Choose a working plane and then Go to Arch > Section Plane. A section plane will be created on the selected plane. Move the plan accordingly to where you want your cut to be. Double click on the section plane to add new objects into the section plane. 
+1. Choose a working plane and then Go to BIM > Section Plane. A section plane will be created on the selected plane. Move the plan accordingly to where you want your cut to be. Double click on the section plane to add new objects into the section plane. 
     - double click on the section plane, then go to the model tab where you can choose all the objects you want to be included in the section cut.
+    - You can trigger the sectional cut by right-click -> Toggle Cutview
 
-2. In the arch workbench go to Draft -> Modification -> Shape 2D view. This will project the section onto the xy plane. You might have to turn off the visibility of your 3d model to see the projected lines below it.
+2. In the BIM workbench go to Annotation -> Shape-based view. This will project the section onto the xy plane. You might have to turn off the visibility of your 3d model to see the projected lines below it.
 
 3. Go to the TechDraw workbench. Go to TechDraw -> Page -> Insert Default Page. You will see a new view opened called a Page.
 
@@ -113,10 +121,40 @@ This entry is based on these resources:
 6. To draw lines, Go to TechDraw -> Add Lines 
 
 ## Views with TechDraw
-1. Choose the Part you want to be in the TechDraw page. Go to TechDraw -> TechDraw Views -> Insert View
+1. Go to TechDraw workbench -> TechDraw -> Page -> Insert Page using Tempate
+    - choose the right template and create the page
+
+2. In the BIM workbench insert view by first selecting the section cut object then go to Annotation -> View and it will insert that view onto that page.
+
+3. Choose the Part you want to be in the TechDraw page. Go to TechDraw -> TechDraw Views -> Insert View
     - scale the view as accordingly
 
-2. Once that you have a view, you can cut section using that view in TechDraw.
+4. Once that you have a view, you can cut section using that view in TechDraw.
+
+5. You can do dimension with the BIM workbench. You can customize the dimension by applying annotation styles onto the dimensions.
+
+### TechDraw Templates
+1. customize your own template https://blog.freecad.org/2023/12/19/tutorial-create-custom-techdraw-templates/
+
+## Rendering with the Render Workbench
+- https://github.com/FreeCAD/FreeCAD-render?tab=readme-ov-file#usage
+- https://github.com/FreeCAD/FreeCAD-render/blob/master/docs/EngineInstall.md#povray
+
+1. Install povray with the command 
+    ```
+    sudo apt install povray
+    ```
+
+2. Install the Render workbench using the workbench manager
+
+3. Go to the Render Workbench, go to Render -> Render
+    - In workbench settings, enter /usr/bin/povray in 'PovRay executable path'. 
+
+4. Create a rendering project go to Render -> Projects -> Povray Projects. Choosen the povray_studio_light.pov
+
+5. Select the objects you want to render and ctrl+click the povray project. Then click on the Rendering View icon. A render view will be created in the project.
+
+6. Change to perspective view and to the scene you want to render. Click on the Project on the tree view and click Render.
 
 ## Print from 3D view
 1. Go to Edit -> Preferences -> Display -> Camera type -> Perspective rendering
