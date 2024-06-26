@@ -1,0 +1,42 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: docs/intro
+parts:
+- caption: Motivation and Background
+  numbered: true
+  chapters:
+  - file: docs/010/01_aims
+  - file: docs/010/02_issues
+  - file: docs/010/03_0_process
+    sections:
+    - file: docs/010/03_1_formulate
+  - file: docs/010/04_0_archsci
+    sections:
+    - file: docs/010/04_1_thermcond
+    - file: docs/010/04_2_rad_trsf
+    - file: docs/010/04_3_climate
+    - file: docs/010/04_4_loads
+    - file: docs/010/04_5_tcomf
+    - file: docs/010/04_6_lighting
+  - file: docs/010/05_tech
+- caption: Task
+  numbered: true        
+  chapters:
+  - file: docs/020/01_stadgarage
+  - file: docs/020/02_optenvcool
+- caption: Sub-Task
+  numbered: true
+  chapters:
+  - file: docs/030/01_tips
+  - file: docs/030/02_b3dsect
+  - file: docs/030/03_b3dplane
+  - file: docs/030/04_b3dimg
+  - file: docs/030/05_fcbim
+  - file: docs/030/06_openstudiopy
+  - file: docs/030/07_librecad
+- caption: References
+  numbered: true
+  chapters:
+  - file: docs/biblio
