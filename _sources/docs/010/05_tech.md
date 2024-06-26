@@ -24,6 +24,8 @@
     - Introduction: https://technical.buildingsmart.org/standards/ifc/
     - Formats: https://technical.buildingsmart.org/standards/ifc/ifc-formats/
     - Specificaitons: https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/
+        - https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/ifcsharedbldgelements/content.html
+        - to read the specifications, the attributes click the expand toggle at the bottom of the table. The numbered attributes are what define the entity.
 - Constructon to Operations Building Information Exhcnage (COBie): https://www.nibs.org/nbims/cobie/v3
 - BIM Collaboration Format (BCF): https://technical.buildingsmart.org/standards/bcf/
 - Information Delivery Specification (IDS)
