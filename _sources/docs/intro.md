@@ -1,4 +1,4 @@
-# Performance-Based Generative Design Workflows (PBGDW)
+# Performance-Based Generative Design Workflows (PBGDW) using Open Standards and Open Source Software
 
 ## What is Open Computational Design?
 Computational design uses computational technologies to support and enhance the design process {cite}`yu_computational_2021,johnson_design_2016`. It requires designers to systematically assess the design process to apply the appropriate technologies in a timely and effective manner. Computational design offers new opportunities to design better built environments. It promises a seamless built-virtual-built cycle where designers are able to design virtually, translate the design to built artefact using digital fabrications, then again capture and represent the artefact virtually with sensors and reality capture technologies for refinement (illustrated in the image below). This cycle allows designers to refine their designs relatively cheaply and rapidly. **It is a powerful tool for the design of sustainable developments, where designers are able to meaningfully evaluate their designs against the Sustainable Development Goals (SDGs) throughout the design process**.
