@@ -1,4 +1,4 @@
-# Design Issues
+# Motivation - Designing for Climate Change
 ## Climate Change
 This is a summary of my understanding of climate change. I have summarize concepts from these two books {cite}`goldstein-rose_100_2020,doerr_speed_2021` and heavily copied text from the IPCC AR6 Mitigation Report. I am attempting to highlight the key points relevant to designers of the built environment from my reading. This entry serves as a note for myself.
 

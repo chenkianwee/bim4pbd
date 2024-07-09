@@ -23,7 +23,7 @@ Generally, a design project can be separated into 4 main work stages, **Pre-desi
 
 Within each stage, there will be a set of deliverables. The deliverables can be drawings, 3D models, mock-ups or the actual built artefacts. Within each stage, design tasks are performed to deliver the deliverables. Design tasks can be sorted into 5 main types, **Formulating, Moving, Representing, Evaluating and Managing** {cite}`lawson_design_2009`.
 
-- Formulating - identify and frame the design problem. Refer to {doc}`03_1_formulate` for further discussion.
+- Formulating - identify and frame the design problem. Refer to {doc}`02_1_formulate` for further discussion.
 - Moving - propose/modify solutions to the design problem.
 - Representing - communicate solutions through drawings, models and mock-ups.
 - Evaluating - assess the solution based on certain criteria.

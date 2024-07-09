@@ -7,35 +7,39 @@ parts:
 - caption: Motivation and Background
   numbered: true
   chapters:
-  - file: docs/010/01_aims
-  - file: docs/010/02_issues
-  - file: docs/010/03_0_process
+  - file: docs/01/01_motivation
+  - file: docs/01/02_0_process
     sections:
-    - file: docs/010/03_1_formulate
-  - file: docs/010/04_0_archsci
-    sections:
-    - file: docs/010/04_1_thermcond
-    - file: docs/010/04_2_rad_trsf
-    - file: docs/010/04_3_climate
-    - file: docs/010/04_4_loads
-    - file: docs/010/04_5_tcomf
-    - file: docs/010/04_6_lighting
-  - file: docs/010/05_tech
-- caption: Task
+    - file: docs/01/02_1_formulate
+- caption: Tutorials
   numbered: true        
   chapters:
-  - file: docs/020/01_stadgarage
-  - file: docs/020/02_optenvcool
-- caption: Sub-Task
+  - file: docs/02/01_stadgarage
+  - file: docs/02/02_optenvcool
+- caption: Software User Guides
   numbered: true
   chapters:
-  - file: docs/030/01_tips
-  - file: docs/030/02_b3dsect
-  - file: docs/030/03_b3dplane
-  - file: docs/030/04_b3dimg
-  - file: docs/030/05_fcbim
-  - file: docs/030/06_openstudiopy
-  - file: docs/030/07_librecad
+  - file: docs/03/01_tech
+  - file: docs/03/02_tips
+  - file: docs/03/03_b3dsect
+  - file: docs/03/04_b3dplane
+  - file: docs/03/05_b3dimg
+  - file: docs/03/06_fcbim
+  - file: docs/03/07_librecad
+  - file: docs/03/08_openstudiopy
+  - file: docs/03/09_ifcopenshell
+- caption: Understanding Performance
+  numbered: true
+  chapters:
+  - file: docs/04/01_rating
+  - file: docs/04/02_0_archsci
+    sections:
+    - file: docs/04/02_1_thermcond
+    - file: docs/04/02_2_rad_trsf
+    - file: docs/04/02_3_climate
+    - file: docs/04/02_4_loads
+    - file: docs/04/02_5_tcomf
+    - file: docs/04/02_6_lighting
 - caption: References
   numbered: true
   chapters:
