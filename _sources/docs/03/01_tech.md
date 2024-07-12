@@ -20,21 +20,46 @@
 - Building footprint of the whole world (https://github.com/microsoft/GlobalMLBuildingFootprints)
 
 ### Building Information Modeling
-- Industry Foundation Class (IFC) 
+- Standard 224-2023 -- Standard for the Application of Building Information Modeling (ANSI Approved) (https://ashrae.iwrapper.com/ASHRAE_PREVIEW_ONLY_STANDARDS/STD_224_2023)
+
+#### Data Standards
+- **Industry Foundation Class (IFC)**
     - Introduction: https://technical.buildingsmart.org/standards/ifc/
     - Formats: https://technical.buildingsmart.org/standards/ifc/ifc-formats/
     - Specificaitons: https://technical.buildingsmart.org/standards/ifc/ifc-schema-specifications/
         - IFC 4X3_ADD2: https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/
             - https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/ifcsharedbldgelements/content.html
             - to read the specifications, the attributes click the expand toggle at the bottom of the table. The numbered attributes are what define the entity.
-- Constructon to Operations Building Information Exhcnage (COBie): https://www.nibs.org/nbims/cobie/v3
+- **Model Definition View (MVD)**: https://technical.buildingsmart.org/standards/ifc/mvd/
+    - MVD database: https://technical.buildingsmart.org/standards/ifc/mvd/mvd-database/
+
+#### Workflow Standards
 - BIM Collaboration Format (BCF): https://technical.buildingsmart.org/standards/bcf/
 - Information Delivery Specification (IDS)
     - https://technical.buildingsmart.org/projects/information-delivery-specification-ids/
     - https://github.com/buildingSMART/IDS
-- Standard 224-2023 -- Standard for the Application of Building Information Modeling (ANSI Approved) (https://ashrae.iwrapper.com/ASHRAE_PREVIEW_ONLY_STANDARDS/STD_224_2023)
+- Information Delivery Manual (IDM): https://technical.buildingsmart.org/standards/information-delivery-manual/
+    - IDM examples: https://technical.buildingsmart.org/standards/information-delivery-manual/idm-database/
+    - Constructon to Operations Building Information Exhcnage (COBie): 
+        - https://www.nibs.org/nbims/cobie/v3
+        - https://www.wbdg.org/bim/cobie
+
+#### OpenBIM API standards
+- https://technical.buildingsmart.org/ -> Standards -> OpenBIM API Standards
+- Foundation API
+- Documents API
+- BCF API
+- Building Smart Data Dictionary (bSDD) API
+
+### Building Performance Simulation
+- Openstudio Model (https://openstudio.net/) 
+- Standard 90.1-2022 (S-I), Energy Standard for Buildings Except Low-Rise Residential Buildings (https://www.ashrae.org/technical-resources/standards-and-guidelines/read-only-versions-of-ashrae-standards)
+- Standard 90.2-2018, Energy Efficient Design of Low-Rise Residential Buildings (https://ashrae.iwrapper.com/ASHRAE_PREVIEW_ONLY_STANDARDS/STD_90.2_2018)
+- Standard 189.1-2020, Standard for the Design of High-Performance Green Buildings (https://www.ashrae.org/technical-resources/standards-and-guidelines/read-only-versions-of-ashrae-standards)
+- Standard 183-2007 (RA 2020) -- Peak Cooling and Heating Load Calculations in Buildings Except Low-Rise Residential Buildings (ACCA Co-sponsored) (https://ashrae.iwrapper.com/ASHRAE_PREVIEW_ONLY_STANDARDS/STD_183_2007_RA_2020)
 
 ### Building Operations
+- BACNet: https://thebacnetinstitute.org/
 - Brick Schema (https://brickschema.org/)
 - Guideline 36-2021 -- High-Performance Sequences of Operation for HVAC Systems (https://ashrae.iwrapper.com/ASHRAE_PREVIEW_ONLY_STANDARDS/GL_36_2021) 
 - Standard 135-2020, BACnetTM A Data Communication Protocol for Building Automation and Control Networks (https://ashrae.iwrapper.com/ASHRAE_PREVIEW_ONLY_STANDARDS/STD_135_2020)
@@ -44,13 +69,6 @@
     - https://open223.info/
     - https://github.com/open223
 - BOPTest simulation based controls https://github.com/ibpsa/project1-boptest?tab=readme-ov-file
-
-### Building Performance Simulation
-- Openstudio Model (https://openstudio.net/) 
-- Standard 90.1-2022 (S-I), Energy Standard for Buildings Except Low-Rise Residential Buildings (https://www.ashrae.org/technical-resources/standards-and-guidelines/read-only-versions-of-ashrae-standards)
-- Standard 90.2-2018, Energy Efficient Design of Low-Rise Residential Buildings (https://ashrae.iwrapper.com/ASHRAE_PREVIEW_ONLY_STANDARDS/STD_90.2_2018)
-- Standard 189.1-2020, Standard for the Design of High-Performance Green Buildings (https://www.ashrae.org/technical-resources/standards-and-guidelines/read-only-versions-of-ashrae-standards)
-- Standard 183-2007 (RA 2020) -- Peak Cooling and Heating Load Calculations in Buildings Except Low-Rise Residential Buildings (ACCA Co-sponsored) (https://ashrae.iwrapper.com/ASHRAE_PREVIEW_ONLY_STANDARDS/STD_183_2007_RA_2020)
 
 ## 3D Modeling
 - Blender 3D (https://www.blender.org/) - Visualization

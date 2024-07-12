@@ -1,4 +1,8 @@
 # IFCOpenShell
+## IfcRelAssignsToGroup
+- https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcZone.htm
+- https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcRelAssignsToGroup.htm
+- https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/annex_e/structural-analysis-model/structural-curve-member.html
 
 ## IFCTimeSeries
 ```
