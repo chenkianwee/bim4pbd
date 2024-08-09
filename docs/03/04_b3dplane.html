@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>4. Blender3D plane &#8212; Open Computational Design for Sustainable Development</title>
+    <title>2. Blender3D plane &#8212; Open Computational Design for Sustainable Development</title>
   
   
   
@@ -60,8 +60,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/03/04_b3dplane';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="5. Import background image and scale" href="05_b3dimg.html" />
-    <link rel="prev" title="3. Sectional perspective with Blender3D and LibreCAD" href="03_b3dsect.html" />
+    <link rel="next" title="3. Import background image and scale" href="05_b3dimg.html" />
+    <link rel="prev" title="1. Sectional perspective with Blender3D and LibreCAD" href="03_b3dsect.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -189,19 +189,22 @@
 <li class="toctree-l1"><a class="reference internal" href="../02/01_stadgarage.html">1. Analysis of Princeton Campus - Stadium Garage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../02/02_optenvcool.html">2. Multi-Objective Optimization of Building Form, Envelope and Cooling System</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Software User Guides</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Software How-To Guides</span></p>
 <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="03_b3dsect.html">1. Sectional perspective with Blender3D and LibreCAD</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">2. Blender3D plane</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_b3dimg.html">3. Import background image and scale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_fcbim.html">4. BIM with FreeCAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_librecad.html">5. Drafting with LibreCAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_openstudiopy.html">6. Understanding the Openstudio Workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_ifcopenshell.html">7. IFCOpenShell</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Software Reference Guides</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="01_tech.html">1. Open-Source Technologies and Data for Design Process</a></li>
 <li class="toctree-l1"><a class="reference internal" href="02_tips.html">2. Shortcut keys and tips</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_b3dsect.html">3. Sectional perspective with Blender3D and LibreCAD</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">4. Blender3D plane</a></li>
-<li class="toctree-l1"><a class="reference internal" href="05_b3dimg.html">5. Import background image and scale</a></li>
-<li class="toctree-l1"><a class="reference internal" href="06_fcbim.html">6. BIM with FreeCAD</a></li>
-<li class="toctree-l1"><a class="reference internal" href="07_librecad.html">7. Drafting with LibreCAD</a></li>
-<li class="toctree-l1"><a class="reference internal" href="08_openstudiopy.html">8. Understanding the Openstudio Workflow</a></li>
-<li class="toctree-l1"><a class="reference internal" href="09_ifcopenshell.html">9. IFCOpenShell</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Understanding Performance</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Building Performance Reference Guides</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../04/01_rating.html">1. Rating Systems</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../04/02_0_archsci.html">2. Architectural Science</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -412,9 +415,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sizing-a-plane-in-blender3d">4.1. Sizing a plane in blender3d</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extruding-an-edge-of-a-plane">4.2. Extruding an edge of a plane</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extruding-the-face-of-a-plane">4.3. Extruding the face of a plane</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sizing-a-plane-in-blender3d">2.1. Sizing a plane in blender3d</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extruding-an-edge-of-a-plane">2.2. Extruding an edge of a plane</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extruding-the-face-of-a-plane">2.3. Extruding the face of a plane</a></li>
 </ul>
             </nav>
         </div>
@@ -427,9 +430,9 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="blender3d-plane">
-<h1><span class="section-number">4. </span>Blender3D plane<a class="headerlink" href="#blender3d-plane" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">2. </span>Blender3D plane<a class="headerlink" href="#blender3d-plane" title="Link to this heading">#</a></h1>
 <section id="sizing-a-plane-in-blender3d">
-<h2><span class="section-number">4.1. </span>Sizing a plane in blender3d<a class="headerlink" href="#sizing-a-plane-in-blender3d" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.1. </span>Sizing a plane in blender3d<a class="headerlink" href="#sizing-a-plane-in-blender3d" title="Link to this heading">#</a></h2>
 <ol class="arabic">
 <li><p>In the ‘Layout’ workspace go to Add -&gt; Mesh -&gt; Plane</p></li>
 <li><p>Go to edit mode by using the keyboard shortcup ‘Tab’ while selecting the plane.</p></li>
@@ -447,14 +450,14 @@ document.write(`
 </ol>
 </section>
 <section id="extruding-an-edge-of-a-plane">
-<h2><span class="section-number">4.2. </span>Extruding an edge of a plane<a class="headerlink" href="#extruding-an-edge-of-a-plane" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.2. </span>Extruding an edge of a plane<a class="headerlink" href="#extruding-an-edge-of-a-plane" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Choose the plane, then go to edit mode.</p></li>
 <li><p>Choose the edge to extrude. Make sure your select mode is Edge. Press ‘e’ then ‘x’,’y’ or ‘z’ to specify the direction of extrusion.</p></li>
 </ol>
 </section>
 <section id="extruding-the-face-of-a-plane">
-<h2><span class="section-number">4.3. </span>Extruding the face of a plane<a class="headerlink" href="#extruding-the-face-of-a-plane" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.3. </span>Extruding the face of a plane<a class="headerlink" href="#extruding-the-face-of-a-plane" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Choose the plane, then go to edit mode.</p></li>
 <li><p>Choose the face to extrude. Make sure your select mode is Face. Press ‘e’ then ‘x’,’y’ or ‘z’ to specify the direction of extrusion.</p></li>
@@ -498,7 +501,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">3. </span>Sectional perspective with Blender3D and LibreCAD</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Sectional perspective with Blender3D and LibreCAD</p>
       </div>
     </a>
     <a class="right-next"
@@ -506,7 +509,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">5. </span>Import background image and scale</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Import background image and scale</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -526,9 +529,9 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sizing-a-plane-in-blender3d">4.1. Sizing a plane in blender3d</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extruding-an-edge-of-a-plane">4.2. Extruding an edge of a plane</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extruding-the-face-of-a-plane">4.3. Extruding the face of a plane</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sizing-a-plane-in-blender3d">2.1. Sizing a plane in blender3d</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extruding-an-edge-of-a-plane">2.2. Extruding an edge of a plane</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extruding-the-face-of-a-plane">2.3. Extruding the face of a plane</a></li>
 </ul>
   </nav></div>
 

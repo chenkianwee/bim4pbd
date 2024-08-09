@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>8. Understanding the Openstudio Workflow &#8212; Open Computational Design for Sustainable Development</title>
+    <title>6. Understanding the Openstudio Workflow &#8212; Open Computational Design for Sustainable Development</title>
   
   
   
@@ -60,8 +60,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/03/08_openstudiopy';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="9. IFCOpenShell" href="09_ifcopenshell.html" />
-    <link rel="prev" title="7. Drafting with LibreCAD" href="07_librecad.html" />
+    <link rel="next" title="7. IFCOpenShell" href="09_ifcopenshell.html" />
+    <link rel="prev" title="5. Drafting with LibreCAD" href="07_librecad.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -189,19 +189,22 @@
 <li class="toctree-l1"><a class="reference internal" href="../02/01_stadgarage.html">1. Analysis of Princeton Campus - Stadium Garage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../02/02_optenvcool.html">2. Multi-Objective Optimization of Building Form, Envelope and Cooling System</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Software User Guides</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Software How-To Guides</span></p>
 <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="03_b3dsect.html">1. Sectional perspective with Blender3D and LibreCAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_b3dplane.html">2. Blender3D plane</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_b3dimg.html">3. Import background image and scale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_fcbim.html">4. BIM with FreeCAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_librecad.html">5. Drafting with LibreCAD</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">6. Understanding the Openstudio Workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_ifcopenshell.html">7. IFCOpenShell</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Software Reference Guides</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="01_tech.html">1. Open-Source Technologies and Data for Design Process</a></li>
 <li class="toctree-l1"><a class="reference internal" href="02_tips.html">2. Shortcut keys and tips</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_b3dsect.html">3. Sectional perspective with Blender3D and LibreCAD</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_b3dplane.html">4. Blender3D plane</a></li>
-<li class="toctree-l1"><a class="reference internal" href="05_b3dimg.html">5. Import background image and scale</a></li>
-<li class="toctree-l1"><a class="reference internal" href="06_fcbim.html">6. BIM with FreeCAD</a></li>
-<li class="toctree-l1"><a class="reference internal" href="07_librecad.html">7. Drafting with LibreCAD</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">8. Understanding the Openstudio Workflow</a></li>
-<li class="toctree-l1"><a class="reference internal" href="09_ifcopenshell.html">9. IFCOpenShell</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Understanding Performance</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Building Performance Reference Guides</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../04/01_rating.html">1. Rating Systems</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../04/02_0_archsci.html">2. Architectural Science</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -412,22 +415,22 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prototype-buildings-and-standards">8.1. Prototype buildings and standards</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weather-files">8.2. Weather Files</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generating-annual-meteorological-year-amy-epw-file">8.2.1. Generating Annual Meteorological Year (AMY) EPW file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prototype-buildings-and-standards">6.1. Prototype buildings and standards</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weather-files">6.2. Weather Files</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generating-annual-meteorological-year-amy-epw-file">6.2.1. Generating Annual Meteorological Year (AMY) EPW file</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#running-a-simple-simulation-with-openstudio-application">8.3. Running a simple simulation with OpenStudio Application</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-energy-modeling-with-python-openstudio-sdk">8.4. Building Energy Modeling with Python OpenStudio SDK</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ifc-to-osm">8.5. IFC to OSM</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-python-measure">8.6. Writing Python Measure</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#openstudio-code-snippets">8.7. Openstudio Code Snippets</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-the-energyplus-output-variables">8.8. Understanding the energyplus output variables</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#python-openstudio-script-to-add-output-item-to-idf-files">8.8.1. Python Openstudio Script to add Output Item to Idf files</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#read-the-eplusout-sql">8.8.2. Read the eplusout.sql</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#running-a-simple-simulation-with-openstudio-application">6.3. Running a simple simulation with OpenStudio Application</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-energy-modeling-with-python-openstudio-sdk">6.4. Building Energy Modeling with Python OpenStudio SDK</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ifc-to-osm">6.5. IFC to OSM</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-python-measure">6.6. Writing Python Measure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#openstudio-code-snippets">6.7. Openstudio Code Snippets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-the-energyplus-output-variables">6.8. Understanding the energyplus output variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#python-openstudio-script-to-add-output-item-to-idf-files">6.8.1. Python Openstudio Script to add Output Item to Idf files</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#read-the-eplusout-sql">6.8.2. Read the eplusout.sql</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resources">8.9. Resources</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resources">6.9. Resources</a></li>
 </ul>
             </nav>
         </div>
@@ -440,7 +443,7 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="understanding-the-openstudio-workflow">
-<h1><span class="section-number">8. </span>Understanding the Openstudio Workflow<a class="headerlink" href="#understanding-the-openstudio-workflow" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">6. </span>Understanding the Openstudio Workflow<a class="headerlink" href="#understanding-the-openstudio-workflow" title="Link to this heading">#</a></h1>
 <ul class="simple">
 <li><p>OpenStudio Workflow (.osw file) - describes the workflow steps of OpenStudio <a href="https://nrel.github.io/OpenStudio-user-documentation/reference/command_line_interface/#osw-structure" target="_blank">official explanation here.</a></p>
 <ul>
@@ -475,20 +478,20 @@ document.write(`
 </li>
 </ul>
 <section id="prototype-buildings-and-standards">
-<h2><span class="section-number">8.1. </span>Prototype buildings and standards<a class="headerlink" href="#prototype-buildings-and-standards" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">6.1. </span>Prototype buildings and standards<a class="headerlink" href="#prototype-buildings-and-standards" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>ASHRAE 90.1</p></li>
 <li><p>IECC</p></li>
 </ul>
 </section>
 <section id="weather-files">
-<h2><span class="section-number">8.2. </span>Weather Files<a class="headerlink" href="#weather-files" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">6.2. </span>Weather Files<a class="headerlink" href="#weather-files" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://climate.onebuilding.org/">https://climate.onebuilding.org/</a></p></li>
 <li><p><a class="reference external" href="https://energyplus.net/weather">https://energyplus.net/weather</a></p></li>
 </ul>
 <section id="generating-annual-meteorological-year-amy-epw-file">
-<h3><span class="section-number">8.2.1. </span>Generating Annual Meteorological Year (AMY) EPW file<a class="headerlink" href="#generating-annual-meteorological-year-amy-epw-file" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">6.2.1. </span>Generating Annual Meteorological Year (AMY) EPW file<a class="headerlink" href="#generating-annual-meteorological-year-amy-epw-file" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Ladybug tools forum: <a class="reference external" href="https://discourse.ladybug.tools/t/generate-epw-file-for-any-location-any-year-from-1940/21263">https://discourse.ladybug.tools/t/generate-epw-file-for-any-location-any-year-from-1940/21263</a></p></li>
 <li><p><a class="github reference external" href="https://github.com/IMMM-SFA/diyepw">IMMM-SFA/diyepw</a></p></li>
@@ -496,7 +499,7 @@ document.write(`
 </section>
 </section>
 <section id="running-a-simple-simulation-with-openstudio-application">
-<h2><span class="section-number">8.3. </span>Running a simple simulation with OpenStudio Application<a class="headerlink" href="#running-a-simple-simulation-with-openstudio-application" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">6.3. </span>Running a simple simulation with OpenStudio Application<a class="headerlink" href="#running-a-simple-simulation-with-openstudio-application" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Download and install OpenStudio Application <a class="reference external" href="https://github.com/openstudiocoalition/OpenStudioApplication/releases">here</a></p></li>
 <li><p>Open OpenStudio. Go to File -&gt; Examples -&gt; Example Model</p></li>
@@ -506,7 +509,7 @@ document.write(`
 </ol>
 </section>
 <section id="building-energy-modeling-with-python-openstudio-sdk">
-<h2><span class="section-number">8.4. </span>Building Energy Modeling with Python OpenStudio SDK<a class="headerlink" href="#building-energy-modeling-with-python-openstudio-sdk" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">6.4. </span>Building Energy Modeling with Python OpenStudio SDK<a class="headerlink" href="#building-energy-modeling-with-python-openstudio-sdk" title="Link to this heading">#</a></h2>
 <ol class="arabic">
 <li><p>Install the python binding of Openstudio</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">openstudio</span>
@@ -565,7 +568,7 @@ m.save(path, True)
 </ol>
 </section>
 <section id="ifc-to-osm">
-<h2><span class="section-number">8.5. </span>IFC to OSM<a class="headerlink" href="#ifc-to-osm" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">6.5. </span>IFC to OSM<a class="headerlink" href="#ifc-to-osm" title="Link to this heading">#</a></h2>
 <ol class="arabic">
 <li><p>Model a IFC building model <a class="reference internal" href="06_fcbim.html"><span class="std std-doc">You can do it with FreeCAD</span></a> and then <a class="reference internal" href="06_fcbim.html#export-to-ifc-and-read-with-ifcopenshell"><span class="std std-ref">export it IFC</span></a>.</p></li>
 <li><p>Using the IFCOpenshell and the OpenStudio library convert the IFC model to OSM. Here is an example script that converts a IFC file to OSM and uses an ideal air loads calculation to get the cooling load.</p>
@@ -1109,7 +1112,7 @@ execute_workflow(wrkflw_path)
 </ol>
 </section>
 <section id="writing-python-measure">
-<h2><span class="section-number">8.6. </span>Writing Python Measure<a class="headerlink" href="#writing-python-measure" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">6.6. </span>Writing Python Measure<a class="headerlink" href="#writing-python-measure" title="Link to this heading">#</a></h2>
 <ol class="arabic">
 <li><p>Create a new measure with the openstudio core</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">openstudio</span> <span class="n">measure</span> <span class="n">new</span> <span class="o">--</span><span class="n">class</span><span class="o">-</span><span class="n">name</span> <span class="n">HVACResults</span> <span class="o">--</span><span class="nb">type</span> <span class="n">EnergyPlusMeasure</span> <span class="o">--</span><span class="n">language</span> <span class="n">Python</span> <span class="o">--</span><span class="n">name</span> <span class="s2">&quot;My energyplus measure&quot;</span> <span class="o">--</span><span class="n">description</span> <span class="s2">&quot;this is my measure&quot;</span> <span class="o">--</span><span class="n">modeler</span><span class="o">-</span><span class="n">description</span> <span class="s2">&quot;this does complicated stuff&quot;</span> <span class="o">--</span><span class="n">taxonomy</span><span class="o">-</span><span class="n">tag</span> <span class="s2">&quot;Reporting.QAQC&quot;</span> <span class="o">./</span><span class="n">measures</span><span class="o">/</span><span class="n">hvac_results</span>
@@ -1131,7 +1134,7 @@ execute_workflow(wrkflw_path)
 </ol>
 </section>
 <section id="openstudio-code-snippets">
-<h2><span class="section-number">8.7. </span>Openstudio Code Snippets<a class="headerlink" href="#openstudio-code-snippets" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">6.7. </span>Openstudio Code Snippets<a class="headerlink" href="#openstudio-code-snippets" title="Link to this heading">#</a></h2>
 <ul>
 <li><p>Removing objects from workspace</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">meter_objs</span> <span class="o">=</span> <span class="n">workspace</span><span class="o">.</span><span class="n">getObjectsByType</span><span class="p">(</span><span class="s1">&#39;Output:Meter&#39;</span><span class="p">)</span>
@@ -1143,7 +1146,7 @@ execute_workflow(wrkflw_path)
 </ul>
 </section>
 <section id="understanding-the-energyplus-output-variables">
-<h2><span class="section-number">8.8. </span>Understanding the energyplus output variables<a class="headerlink" href="#understanding-the-energyplus-output-variables" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">6.8. </span>Understanding the energyplus output variables<a class="headerlink" href="#understanding-the-energyplus-output-variables" title="Link to this heading">#</a></h2>
 <p>The output variables is the lowest level result you can output from an energyplus simulation. These variables can be aggregated into meters where a meter is made up of a list of variables. On the highest level, you have the tables (report), where it is an aggregation of various variables and meters to form a complete performance view of the building.</p>
 <ul class="simple">
 <li><p>Energyplus documentation on output details: <a class="reference external" href="https://energyplus.net/assets/nrel_custom/pdfs/pdfs_v23.2.0/OutputDetailsAndExamples.pdf">https://energyplus.net/assets/nrel_custom/pdfs/pdfs_v23.2.0/OutputDetailsAndExamples.pdf</a></p></li>
@@ -1220,7 +1223,7 @@ execute_workflow(wrkflw_path)
 </li>
 </ol>
 <section id="python-openstudio-script-to-add-output-item-to-idf-files">
-<h3><span class="section-number">8.8.1. </span>Python Openstudio Script to add Output Item to Idf files<a class="headerlink" href="#python-openstudio-script-to-add-output-item-to-idf-files" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">6.8.1. </span>Python Openstudio Script to add Output Item to Idf files<a class="headerlink" href="#python-openstudio-script-to-add-output-item-to-idf-files" title="Link to this heading">#</a></h3>
 <ul>
 <li><p>output variable</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">idfObject</span> <span class="o">=</span> <span class="n">openstudio</span><span class="o">.</span><span class="n">IdfObject</span><span class="p">(</span><span class="n">openstudio</span><span class="o">.</span><span class="n">IddObjectType</span><span class="p">(</span><span class="s1">&#39;Output:Variable&#39;</span><span class="p">))</span>
@@ -1253,7 +1256,7 @@ execute_workflow(wrkflw_path)
 </ul>
 </section>
 <section id="read-the-eplusout-sql">
-<h3><span class="section-number">8.8.2. </span>Read the eplusout.sql<a class="headerlink" href="#read-the-eplusout-sql" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">6.8.2. </span>Read the eplusout.sql<a class="headerlink" href="#read-the-eplusout-sql" title="Link to this heading">#</a></h3>
 <p>I will use the Ladybug tools library to read the sql generated from the energyplus result. Install the ladybug tool with pip.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ladybug</span><span class="o">-</span><span class="n">core</span>
 </pre></div>
@@ -1283,7 +1286,7 @@ execute_workflow(wrkflw_path)
 </section>
 </section>
 <section id="resources">
-<h2><span class="section-number">8.9. </span>Resources<a class="headerlink" href="#resources" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">6.9. </span>Resources<a class="headerlink" href="#resources" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>API reference document (<a class="reference external" href="https://s3.amazonaws.com/openstudio-sdk-documentation/index.html">https://s3.amazonaws.com/openstudio-sdk-documentation/index.html</a>)</p></li>
 <li><p>Openstudio-standards: the ruby library that is very useful for providing all the function uesful for energy modeling</p>
@@ -1370,7 +1373,7 @@ execute_workflow(wrkflw_path)
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">7. </span>Drafting with LibreCAD</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>Drafting with LibreCAD</p>
       </div>
     </a>
     <a class="right-next"
@@ -1378,7 +1381,7 @@ execute_workflow(wrkflw_path)
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">9. </span>IFCOpenShell</p>
+        <p class="prev-next-title"><span class="section-number">7. </span>IFCOpenShell</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1398,22 +1401,22 @@ execute_workflow(wrkflw_path)
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prototype-buildings-and-standards">8.1. Prototype buildings and standards</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weather-files">8.2. Weather Files</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generating-annual-meteorological-year-amy-epw-file">8.2.1. Generating Annual Meteorological Year (AMY) EPW file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prototype-buildings-and-standards">6.1. Prototype buildings and standards</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weather-files">6.2. Weather Files</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generating-annual-meteorological-year-amy-epw-file">6.2.1. Generating Annual Meteorological Year (AMY) EPW file</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#running-a-simple-simulation-with-openstudio-application">8.3. Running a simple simulation with OpenStudio Application</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-energy-modeling-with-python-openstudio-sdk">8.4. Building Energy Modeling with Python OpenStudio SDK</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ifc-to-osm">8.5. IFC to OSM</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-python-measure">8.6. Writing Python Measure</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#openstudio-code-snippets">8.7. Openstudio Code Snippets</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-the-energyplus-output-variables">8.8. Understanding the energyplus output variables</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#python-openstudio-script-to-add-output-item-to-idf-files">8.8.1. Python Openstudio Script to add Output Item to Idf files</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#read-the-eplusout-sql">8.8.2. Read the eplusout.sql</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#running-a-simple-simulation-with-openstudio-application">6.3. Running a simple simulation with OpenStudio Application</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-energy-modeling-with-python-openstudio-sdk">6.4. Building Energy Modeling with Python OpenStudio SDK</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ifc-to-osm">6.5. IFC to OSM</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-python-measure">6.6. Writing Python Measure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#openstudio-code-snippets">6.7. Openstudio Code Snippets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-the-energyplus-output-variables">6.8. Understanding the energyplus output variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#python-openstudio-script-to-add-output-item-to-idf-files">6.8.1. Python Openstudio Script to add Output Item to Idf files</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#read-the-eplusout-sql">6.8.2. Read the eplusout.sql</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resources">8.9. Resources</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resources">6.9. Resources</a></li>
 </ul>
   </nav></div>
 

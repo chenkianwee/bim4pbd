@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>9. IFCOpenShell &#8212; Open Computational Design for Sustainable Development</title>
+    <title>7. IFCOpenShell &#8212; Open Computational Design for Sustainable Development</title>
   
   
   
@@ -60,8 +60,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/03/09_ifcopenshell';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="1. Rating Systems" href="../04/01_rating.html" />
-    <link rel="prev" title="8. Understanding the Openstudio Workflow" href="08_openstudiopy.html" />
+    <link rel="next" title="1. Open-Source Technologies and Data for Design Process" href="01_tech.html" />
+    <link rel="prev" title="6. Understanding the Openstudio Workflow" href="08_openstudiopy.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -189,19 +189,22 @@
 <li class="toctree-l1"><a class="reference internal" href="../02/01_stadgarage.html">1. Analysis of Princeton Campus - Stadium Garage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../02/02_optenvcool.html">2. Multi-Objective Optimization of Building Form, Envelope and Cooling System</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Software User Guides</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Software How-To Guides</span></p>
 <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="03_b3dsect.html">1. Sectional perspective with Blender3D and LibreCAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_b3dplane.html">2. Blender3D plane</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_b3dimg.html">3. Import background image and scale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_fcbim.html">4. BIM with FreeCAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_librecad.html">5. Drafting with LibreCAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_openstudiopy.html">6. Understanding the Openstudio Workflow</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">7. IFCOpenShell</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Software Reference Guides</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="01_tech.html">1. Open-Source Technologies and Data for Design Process</a></li>
 <li class="toctree-l1"><a class="reference internal" href="02_tips.html">2. Shortcut keys and tips</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_b3dsect.html">3. Sectional perspective with Blender3D and LibreCAD</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_b3dplane.html">4. Blender3D plane</a></li>
-<li class="toctree-l1"><a class="reference internal" href="05_b3dimg.html">5. Import background image and scale</a></li>
-<li class="toctree-l1"><a class="reference internal" href="06_fcbim.html">6. BIM with FreeCAD</a></li>
-<li class="toctree-l1"><a class="reference internal" href="07_librecad.html">7. Drafting with LibreCAD</a></li>
-<li class="toctree-l1"><a class="reference internal" href="08_openstudiopy.html">8. Understanding the Openstudio Workflow</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">9. IFCOpenShell</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Understanding Performance</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Building Performance Reference Guides</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../04/01_rating.html">1. Rating Systems</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../04/02_0_archsci.html">2. Architectural Science</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -412,8 +415,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ifcrelassignstogroup">9.1. IfcRelAssignsToGroup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ifctimeseries">9.2. IFCTimeSeries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ifcrelassignstogroup">7.1. IfcRelAssignsToGroup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ifctimeseries">7.2. IFCTimeSeries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ifcopenshell-traverse-and-inverse">7.3. IFCOpenshell Traverse and Inverse</a></li>
 </ul>
             </nav>
         </div>
@@ -426,9 +430,9 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="ifcopenshell">
-<h1><span class="section-number">9. </span>IFCOpenShell<a class="headerlink" href="#ifcopenshell" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">7. </span>IFCOpenShell<a class="headerlink" href="#ifcopenshell" title="Link to this heading">#</a></h1>
 <section id="ifcrelassignstogroup">
-<h2><span class="section-number">9.1. </span>IfcRelAssignsToGroup<a class="headerlink" href="#ifcrelassignstogroup" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">7.1. </span>IfcRelAssignsToGroup<a class="headerlink" href="#ifcrelassignstogroup" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcZone.htm">https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcZone.htm</a></p></li>
 <li><p><a class="reference external" href="https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcRelAssignsToGroup.htm">https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcRelAssignsToGroup.htm</a></p></li>
@@ -436,7 +440,7 @@ document.write(`
 </ul>
 </section>
 <section id="ifctimeseries">
-<h2><span class="section-number">9.2. </span>IFCTimeSeries<a class="headerlink" href="#ifctimeseries" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">7.2. </span>IFCTimeSeries<a class="headerlink" href="#ifctimeseries" title="Link to this heading">#</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">ifcopenshell</span>
 <span class="kn">import</span> <span class="nn">ifcopenshell.api</span>
 <span class="c1"># region: IFCTimeseries</span>
@@ -469,6 +473,21 @@ document.write(`
 
 <span class="n">ifcmodel</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;/home/Desktop/test.ifc&#39;</span><span class="p">)</span>
 <span class="c1"># endregion: IFCTimeseries</span>
+</pre></div>
+</div>
+</section>
+<section id="ifcopenshell-traverse-and-inverse">
+<h2><span class="section-number">7.3. </span>IFCOpenshell Traverse and Inverse<a class="headerlink" href="#ifcopenshell-traverse-and-inverse" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">ifcopenshell</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">ifc_path</span><span class="p">)</span>
+    <span class="c1"># mat_layer_sets = model.by_type(&#39;IfcMaterialLayerSet&#39;)</span>
+    <span class="n">mat_layer_sets</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">by_type</span><span class="p">(</span><span class="s1">&#39;IfcWallType&#39;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">mls</span> <span class="ow">in</span> <span class="n">mat_layer_sets</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">]:</span>
+        <span class="n">trav</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">traverse</span><span class="p">(</span><span class="n">mls</span><span class="p">,</span> <span class="n">max_levels</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">invs</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">get_inverse</span><span class="p">(</span><span class="n">mls</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">inv</span> <span class="ow">in</span> <span class="n">invs</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">inv</span><span class="o">.</span><span class="n">get_info</span><span class="p">())</span>
+        <span class="c1"># print(type(invs))</span>
+    <span class="c1"># print(mat_layer_sets)</span>
 </pre></div>
 </div>
 </section>
@@ -510,15 +529,15 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">8. </span>Understanding the Openstudio Workflow</p>
+        <p class="prev-next-title"><span class="section-number">6. </span>Understanding the Openstudio Workflow</p>
       </div>
     </a>
     <a class="right-next"
-       href="../04/01_rating.html"
+       href="01_tech.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">1. </span>Rating Systems</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Open-Source Technologies and Data for Design Process</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -538,8 +557,9 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ifcrelassignstogroup">9.1. IfcRelAssignsToGroup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ifctimeseries">9.2. IFCTimeSeries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ifcrelassignstogroup">7.1. IfcRelAssignsToGroup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ifctimeseries">7.2. IFCTimeSeries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ifcopenshell-traverse-and-inverse">7.3. IFCOpenshell Traverse and Inverse</a></li>
 </ul>
   </nav></div>
 

@@ -39,3 +39,16 @@ ifcopenshell.api.run("pset_template.add_prop_template", ifcmodel, pset_template=
 ifcmodel.write('/home/Desktop/test.ifc')
 # endregion: IFCTimeseries
 ```
+## IFCOpenshell Traverse and Inverse
+```
+model = ifcopenshell.open(ifc_path)
+    # mat_layer_sets = model.by_type('IfcMaterialLayerSet')
+    mat_layer_sets = model.by_type('IfcWallType')
+    for mls in mat_layer_sets[1:2]:
+        trav = model.traverse(mls, max_levels=2)
+        invs = model.get_inverse(mls)
+        for inv in invs:
+            print(inv.get_info())
+        # print(type(invs))
+    # print(mat_layer_sets)
+```
