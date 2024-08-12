@@ -5,6 +5,9 @@ These notes are based on these sources:
 - <a href="https://en.wikipedia.org/wiki/Thermal_conductivity_measurement" target="_blank"> thermal conductivity measurement wikipedia</a>
 - <a href="https://en.wikipedia.org/wiki/R-value_(insulation)" target="_blank"> thermal resistance R-value wikipedia</a>
 <Br></Br>
+- <a href="https://www.firstinarchitecture.co.uk/a-quick-and-easy-guide-to-u-values/" target="_blank"> how to calculate U-values</a>
+<Br></Br>
+
 - **Thermal Conductivity/ λ or K-value (W/m.K)**: the heat flow density (W/m2) in a 1 m thick body (i.e. the length of heat flow path is 1 m), with a 1 degree temperature difference.
   - q = -k * A * deltaT/x
     - q is the heatflux (w/m2)
