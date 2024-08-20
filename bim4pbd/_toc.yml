@@ -1,0 +1,49 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: docs/intro
+parts:
+- caption: Motivation and Background
+  numbered: true
+  chapters:
+  - file: docs/01/01_motivation
+  - file: docs/01/02_0_process
+    sections:
+    - file: docs/01/02_1_formulate
+- caption: Tutorials
+  numbered: true        
+  chapters:
+  - file: docs/02/01_stadgarage
+  - file: docs/02/02_optenvcool
+- caption: Software How-To Guides
+  numbered: true
+  chapters:
+  - file: docs/03/03_b3dsect
+  - file: docs/03/04_b3dplane
+  - file: docs/03/05_b3dimg
+  - file: docs/03/06_fcbim
+  - file: docs/03/07_librecad
+  - file: docs/03/08_openstudiopy
+  - file: docs/03/09_ifcopenshell
+- caption: Software References
+  numbered: true
+  chapters:
+  - file: docs/03/01_tech
+  - file: docs/03/02_tips
+- caption: Building Performance References
+  numbered: true
+  chapters:
+  - file: docs/04/01_rating
+  - file: docs/04/02_0_archsci
+    sections:
+    - file: docs/04/02_1_thermcond
+    - file: docs/04/02_2_rad_trsf
+    - file: docs/04/02_3_climate
+    - file: docs/04/02_4_loads
+    - file: docs/04/02_5_tcomf
+    - file: docs/04/02_6_lighting
+- caption: References
+  numbered: true
+  chapters:
+  - file: docs/biblio
