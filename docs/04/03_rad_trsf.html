@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>1. Sectional perspective with Blender3D and LibreCAD &#8212; Open Computational Design for Sustainable Development</title>
+    <title>3. Radiant Heat Transfer: Reflectance, Absorptance and Emittance &#8212; Building Information Modeling for Performance-based Design (BIM4PBD)</title>
   
   
   
@@ -57,11 +57,13 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/03/03_b3dsect';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/04/03_rad_trsf';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="2. Blender3D plane" href="04_b3dplane.html" />
-    <link rel="prev" title="2. Multi-Objective Optimization of Building Form, Envelope and Cooling System" href="../02/02_optenvcool.html" />
+    <link rel="next" title="4. Climate Classifications" href="04_climate.html" />
+    <link rel="prev" title="2. Thermal Conductivity (λ or K-value), Resistance (R-value) and Transmittance (U-value)" href="02_thermcond.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -152,7 +154,7 @@
   
   
   
-    <p class="title logo__title">Open Computational Design for Sustainable Development</p>
+    <p class="title logo__title">Building Information Modeling for Performance-based Design (BIM4PBD)</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -172,7 +174,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    Building Information Modeling for Performance-Based Design (BIM4PBD)
+                    Introduction
                 </a>
             </li>
         </ul>
@@ -190,32 +192,21 @@
 <li class="toctree-l1"><a class="reference internal" href="../02/02_optenvcool.html">2. Multi-Objective Optimization of Building Form, Envelope and Cooling System</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Software How-To Guides</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Sectional perspective with Blender3D and LibreCAD</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_b3dplane.html">2. Blender3D plane</a></li>
-<li class="toctree-l1"><a class="reference internal" href="05_b3dimg.html">3. Import background image and scale</a></li>
-<li class="toctree-l1"><a class="reference internal" href="06_fcbim.html">4. BIM with FreeCAD</a></li>
-<li class="toctree-l1"><a class="reference internal" href="07_librecad.html">5. Drafting with LibreCAD</a></li>
-<li class="toctree-l1"><a class="reference internal" href="08_openstudiopy.html">6. Understanding the Openstudio Workflow</a></li>
-<li class="toctree-l1"><a class="reference internal" href="09_ifcopenshell.html">7. IFCOpenShell</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Software References</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="01_tech.html">1. Open-Source Technologies and Data for Design Process</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_tips.html">2. Shortcut keys and tips</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/01_fcbim.html">1. BIM with FreeCAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/02_librecad.html">2. Drafting with LibreCAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/03_openstudiopy.html">3. Understanding the Openstudio Workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/04_ifcopenshell.html">4. IFCOpenShell</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Building Performance References</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../04/01_rating.html">1. Rating Systems</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../04/02_0_archsci.html">2. Architectural Science</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../04/02_1_thermcond.html">2.1. Thermal Conductivity (λ or K-value), Resistance (R-value) and Transmittance (U-value)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../04/02_2_rad_trsf.html">2.2. Radiant Heat Transfer: Reflectance, Absorptance and Emittance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../04/02_3_climate.html">2.3. Climate Classifications</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../04/02_4_loads.html">2.4. Cooling and Heating Loads</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../04/02_5_tcomf.html">2.5. Thermal Comfort</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../04/02_6_lighting.html">2.6. Lighting</a></li>
-</ul>
-</li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_rating.html">1. Rating Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_thermcond.html">2. Thermal Conductivity (λ or K-value), Resistance (R-value) and Transmittance (U-value)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Radiant Heat Transfer: Reflectance, Absorptance and Emittance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_climate.html">4. Climate Classifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_loads.html">5. Cooling and Heating Loads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_lighting.html">6. Lighting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_tcomf.html">7. Thermal Comfort</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">References</span></p>
 <ul class="nav bd-sidenav">
@@ -291,7 +282,7 @@
       
       
       
-      <li><a href="https://github.com/chenkianwee/opencd4susdev/issues/new?title=Issue%20on%20page%20%2Fdocs/03/03_b3dsect.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/chenkianwee/opencd4susdev/issues/new?title=Issue%20on%20page%20%2Fdocs/04/03_rad_trsf.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -321,7 +312,7 @@
       
       
       
-      <li><a href="../../_sources/docs/03/03_b3dsect.md" target="_blank"
+      <li><a href="../../_sources/docs/04/03_rad_trsf.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -392,7 +383,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -403,11 +396,21 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Sectional perspective with Blender3D and LibreCAD</h1>
+    <h1>Radiant Heat Transfer: Reflectance, Absorptance and Emittance</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculate-radiative-heat-transfer-between-two-surfaces">3.1. Calculate Radiative Heat Transfer between Two Surfaces</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solar-radiation-irradiance-irradiation-insolation">3.2. Solar Radiation, Irradiance, Irradiation, Insolation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instruments-to-measure-radiative-heat-transfer">3.3. Instruments to measure radiative heat transfer</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -417,47 +420,102 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="sectional-perspective-with-blender3d-and-librecad">
-<h1><span class="section-number">1. </span>Sectional perspective with Blender3D and LibreCAD<a class="headerlink" href="#sectional-perspective-with-blender3d-and-librecad" title="Link to this heading">#</a></h1>
-<p>I will attempt to model a space using LibreCAD and Blender3D and cut a sectional perspective. For a more comprehensive tutorial, refer to <a href="https://learning.oreilly.com/library/view/introduction-to-blender/9781484279540/" target="_blank">Introduction to Blender 3.0 : learn organic and architectural modeling, lighting, materials, painting, rendering, and compositing with Blender Chapter 3 Building a 3D Environment </a></p>
-<ol class="arabic">
-<li><p>Draw the following with the rectangle command and offset command in librecad (<a class="reference internal" href="02_tips.html"><span class="doc">Shortcut keys and tips</span></a>). Dimensions are in meters.
-<br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/librecad1.png"><img alt="../../_images/librecad1.png" class="align-center" src="../../_images/librecad1.png" style="width: 100%;" /></a>
-<p><br/><br/></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="radiant-heat-transfer-reflectance-absorptance-and-emittance">
+<h1><span class="section-number">3. </span>Radiant Heat Transfer: Reflectance, Absorptance and Emittance<a class="headerlink" href="#radiant-heat-transfer-reflectance-absorptance-and-emittance" title="Link to this heading">#</a></h1>
+<p>These notes are based on these sources:</p>
+<ul class="simple">
+<li><p>Architectural science textbook <span id="id1">[<a class="reference internal" href="../biblio.html#id12" title="Steven V. Szokolay. Introduction to architectural science : the basis of sustainable design. Routledge, London, 3rd edition, 2014. ISBN 978-1-317-91859-2.">Szokolay, 2014</a>]</span> Pg 10-11.
+<Br></Br></p></li>
+<li><p><strong>Reflectance <span class="math notranslate nohighlight">\(\rho\)</span></strong>: decimal fraction indicating how much of the incident radiation is reflected by a surface.</p></li>
+<li><p><strong>Absorptance <span class="math notranslate nohighlight">\(\alpha\)</span></strong>: decimal fraction, a measure of the ability to absorb radiation, relative to the perfect black body where the absorptance is 1.</p>
+<ul>
+<li><p><strong>For any opaque surfaces reflectance + absorptance = 1</strong>.</p></li>
+<li><p>Absortance is high for dark surface and low for light/shiny metallic surfaces. e.g. 0.9 for black asphalt, 0.2 for shiny aluminium.</p></li>
+</ul>
 </li>
-<li><p>Import it into Blender3D. Go to Edit -&gt; Preferences -&gt; Add-ons. Search for dxf. Activate the Import-Export: Import AutoCAD DXF Format (.dxf) add-on. Turn both import and export on.</p></li>
-<li><p>Make a collection for walls at the outliner. Add a plane. Resize the plane (<a class="reference internal" href="04_b3dplane.html"><span class="doc">here</span></a>) and snap it to the outline to make the walls.
-<br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/blender7.png"><img alt="../../_images/blender7.png" class="align-center" src="../../_images/blender7.png" style="width: 100%;" /></a>
-<p><br/><br/></p>
+<li><p><strong>emittance <span class="math notranslate nohighlight">\(\epsilon\)</span></strong>: decimal fraction, a measure of the ability to emit radiation, relative to the ‘black body’, the perfect emitter.</p>
+<ul>
+<li><p><strong>For ordinary surfaces emittance = absorptance</strong> for the same wavelength (temperature) of radiation. However many surfaces have selective properties. For example:</p></li>
+<li><p>it is desireable for solar collectors to have high absorptance for solar (6000C), but low emittance at ordinary temperatures (&lt;100c).</p></li>
+<li><p>it is desireable for skyview passive cooling to have low absorptance for solar (6000C), but high emittance at ordinary temperatures (&lt;100c).</p></li>
+<li><p>A shiny metal surface is non-selective meaning emittance = absorptance.</p></li>
+</ul>
 </li>
-<li><p>Extrude the walls following instructions <a class="reference internal" href="04_b3dplane.html#extruding-the-face-of-a-plane"><span class="std std-ref">here</span></a>.
-<br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/blender8.png"><img alt="../../_images/blender8.png" class="align-center" src="../../_images/blender8.png" style="width: 100%;" /></a>
-<p><br/><br/></p>
+<li><p><strong>Transmittance</strong>: decimal fraction indicating how much of the incident radiation is transmitted through the surface. Usually for transparent materials like glass.</p></li>
+</ul>
+<section id="calculate-radiative-heat-transfer-between-two-surfaces">
+<h2><span class="section-number">3.1. </span>Calculate Radiative Heat Transfer between Two Surfaces<a class="headerlink" href="#calculate-radiative-heat-transfer-between-two-surfaces" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>ASHRAE handbook  heating, ventilating, and air-conditioning systems and equipment, Chapter 6.2</p></li>
+<li><p>You can simplify the calculation by assuming it to be a 2 surfaces enclosure. Caculate the AUST with eqn 2 and use eqn 4 to calculate qr</p></li>
+<li><p>if you have surface temperatures of the whole room and a 3D scene of the room. You can calculate the heat transfer to each surfaces with eqn 1 and 3.</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>qr = s * Fr * (Tp<sup>4</sup> - Tr<sup>4</sup>)</p>
+<ul class="simple">
+<li><p>qr = radiative heat transfer (W/m2)</p></li>
+<li><p>s = Stefan-Boltzmann constant = 5.67 * 10–8 W/(m2·K4)</p></li>
+<li><p>Fr = radiation exchange factor (dimensionless)</p></li>
+<li><p>Tp = effective temperature of heating (cooling) panel surface, K</p></li>
+<li><p>Tr = temperature of fictitious surface (unheated or uncooled), K</p></li>
+</ul>
 </li>
-<li><p>In the object mode. Select all the walls. Click the Move icon at the left side bar. Move them in the Z direction. While dragging the walls key in 0.3m. This is to make way for the floor slab.
-<br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/blender9.png"><img alt="../../_images/blender9.png" class="align-center" src="../../_images/blender9.png" style="width: 100%;" /></a>
-<p><br/><br/></p>
+<li><p>Tr = ((A1 * E1 * T1) + (A2 * E3 * T3) + … + (Aj * Ej * Tj)) / ((A1 * E1) + (A2 * E2) + … + (Aj * Ej))</p>
+<ul class="simple">
+<li><p>Tj = temperature of surfaces other than panels, K</p></li>
+<li><p>Aj = area of surfaces other than panels, m2</p></li>
+<li><p>Ej = thermal emittance of surfaces other than panel(s) (dimensionless)</p></li>
+<li><p>This is the AUST calculation.</p></li>
+</ul>
 </li>
-<li><p>Copy and paste the floor slab. Move the slab 4.3m up. It will be the roof.
-<br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/blender10.png"><img alt="../../_images/blender10.png" class="align-center" src="../../_images/blender10.png" style="width: 100%;" /></a>
-<p><br/><br/></p>
+<li><p>Fr = 1/((1/Fpr) + (1/Ep - 1) + (Ap/Ar)*(1/Er-1))</p>
+<ul class="simple">
+<li><p>Fpr = radiation angle factor from panel to fictitious surface (1.0 for flat panel) (View factor)</p></li>
+<li><p>Ap, Ar = area of panel surface and fictitious surface, respectively</p></li>
+<li><p>Ep , Er = thermal emittance of panel surface and fictitious surface, respectively (dimensionless) (in a room is usually 0.9)</p></li>
+</ul>
 </li>
-<li><p>As Blender3d do not have a function to do sectional cuts. We turn off the visibility of one of the walls so we can see into the space. Set the camera interactively by going to the right hand side bar -&gt; View -&gt; View Lock -&gt; tick Camera to View.
-<br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/blender11.png"><img alt="../../_images/blender11.png" class="align-center" src="../../_images/blender11.png" style="width: 100%;" /></a>
-<p><br/><br/></p>
-</li>
-<li><p>Add line rendering by ticking Freestyle in the Rendering Properties tab. Render the image by going to Render -&gt; Render Image. You can make the background transparent by going to the Render Properties -&gt; Film -&gt; Transparent.
-<br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/blender13.png"><img alt="../../_images/blender13.png" class="align-center" src="../../_images/blender13.png" style="width: 100%;" /></a>
-<p><br/><br/></p>
+<li><p>qr = 5 * 10<sup>-8</sup> * ((tp + 273.15)<sup>4</sup> – (AUST + 273.15)<sup>4</sup>)</p>
+<ul class="simple">
+<li><p>tp = effective panel surface temperature, °C</p></li>
+<li><p>AUST = area-weighted temperature of all indoor surfaces of walls, ceiling, floor, windows, doors, etc. (excluding active panel surfaces), °C</p></li>
+</ul>
 </li>
 </ol>
+</section>
+<section id="solar-radiation-irradiance-irradiation-insolation">
+<h2><span class="section-number">3.2. </span>Solar Radiation, Irradiance, Irradiation, Insolation<a class="headerlink" href="#solar-radiation-irradiance-irradiation-insolation" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Solar radiation, often called the solar resource or just sunlight, is a general term for the electromagnetic radiation emitted by the sun.</p>
+<ul>
+<li><p><a class="reference external" href="https://www.energy.gov/eere/solar/solar-radiation-basics">https://www.energy.gov/eere/solar/solar-radiation-basics</a></p></li>
+</ul>
+</li>
+<li><p>There are many different words and meanings such as solar radiation (electromagnetic), solar irradiance (for power), solar irradiation (for energy), as well as solar insolation to describe the amount of sunlight that is available at any particular location.</p>
+<ul>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Solar_irradiance">https://en.wikipedia.org/wiki/Solar_irradiance</a></p></li>
+<li><p><a class="reference external" href="https://www.alternative-energy-tutorials.com/solar-power/solar-irradiance.html">https://www.alternative-energy-tutorials.com/solar-power/solar-irradiance.html</a></p></li>
+</ul>
+</li>
+<li><p>Solar Irradiance (W/m2): the amount of solar power landing on a surface</p></li>
+<li><p>Solar Irradiation (kWh/m2): this is the same as Insolation. Integration of Solar Irradiance. The SI unit is Joule per sqm (J/m2).</p></li>
+</ul>
+</section>
+<section id="instruments-to-measure-radiative-heat-transfer">
+<h2><span class="section-number">3.3. </span>Instruments to measure radiative heat transfer<a class="headerlink" href="#instruments-to-measure-radiative-heat-transfer" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Pyrgeometer (<a class="reference external" href="https://en.wikipedia.org/wiki/Pyrgeometer">https://en.wikipedia.org/wiki/Pyrgeometer</a>)</p>
+<ul>
+<li><p>measures near-surface infra-red (IR) radiation, approximately from 4.5 μm to 100 μm on the electromagnetic spectrum (thereby excluding solar radiation).</p></li>
+</ul>
+</li>
+<li><p>Pyranometer (<a class="reference external" href="https://en.wikipedia.org/wiki/Pyranometer">https://en.wikipedia.org/wiki/Pyranometer</a>)</p>
+<ul>
+<li><p>measuring solar irradiance on a planar surface and it is designed to measure the solar radiation flux density (W/m2) from the hemisphere above within a wavelength range 0.3 μm to 3 μm.</p></li>
+</ul>
+</li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -473,7 +531,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./docs/03"
+            path: "./docs/04"
         },
         predefinedOutput: true
     }
@@ -491,20 +549,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../02/02_optenvcool.html"
+       href="02_thermcond.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">2. </span>Multi-Objective Optimization of Building Form, Envelope and Cooling System</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Thermal Conductivity (λ or K-value), Resistance (R-value) and Transmittance (U-value)</p>
       </div>
     </a>
     <a class="right-next"
-       href="04_b3dplane.html"
+       href="04_climate.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">2. </span>Blender3D plane</p>
+        <p class="prev-next-title"><span class="section-number">4. </span>Climate Classifications</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -515,7 +573,22 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculate-radiative-heat-transfer-between-two-surfaces">3.1. Calculate Radiative Heat Transfer between Two Surfaces</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solar-radiation-irradiance-irradiation-insolation">3.2. Solar Radiation, Irradiance, Irradiation, Insolation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instruments-to-measure-radiative-heat-transfer">3.3. Instruments to measure radiative heat transfer</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
