@@ -80,7 +80,7 @@
     ```
 
 ## IFC to OSM
-1. Model a IFC building model [You can do it with FreeCAD](06_fcbim.md) and then [export it IFC](06_fcbim.md#export-to-ifc-and-read-with-ifcopenshell).
+1. Model a IFC building model [You can do it with FreeCAD](01_fcbim.md) and then [export it IFC](01_fcbim.md#export-to-ifc-and-read-with-ifcopenshell).
 
 2. Using the IFCOpenshell and the OpenStudio library convert the IFC model to OSM. Here is an example script that converts a IFC file to OSM and uses an ideal air loads calculation to get the cooling load.
     ```{dropdown} Script to Convert IFC to OSModel
